@@ -1,111 +1,92 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
-
-
-
-
-
-
-
-
-
-
-<item>
-<title>[B][COLOR navy]•[/COLOR][COLOR white] TRAILERS [/B][COLOR springgreen]  [/COLOR]</title>
-<link>http://fonix.pt</link>
-<externallink>https://pastebin.com/raw/X0NwfG4d</externallink>
+<channels>
+<channel>
+<name>[B][COLOR gold]TRAILERS[/B][/COLOR]</name>
 <thumbnail>http://upimagens.com/di/5T7A/trailers.png</thumbnail>
-<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
-
-=====================================================================================================================
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
+<info>Trailers de Filmes</info>
+</subitem>
+</item>
 
 <item>
-<title>[B][COLOR navy]•[/COLOR][COLOR white] MOVIE RELEASE #1 [/B][COLOR springgreen] [By: Inspiration Links] [/COLOR]</title>
-<link>http://fonix.pt</link>
-<externallink>https://goo.gl/4elImZ</externallink>
+<title>[B][COLOR gold]TRAILERS[/B][/COLOR]</title>
+<link>http://ignorame</link>
+<thumbnail>http://upimagens.com/di/5T7A/trailers.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
+<info>Trailers de Filmes</info>
+<externallink>https://pastebin.com/raw/X0NwfG4d</externallink>
+</item>
+
+
+<channels>
+<channel>
+<name>[B][COLOR gold]MOVIE RELEASE[/B][/COLOR]</name>
 <thumbnail>http://upimagens.com/di/DI0V/Airportetgg.png</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
+<info>Filmes Recentes</info>
+</subitem>
 </item>
 
-=====================================================================================================================
-
 <item>
-<title>[B][COLOR navy]•[/COLOR][COLOR white] MOVIE RELEASE #2 [/B][COLOR springgreen] [By: Spectro] [/COLOR]</title>
-<link>http://fonix.pt</link>
-<jsonrpc>plugin://plugin.video.specto/?action=movieYears</jsonrpc>
-<thumbnail>https://s21.postimg.io/b3deqiuaf/movies.png</thumbnail>
-<fanart>http://s10.postimg.org/4j8lmh789/fanart.jpg</fanart></item>
+<title>[B][COLOR gold]MOVIE RELEASE[/B][/COLOR]</title>
+<link>http://ignorame</link>
+<thumbnail>http://upimagens.com/di/DI0V/Airportetgg.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
+<info>Filmes Recentes</info>
+<externallink>https://raw.githubusercontent.com/fghjgb/inspiration/master/FILMES_2016.xml?token=AVdRuA96Z45yADbog51NSTZ_d_HKLquBks5ZIMAywA%3D%3D</externallink>
+</item>
 
-=====================================================================================================================
-
-<item>
-<title>[B][COLOR navy]•[/COLOR][COLOR white] FILMES INFANTIS [/B][COLOR springgreen]  [/COLOR]</title>
-<link>http://fonix.pt</link>
-<externallink>https://goo.gl/M71Xg0</externallink>
+<channels>
+<channel>
+<name>[B][COLOR gold]MOVIE KIDS[/B][/COLOR]</name>
 <thumbnail>http://upimagens.com/di/HQVI/animacao.png</thumbnail>
-<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
-
-=====================================================================================================================
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
+<info>Filmes Recentes</info>
+</subitem>
+</item>
 
 <item>
-<title>[B][COLOR navy]•[/COLOR][COLOR white] VINTAGE FILMS [COLOR navy]•[/B][COLOR springgreen]  [/COLOR]</title>
-<link>http://fonix.pt</link>
-<externallink>https://pastebin.com/raw/GihtWrTX</externallink>
+<title>[B][COLOR gold]MOVIE KIDS[/B][/COLOR]</title>
+<link>http://ignorame</link>
+<thumbnail>http://upimagens.com/di/HQVI/animacao.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
+<info>Filmes Recentes</info>
+<externallink>https://raw.githubusercontent.com/fghjgb/inspiration/master/FILMES%20ANIMACAO.xml?token=AVdRuGWU4-Q9k-vFBdk8Ls8aUMK0qmIbks5ZIL_owA%3D%3D</externallink>
+</item>
+
+<channels>
+<channel>
+<name>[B][COLOR gold]VINTAGE FILMS[/B][/COLOR]</name>
 <thumbnail>https://upimagens.com/di/IJ29/vintage_films.png</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
+<info>Filmes Antigos</info>
+</subitem>
 </item>
 
+<item>
+<title>[B][COLOR gold]VINTAGE FILMS[/B][/COLOR]</title>
+<link>http://ignorame</link>
+<thumbnail>https://upimagens.com/di/IJ29/vintage_films.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
+<info>Filmes Antigos</info>
+<externallink>https://raw.githubusercontent.com/fghjgb/inspiration/master/FILMS_VINTAGE.xml?token=AVdRuEkoQZ_ZUZqGPvjZ4KVWf1l77ZGOks5ZIL8xwA%3D%3D</externallink>
+</item>
 
-=====================================================================================================================
+<channels>
+<channel>
+<name>[B][COLOR gold]MADE IN PT[/B][/COLOR]</name>
+<thumbnail>http://upimagens.com/di/Q29L/f1gp.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
+<info>Filmes Portugueses</info>
+</subitem>
+</item>
 
 <item>
-<title>[B][COLOR navy]•[/COLOR][COLOR white] MADE IN PT [/B][COLOR springgreen]  [/COLOR]</title>
-<link>http://fonix.pt</link>
-<externallink>https://goo.gl/436ntZ</externallink>
-<thumbnail>http://upimagens.com/di/HBRH/made_in_pt.png</thumbnail>
-<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Inspiration Links 2017 All rights reserved
+<title>[B][COLOR gold]MADE IN PT[/B][/COLOR]</title>
+<link>http://ignorame</link>
+<thumbnail>http://upimagens.com/di/Q29L/f1gp.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
+<info>Filmes Portugueses</info>
+<externallink>https://raw.githubusercontent.com/fghjgb/inspiration/master/CINEMA_PORTUGUES.xml?token=AVdRuMnU6ssxSqEDZAcJeAsCr1wi549jks5ZIL-AwA%3D%3D</externallink>
+</item>
