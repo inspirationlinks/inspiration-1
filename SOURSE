@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<channels>
+<channel>
+"<name>[B][COLOR lime]•[/COLOR][COLOR lavenderblush] TV PORTUGAL
+INSPIRATION[/B][/COLOR]</name>"
+<thumbnail>http://upimagens.com/di/YGEP/tv8.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
+</subitem>
+</item>
+
+<item>
+"<title>[B][COLOR lime]•[/COLOR][COLOR lavenderblush] TV PORTUGAL
+INSPIRATION[/B][/COLOR]</title>"
+<link>http://fuime</link>
+<externallink>http://bit.ly/AGENDA_DIARIA$$LSProEncKey=INSPIRATIONListas$$</externallink>
+<thumbnail>http://i.imgur.com/gdQeoPT.png</thumbnail>
+<fanart>http://i.imgur.com/i3WS0fo.jpg</fanart>
+<info>Agenda com os Eventos Desportivos que passam no INSPIRATION Live Events</info>
+</item>
+
+
+<channels>
+<channel>
+<name>[B][COLOR lime]•[/COLOR][COLOR lavenderblush] DESPORTO[/B][/COLOR]</name>
+<thumbnail>http://i.imgur.com/8xcxij1.png</thumbnail>
+</subitem>
+</item>
+
+<item>
+<title>[B][COLOR lime]•[/COLOR][COLOR lavenderblush] DESPORTO[/B][/COLOR]</title>
+<link>http://fuime</link>
+<externallink>http://bit.ly/DESPORTO_INSPIRATION$$LSProEncKey=INSPIRATIONMenus$$</externallink>
+<thumbnail>http://i.imgur.com/8xcxij1.png</thumbnail>
+<fanart>http://i.imgur.com/HIUUB6L.jpg</fanart>
+<info>Seccao Desporto</info>
+</item>
+
+
+<channels>
+<channel>
+<name>[B][COLOR lime]•[/COLOR][COLOR lavenderblush] CINEMA[/B][/COLOR]</name>
+<thumbnail>http://i.imgur.com/e9q1iaf.png</thumbnail>
+</subitem>
+</item>
+
+<item>
+<title>[B][COLOR lime]•[/COLOR][COLOR lavenderblush] CINEMA[/B][/COLOR]</title>
+<link>http://fuime</link>
+<externallink>http://bit.ly/CANAIS_TV_INSPIRATION$$LSProEncKey=INSPIRATIONMenus$$</externallink>
+<thumbnail>http://i.imgur.com/e9q1iaf.png</thumbnail>
+<fanart>http://i.imgur.com/HiYIBZi.jpg</fanart>
+<info>Canais que passam na TV Portuguesa (e não só)</info>
+</item>
+
+<channels>
+<channel>
+<name>[B][COLOR lime]•[/COLOR][COLOR lavenderblush] MUSIC[/B][/COLOR]</name>
+<thumbnail>http://i.imgur.com/CvkwE6F.png</thumbnail>
+</subitem>
+</item>
+
+<item>
+<title>[B][COLOR lime]•[/COLOR][COLOR lavenderblush] MUSIC[/B][/COLOR]</title>
+<link>http://fuime</link>
+<externallink>https://raw.githubusercontent.com/fghjgb/inspiration/master/MUSIC.xml?token=AVdRuHG2uRHZgxno0BlRWVbnCgzUk8w-ks5ZIJX0wA%3D%3D</externallink>
+<thumbnail>http://i.imgur.com/CvkwE6F.png</thumbnail>
+<fanart>http://i.imgur.com/kiCztG1.jpg</fanart>
+<info>Filmes para ver sentado no sofa</info>
+</item>
+
+
+<channels>
+<channel>
+<name>[B][COLOR lime]•[/COLOR][COLOR lavenderblush] RADIOS[/B][/COLOR]</name>
+<thumbnail>http://i.imgur.com/9nU6mFl.png</thumbnail>
+</subitem>
+</item>
+
+<item>
+<title>[B][COLOR lime]•[/COLOR][COLOR lavenderblush] RADIOS[/B][/COLOR]</title>
+<link>http://fuime</link>
+<externallink>http://bit.ly/LISTA_RADIOS$$LSProEncKey=INSPIRATIONListas$$</externallink>
+<thumbnail>http://i.imgur.com/9nU6mFl.png</thumbnail>
+<fanart>http://i.imgur.com/sgogKuf.jpg</fanart>
+<info>Radios em direto</info>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<channels>
+<channel>
+<name>[B][COLOR lime]•[/COLOR][COLOR lavenderblush] WEBCAM's[/B][/COLOR]</name>
+<thumbnail>http://i.imgur.com/JvYOLuZ.png</thumbnail>
+</subitem>
+</item>
+
+<item>
+<title>[B][COLOR lime]•[/COLOR][COLOR lavenderblush] WEBCAM's[/B][/COLOR]</title>
+<link>http://fuime</link>
+<externallink>http://bit.ly/MENU_WEBCAMS</externallink>
+<thumbnail>http://i.imgur.com/JvYOLuZ.png</thumbnail>
+<fanart>http://i.imgur.com/JdOKsYv.jpg</fanart>
+<info>WebCam's espalhadas pelo mundo</info>
+</item>
+
+
+<channels>
+<channel>
+<name>[B][COLOR lime]•[/COLOR][COLOR lavenderblush] KODI TIP's[/B][/COLOR]</name>
+<thumbnail>http://i.imgur.com/g77Pa31.png</thumbnail>
+</subitem>
+</item>
+
+<item>
+<title>[B][COLOR lime]•[/COLOR][COLOR lavenderblush] KODI TIP's[/B][/COLOR]</title>
+<link>http://fuime</link>
+<externallink>http://bit.ly/KODI_TIPS</externallink>
+<thumbnail>http://i.imgur.com/g77Pa31.png</thumbnail>
+<fanart>http://i.imgur.com/FfdwcM6.jpg</fanart>
+<info>Videos do YouTube</info>
+</item>
