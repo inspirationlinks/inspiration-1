@@ -1,89 +1,58 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
-
-
-
-
-<channels> 
-
-
+<channels>
 <channel>
-<name>[B][COLOR lime]•[/COLOR][COLOR white] DESPORTO PREMIUM[/COLOR] [/B]</name>
+<name>[B][COLOR deepskyblue]DESPORTO PREMIUM[/B][/COLOR]</name>
 <thumbnail>http://upimagens.com/di/RQMS/futbol.png</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
-<link>http://fui.me</link>
-<externallink>&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#112;&#97;&#115;&#116;&#101;&#98;&#105;&#110;&#46;&#99;&#111;&#109;&#47;&#114;&#97;&#119;&#47;&#49;&#56;&#102;&#105;&#71;&#55;&#50;&#66;&#36;&#36;&#76;&#83;&#80;&#114;&#111;&#69;&#110;&#99;&#75;&#101;&#121;&#61;&#120;&#120;&#120;&#36;&#36;</externallink>
-</channel>
+<info>Transmissões Desportivas</info>
+</subitem>
+</item>
 
-
-
-<channel>
-<name>[B][COLOR lime]•[/COLOR][COLOR white] REPLAY[COLOR red]•[/COLOR] DESPORTIVOS[/COLOR][/B]</name>
-<thumbnail>https://upimagens.com/di/R9JX/Airportet3.png</thumbnail>
+<item>
+<title>[B][COLOR lime]•[/COLOR][COLOR white] DESPORTO[COLOR red]•[/COLOR] PREMIUM[/COLOR][/B]</title>
+<link>http://ignorame</link>
+<thumbnail>http://upimagens.com/di/RQMS/futbol.png</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
-<link>http://fui.me</link>
-<externallink>https://goo.gl/0t4mXc</externallink>
-</channel>
+<info>Transmissões Desportivas</info>
+<externallink>https://raw.githubusercontent.com/fghjgb/inspiration/master/FUTBOL%20LIVE.xml?token=AVdRuEDhP_f1OnokbwyvR2LqUtZNCDBzks5ZILUWwA%3D%3D</externallink>
+</item>
 
 
-
-
+<channels>
 <channel>
-<name>[B][COLOR lime]•[/COLOR][COLOR white] WRC[COLOR red]|[/COLOR]F1[COLOR red]|[/COLOR]MOTOGP[/COLOR] [/B]</name>
+<name>[B][COLOR deepskyblue]WRC | F1 | MOTOGP[/B][/COLOR]</name>
 <thumbnail>http://upimagens.com/di/Q29L/f1gp.png</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
-<externallink>https://goo.gl/JMrw9z</externallink>
-<info>Canais MORORIZADOS</info>
-</channel>
+<info>Canais de TV do Brasil</info>
+</subitem>
+</item>
+
+<item>
+<title>[B][COLOR lime]•[/COLOR][COLOR white] WRC[COLOR red]|[/COLOR]F1[COLOR red]|[/COLOR]MOTOGP[/COLOR] [/B]</title>
+<link>http://ignorame</link>
+<thumbnail>http://upimagens.com/di/Q29L/f1gp.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
+<info>Canais de TV do Brasil</info>
+<externallink>https://raw.githubusercontent.com/fghjgb/inspiration/master/FORMULA1_GP.xml?token=AVdRuMVAzl-yAjZa5vh6r6ROzAUYK8Y3ks5ZILV3wA%3D%3D</externallink>
+</item>
 
 
+<channels>
+<channel>
+<name>[B][COLOR deepskyblue]REPLAY[/B][/COLOR]</name>
+<thumbnail>https://upimagens.com/di/R9JX/Airportet3.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
+<info>Repetição de Programas Desportivos</info>
+</subitem>
+</item>
 
+<item>
+<title>[B][COLOR lime]•[/COLOR][COLOR white] REPLAY [COLOR red]•[/COLOR] DESPORTIVOS[/COLOR][/B]</title>
+<link>http://ignorame</link>
+<thumbnail>https://upimagens.com/di/R9JX/Airportet3.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
+<info>Repetição de Programas Desportivos</info>
+<externallink>https://raw.githubusercontent.com/fghjgb/inspiration/master/INFORMACAO_DESPORTIVA.xml?token=AVdRuHV6MmSc2yZJdWNTF0zLaoHCF1OCks5ZILdfwA%3D%3D</externallink>
+</item>
 
-</channels>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Inspiration Links 2017 All rights reserved
