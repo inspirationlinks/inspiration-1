@@ -1,0 +1,1142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=====================================================================================================================
+<item>
+<title>[B][COLOR red]••vv•• [COLOR gold]CONCERTOS [COLOR blue]LIVE[/COLOR][COLOR red] ••vv••[/COLOR][/B]</title> 
+<link>http://fui.me</link>
+<thumbnail>http://upimagens.com/di/2QB1/logoinspiration.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+=====================================================================================================================
+
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR blue] Concertos ao Vivo [/COLOR][COLOR magenta] [Youtube] [/COLOR][/B]</title>
+<link>http://fui.me</link>
+<externallink>https://goo.gl/G8SgOM</externallink>
+<thumbnail>http://upimagens.com/di/VYB3/concertos.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+
+
+
+
+=====================================================================================================================
+<item>
+<title>[B][COLOR red]••vv•• [COLOR gold]TOP CHARTS [COLOR blue]MUSIC[/COLOR][COLOR red] ••vv••[/COLOR][/B]</title> 
+<link>http://fui.me</link>
+<thumbnail>http://upimagens.com/di/2QB1/logoinspiration.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+=====================================================================================================================
+
+
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] [COLOR blue]Best musics[/COLOR][COLOR red] - [/COLOR]PT[COLOR red] -[/COLOR][COLOR magenta] [Youtube] [/COLOR][/B]</title>
+<link>$doregex[makelist2]</link>
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[B][COLOR blue]page[/B][/COLOR] [makelist2.param1]</title>
+<link>$doregex[makelist3]</link>
+<referer></referer>
+<thumbnail>http://upimagens.com/di/QBAI/topcharts.png</thumbnail>
+<fanart>http://upimagens.com/di/LQL5/mzl.png</fanart>
+]]></listrepeat>
+<expres> (.*?),</expres>
+<page>$doregex[get-number]</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+            <name>makelist3</name>
+            <listrepeat><![CDATA[
+                        <title>[B][COLOR blue]|[/COLOR][COLOR gold]|[/COLOR][COLOR red]|[/COLOR][/B][makelist3.param2]</title>
+                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist3.param1]</link>
+                        <thumbnail>http://upimagens.com/di/QBAI/topcharts.png</thumbnail>
+                        <fanart>http://upimagens.com/di/LQL5/mzl.png</fanart>
+            ]]></listrepeat>
+            <expres>spf-link " dir="ltr" href="\/watch\?v=(.*?)&amp;.*?\n(.*)</expres>
+            <page>$doregex[get-source-page]</page>
+            <cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>get-number</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='https://www.youtube.com/playlist?list=PLdthbyWLeoNDNze8JJ6slZWMj8aHvwzKA'):
+
+ import requests
+ import re
+
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Accept-Language': 'en-US'}
+
+ rr = requests.get(url, headers=headers)
+ number = re.findall('</a></li><li>(.*?) vid', rr.text)[0]
+ #number = number.encode('unicode-escape')
+ number = number.replace(',', '')
+ real = int(float(number)) / 100
+ real2 = real + 3
+
+ liste = list(range(real2))
+ return liste
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='https://www.youtube.com/playlist?list=PLdthbyWLeoNDNze8JJ6slZWMj8aHvwzKA'):
+
+ import requests
+ import re
+ import json
+
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0'}
+ r1 = requests.get(url, headers = headers)
+ source = r1.text
+ page = [makelist2.param1]
+ N = int(float(page))
+ pre = 'https://www.youtube.com'
+ if (N > 1):
+
+  for itr in range (1,N):
+    continuex = re.findall('data-uix-load-more-href="(.*?)"', source)[0]
+    continuationx = pre + continuex
+    r = requests.get(continuationx, headers = headers)
+    source = r.text
+    jdata = json.loads(source)
+    source = jdata["load_more_widget_html"]
+    page = jdata["content_html"]
+  return page
+   
+ else:
+
+  return source
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://upimagens.com/di/QBAI/topcharts.png</thumbnail>
+<fanart>http://upimagens.com/di/LQL5/mzl.png</fanart></item>
+=====================================================================================================================
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] [COLOR blue]Top Tracks[/COLOR][COLOR red] - [/COLOR]PT[COLOR red] -[/COLOR][COLOR magenta] [Youtube] [/COLOR][/B]</title>
+<link>$doregex[makelist2]</link>
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[B][COLOR blue]page[/B][/COLOR] [makelist2.param1]</title>
+<link>$doregex[makelist3]</link>
+<referer></referer>
+<thumbnail>http://upimagens.com/di/QBAI/topcharts.png</thumbnail>
+<fanart>http://upimagens.com/di/LQL5/mzl.png</fanart>
+]]></listrepeat>
+<expres> (.*?),</expres>
+<page>$doregex[get-number]</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+            <name>makelist3</name>
+            <listrepeat><![CDATA[
+                        <title>[B][COLOR blue]|[/COLOR][COLOR gold]|[/COLOR][COLOR red]|[/COLOR][/B][makelist3.param2]</title>
+                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist3.param1]</link>
+                        <thumbnail>http://upimagens.com/di/QBAI/topcharts.png</thumbnail>
+                        <fanart>http://upimagens.com/di/LQL5/mzl.png</fanart>
+            ]]></listrepeat>
+            <expres>spf-link " dir="ltr" href="\/watch\?v=(.*?)&amp;.*?\n(.*)</expres>
+            <page>$doregex[get-source-page]</page>
+            <cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>get-number</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='https://www.youtube.com/playlist?list=PLL92dfFL9ZdIGA4DcKZqkKXk8ZowUWMzI'):
+
+ import requests
+ import re
+
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Accept-Language': 'en-US'}
+
+ rr = requests.get(url, headers=headers)
+ number = re.findall('</a></li><li>(.*?) vid', rr.text)[0]
+ #number = number.encode('unicode-escape')
+ number = number.replace(',', '')
+ real = int(float(number)) / 100
+ real2 = real + 3
+
+ liste = list(range(real2))
+ return liste
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='https://www.youtube.com/playlist?list=PLL92dfFL9ZdIGA4DcKZqkKXk8ZowUWMzI'):
+
+ import requests
+ import re
+ import json
+
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0'}
+ r1 = requests.get(url, headers = headers)
+ source = r1.text
+ page = [makelist2.param1]
+ N = int(float(page))
+ pre = 'https://www.youtube.com'
+ if (N > 1):
+
+  for itr in range (1,N):
+    continuex = re.findall('data-uix-load-more-href="(.*?)"', source)[0]
+    continuationx = pre + continuex
+    r = requests.get(continuationx, headers = headers)
+    source = r.text
+    jdata = json.loads(source)
+    source = jdata["load_more_widget_html"]
+    page = jdata["content_html"]
+  return page
+   
+ else:
+
+  return source
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://upimagens.com/di/QBAI/topcharts.png</thumbnail>
+<fanart>http://upimagens.com/di/LQL5/mzl.png</fanart></item>
+=====================================================================================================================
+
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] [COLOR blue]Top Tracks[/COLOR][COLOR red] - [/COLOR]Brasil [COLOR red]-[/COLOR][COLOR magenta] [Youtube] [/COLOR][/B]</title>
+<link>$doregex[makelist2]</link>
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[B][COLOR blue]page[/B][/COLOR] [makelist2.param1]</title>
+<link>$doregex[makelist3]</link>
+<referer></referer>
+<thumbnail>http://upimagens.com/di/QBAI/topcharts.png</thumbnail>
+<fanart>http://upimagens.com/di/LQL5/mzl.png</fanart>
+]]></listrepeat>
+<expres> (.*?),</expres>
+<page>$doregex[get-number]</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+            <name>makelist3</name>
+            <listrepeat><![CDATA[
+                        <title>[B][COLOR blue]•[/COLOR][makelist3.param2][COLOR lavenderblush][/COLOR][/B]</title>
+                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist3.param1]</link>
+                        <thumbnail>http://upimagens.com/di/QBAI/topcharts.png</thumbnail>
+                        <fanart>http://upimagens.com/di/LQL5/mzl.png</fanart>
+            ]]></listrepeat>
+            <expres>spf-link " dir="ltr" href="\/watch\?v=(.*?)&amp;.*?\n(.*)</expres>
+            <page>$doregex[get-source-page]</page>
+            <cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>get-number</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='https://www.youtube.com/playlist?list=PLFgquLnL59amgHJoypBNANk_038__LaXM'):
+
+ import requests
+ import re
+
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Accept-Language': 'en-US'}
+
+ rr = requests.get(url, headers=headers)
+ number = re.findall('</a></li><li>(.*?) vid', rr.text)[0]
+ #number = number.encode('unicode-escape')
+ number = number.replace(',', '')
+ real = int(float(number)) / 100
+ real2 = real + 3
+
+ liste = list(range(real2))
+ return liste
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='https://www.youtube.com/playlist?list=PLFgquLnL59amgHJoypBNANk_038__LaXM'):
+
+ import requests
+ import re
+ import json
+
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0'}
+ r1 = requests.get(url, headers = headers)
+ source = r1.text
+ page = [makelist2.param1]
+ N = int(float(page))
+ pre = 'https://www.youtube.com'
+ if (N > 1):
+
+  for itr in range (1,N):
+    continuex = re.findall('data-uix-load-more-href="(.*?)"', source)[0]
+    continuationx = pre + continuex
+    r = requests.get(continuationx, headers = headers)
+    source = r.text
+    jdata = json.loads(source)
+    source = jdata["load_more_widget_html"]
+    page = jdata["content_html"]
+  return page
+   
+ else:
+
+  return source
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://upimagens.com/di/QBAI/topcharts.png</thumbnail>
+<fanart>http://upimagens.com/di/LQL5/mzl.png</fanart></item>
+
+
+
+=====================================================================================================================
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] [COLOR blue]Top Tracks[/COLOR][COLOR red] - [/COLOR]UK [COLOR red]-[/COLOR][COLOR magenta] [Youtube] [/COLOR][/B]</title>
+<link>$doregex[makelist2]</link>
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[B][COLOR blue]page[/B][/COLOR] [makelist2.param1]</title>
+<link>$doregex[makelist3]</link>
+<referer></referer>
+<thumbnail>http://upimagens.com/di/QBAI/topcharts.png</thumbnail>
+<fanart>http://upimagens.com/di/LQL5/mzl.png</fanart>
+]]></listrepeat>
+<expres> (.*?),</expres>
+<page>$doregex[get-number]</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+            <name>makelist3</name>
+            <listrepeat><![CDATA[
+                        <title>[B][COLOR blue]•[/COLOR][makelist3.param2][COLOR lavenderblush][/COLOR][/B]</title>
+                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist3.param1]</link>
+                        <thumbnail>http://upimagens.com/di/QBAI/topcharts.png</thumbnail>
+                        <fanart>http://upimagens.com/di/LQL5/mzl.png</fanart>
+            ]]></listrepeat>
+            <expres>spf-link " dir="ltr" href="\/watch\?v=(.*?)&amp;.*?\n(.*)</expres>
+            <page>$doregex[get-source-page]</page>
+            <cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>get-number</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='https://www.youtube.com/playlist?list=PLywWGW4ILrvpqqkgKRV8jpZMaUPohQipP'):
+
+ import requests
+ import re
+
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Accept-Language': 'en-US'}
+
+ rr = requests.get(url, headers=headers)
+ number = re.findall('</a></li><li>(.*?) vid', rr.text)[0]
+ #number = number.encode('unicode-escape')
+ number = number.replace(',', '')
+ real = int(float(number)) / 100
+ real2 = real + 3
+
+ liste = list(range(real2))
+ return liste
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='https://www.youtube.com/playlist?list=PLywWGW4ILrvpqqkgKRV8jpZMaUPohQipP'):
+
+ import requests
+ import re
+ import json
+
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0'}
+ r1 = requests.get(url, headers = headers)
+ source = r1.text
+ page = [makelist2.param1]
+ N = int(float(page))
+ pre = 'https://www.youtube.com'
+ if (N > 1):
+
+  for itr in range (1,N):
+    continuex = re.findall('data-uix-load-more-href="(.*?)"', source)[0]
+    continuationx = pre + continuex
+    r = requests.get(continuationx, headers = headers)
+    source = r.text
+    jdata = json.loads(source)
+    source = jdata["load_more_widget_html"]
+    page = jdata["content_html"]
+  return page
+   
+ else:
+
+  return source
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://upimagens.com/di/QBAI/topcharts.png</thumbnail>
+<fanart>http://upimagens.com/di/LQL5/mzl.png</fanart></item>
+
+
+
+=====================================================================================================================
+
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] [COLOR blue]Top Tracks[/COLOR][COLOR red] - [/COLOR]ESP [COLOR red]-[/COLOR][COLOR magenta] [Youtube] [/COLOR][/B]</title>
+<link>$doregex[makelist2]</link>
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[B][COLOR blue]page[/B][/COLOR] [makelist2.param1]</title>
+<link>$doregex[makelist3]</link>
+<referer></referer>
+<thumbnail>http://upimagens.com/di/QBAI/topcharts.png</thumbnail>
+<fanart>http://upimagens.com/di/LQL5/mzl.png</fanart>
+]]></listrepeat>
+<expres> (.*?),</expres>
+<page>$doregex[get-number]</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+            <name>makelist3</name>
+            <listrepeat><![CDATA[
+                        <title>[B][COLOR blue]•[/COLOR][makelist3.param2][COLOR lavenderblush][/COLOR][/B]</title>
+                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist3.param1]</link>
+                        <thumbnail>http://upimagens.com/di/QBAI/topcharts.png</thumbnail>
+                        <fanart>http://upimagens.com/di/LQL5/mzl.png</fanart>
+            ]]></listrepeat>
+            <expres>spf-link " dir="ltr" href="\/watch\?v=(.*?)&amp;.*?\n(.*)</expres>
+            <page>$doregex[get-source-page]</page>
+            <cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>get-number</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='https://www.youtube.com/playlist?list=PLFgquLnL59anUbTCum31nHshzm-3pAMP-'):
+
+ import requests
+ import re
+
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Accept-Language': 'en-US'}
+
+ rr = requests.get(url, headers=headers)
+ number = re.findall('</a></li><li>(.*?) vid', rr.text)[0]
+ #number = number.encode('unicode-escape')
+ number = number.replace(',', '')
+ real = int(float(number)) / 100
+ real2 = real + 3
+
+ liste = list(range(real2))
+ return liste
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='https://www.youtube.com/playlist?list=PLFgquLnL59anUbTCum31nHshzm-3pAMP-'):
+
+ import requests
+ import re
+ import json
+
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0'}
+ r1 = requests.get(url, headers = headers)
+ source = r1.text
+ page = [makelist2.param1]
+ N = int(float(page))
+ pre = 'https://www.youtube.com'
+ if (N > 1):
+
+  for itr in range (1,N):
+    continuex = re.findall('data-uix-load-more-href="(.*?)"', source)[0]
+    continuationx = pre + continuex
+    r = requests.get(continuationx, headers = headers)
+    source = r.text
+    jdata = json.loads(source)
+    source = jdata["load_more_widget_html"]
+    page = jdata["content_html"]
+  return page
+   
+ else:
+
+  return source
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://upimagens.com/di/QBAI/topcharts.png</thumbnail>
+<fanart>http://upimagens.com/di/LQL5/mzl.png</fanart></item>
+
+
+
+=====================================================================================================================
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] [COLOR blue]Top Tracks[/COLOR][COLOR red] - [/COLOR]USA [COLOR red]-[/COLOR][COLOR magenta] [Youtube] [/COLOR][/B]</title>
+<link>$doregex[makelist2]</link>
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[B][COLOR blue]page[/B][/COLOR] [makelist2.param1]</title>
+<link>$doregex[makelist3]</link>
+<referer></referer>
+<thumbnail>http://upimagens.com/di/QBAI/topcharts.png</thumbnail>
+<fanart>http://upimagens.com/di/LQL5/mzl.png</fanart>
+]]></listrepeat>
+<expres> (.*?),</expres>
+<page>$doregex[get-number]</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+            <name>makelist3</name>
+            <listrepeat><![CDATA[
+                        <title>[B][COLOR blue]•[/COLOR][COLOR lavenderblush][/COLOR][/B][makelist3.param2]</title>
+                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist3.param1]</link>
+                        <thumbnail>http://upimagens.com/di/QBAI/topcharts.png</thumbnail>
+                        <fanart>http://upimagens.com/di/LQL5/mzl.png</fanart>
+            ]]></listrepeat>
+            <expres>spf-link " dir="ltr" href="\/watch\?v=(.*?)&amp;.*?\n(.*)</expres>
+            <page>$doregex[get-source-page]</page>
+            <cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>get-number</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='https://www.youtube.com/playlist?list=PLx0sYbCqOb8QTF1DCJVfQrtWknZFzuoAE'):
+
+ import requests
+ import re
+
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Accept-Language': 'en-US'}
+
+ rr = requests.get(url, headers=headers)
+ number = re.findall('</a></li><li>(.*?) vid', rr.text)[0]
+ #number = number.encode('unicode-escape')
+ number = number.replace(',', '')
+ real = int(float(number)) / 100
+ real2 = real + 3
+
+ liste = list(range(real2))
+ return liste
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='https://www.youtube.com/playlist?list=PLx0sYbCqOb8QTF1DCJVfQrtWknZFzuoAE'):
+
+ import requests
+ import re
+ import json
+
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0'}
+ r1 = requests.get(url, headers = headers)
+ source = r1.text
+ page = [makelist2.param1]
+ N = int(float(page))
+ pre = 'https://www.youtube.com'
+ if (N > 1):
+
+  for itr in range (1,N):
+    continuex = re.findall('data-uix-load-more-href="(.*?)"', source)[0]
+    continuationx = pre + continuex
+    r = requests.get(continuationx, headers = headers)
+    source = r.text
+    jdata = json.loads(source)
+    source = jdata["load_more_widget_html"]
+    page = jdata["content_html"]
+  return page
+   
+ else:
+
+  return source
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://upimagens.com/di/QBAI/topcharts.png</thumbnail>
+<fanart>http://upimagens.com/di/LQL5/mzl.png</fanart></item>
+
+
+
+
+
+
+=====================================================================================================================
+<item>
+<title>[B][COLOR red]••vv•• [COLOR gold]LISTA MUSICA [COLOR blue]EXTERNAS[/COLOR][COLOR red] ••vv••[/COLOR][/B]</title> 
+<link>http://fui.me</link>
+<thumbnail>http://upimagens.com/di/2QB1/logoinspiration.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+=====================================================================================================================
+
+
+
+
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] MUSIC ZONE [COLOR red]• [/B][COLOR magenta]by Norestric[/COLOR]</title>
+<link>http://fui.me</link>
+<externallink>&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#110;&#111;&#114;&#101;&#115;&#116;&#114;&#105;&#99;&#116;&#105;&#111;&#110;&#115;&#46;&#99;&#108;&#117;&#98;&#47;&#110;&#111;&#114;&#101;&#115;&#116;&#114;&#105;&#99;&#116;&#105;&#111;&#110;&#115;&#46;&#99;&#108;&#117;&#98;&#47;&#116;&#97;&#115;&#116;&#114;&#101;&#97;&#109;&#115;&#47;&#102;&#105;&#108;&#101;&#115;&#47;&#109;&#117;&#115;&#105;&#99;&#47;&#77;&#117;&#115;&#105;&#99;&#37;&#50;&#48;&#84;&#86;&#46;&#120;&#109;&#108;</externallink>
+<thumbnail>http://upimagens.com/di/95Y4/musiczone.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+
+
+
+
+=====================================================================================================================
+<item>
+<title>[B][COLOR red]••vv•• [COLOR gold]LISTA MUSICA [COLOR blue]INSPIR@TION[/COLOR][COLOR red] ••vv••[/COLOR][/B]</title> 
+<link>http://fui.me</link>
+<thumbnail>http://upimagens.com/di/2QB1/logoinspiration.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+=====================================================================================================================
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] Radio 51 Tv [COLOR red]•[/COLOR][/B]</title>
+<link>http://wms.shared.streamshow.it/canale51/canale51/playlist.m3u8</link>
+<thumbnail>https://lh3.googleusercontent.com/-u8AgVGCIo54/VVIarjld4dI/AAAAAAAHlUA/sfNp3gA84P0/s1600/Radio51%252520MusicTV%252520133.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] MUSIC VOX TV HD [COLOR red]•[/COLOR][/B]</title>
+<link>http://stream.smcloud.net/tv/vox/vox_720p/index.m3u8$$lsname=VOX</link>
+<link>http://stream.smcloud.net/tv/vox/vox_360p/playlist.m3u8$$lsname=VOX</link>
+<thumbnail>http://oklivetv.com/wp-content/uploads/2015/05/vox_tv_music_logo.jpg</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] NR1 [COLOR red]•[/COLOR][/B]</title>
+<link>http://mn-l.mncdn.com/birnumaramedya_live/nr1tv.sdp/playlist.m3u8</link>
+<thumbnail>http://www.yakkatv.com/images/Ch-logo/Turksih/nr1_tr.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] M2 tv [COLOR red]•[/COLOR][/B]</title>
+<link>http://live.m2.tv/hls/stream.m3u8</link>
+<thumbnail>https://upload.wikimedia.org/wikipedia/en/f/f1/M2_(Ukraine).png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] ONE Tv1 [COLOR red]•[/COLOR][/B]</title>
+<link>http://rtmp.one.by:1300/</link>
+<thumbnail>https://divan.tv/img/global_img/channel_website/ua_270.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] INDIMUSIC  [COLOR red]•[/COLOR][/B]</title>
+<link>rtmp://indimusic.tulix.tv:1935/livemulti/Stream1.stream swfUrl=http://swf.tulix.tv/jwplayer/jwplayer.flash.swf pageUrl=http://www.tulix.com/iframe/indimusictv/index-multi2.php</link>
+<thumbnail>http://ecx.images-amazon.com/images/I/51bE%2B1DF24L.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] TIGO MUSIC [COLOR red]•[/COLOR][COLOR white] [COL][/COLOR][/B]</title>
+<link>http://hlslive.lcdn.une.net.co/v1/AUTH_HLSLIVE/MESH/tu1_1.m3u8</link>
+<thumbnail>https://media.licdn.com/media/p/4/005/097/191/0d8cfc7.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] 24RockOne [COLOR red]•[/COLOR][COLOR white] [COL][/COLOR][/B]</title>
+<link>http://mediatv2.topix.it:80/24RockOne66</link>
+<thumbnail>https://img.discogs.com/61EeNpcrncUPxOhSzULl8F69sbM=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-7617226-1445243018-6090.jpeg.jpg</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] CAPITAL TV [COLOR red]•[/COLOR][/B]</title>
+<link>http://ooyalahd2-f.akamaihd.net/i/globalradio01_delivery@156521/index_656_av-p.m3u8?sd=10&amp;rebase;=on</link>
+<thumbnail>https://upload.wikimedia.org/wikipedia/en/3/32/Capital_TV_logo.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] HIT TV [COLOR red]•[/COLOR][/B]</title>
+<link>http://tst.es.flash.glb.ipercast.net/tst.es-live/live/index.m3u8</link>
+<thumbnail>http://directostv.teleame.com/wp-content/uploads/2016/01/Hit-TV.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] Standby tv [COLOR red]•[/COLOR][/B]</title>
+<link>http://176.31.226.78:1935/standbytvlive/stream1.sdp/playlist.m3u8</link>
+<thumbnail>https://thewildernessroad.files.wordpress.com/2014/03/tv-standby.jpg</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] STARDS TV [COLOR red]•[/COLOR][COLOR white] [Pol][/COLOR][/B]</title>
+<link>http://starstv.live.e55-po.insyscd.net/starstvhd.smil/playlist.m3u8</link>
+<thumbnail>http://i.wp.pl/a/f/png/32041/stars-tv-logo.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] Powertv [COLOR red]•[/COLOR][/B]</title>
+<link>http://cdn2.powergroup.com.tr/powertv/_definst_/powerturktv.smil/playlist.m3u8</link>
+<thumbnail>http://webtviptv.com/wp-content/uploads/2016/04/powertv.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] TV 538 MUSIC [COLOR red]•[/COLOR][/B]</title>
+<link>http://538hls.lswcdn.triple-it.nl/content/538tv/538tv_2.m3u8</link>
+<thumbnail>https://upload.wikimedia.org/wikipedia/commons/8/85/538_logo_2012.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] Virgin Tv Radio [COLOR red]•[/COLOR][/B]</title>
+<link>http://wow01.105.net:1935/live/virgin1/livestream.m3u8</link>
+<link>http://fms.105.net:1935/live/virgin1/playlist.m3u8</link>
+<thumbnail>https://pbs.twimg.com/profile_images/446220611447033856/t6ghnFTy.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] 6 Music [COLOR red]•[/COLOR] [COLOR magenta][FR][/B][/COLOR]</title>
+<link>http://sslhls.m6tv.cdn.sfr.net/hls-live/livepkgr/_definst_/m6_music_hits_hls_aes/m6_music_hits_hls_aes_856.m3u8</link>
+<link>http://hls.m6tv.cdn.sfr.net/hls-live/streams/livepkgr/events/_definst_/m6_music_hits_hls_aes/m6_music_hits_hls_aes_856Num7434.ts</link>
+
+<thumbnail>http://m6music.free.fr/m6music/im2/m6_music.png</thumbnail>
+
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] M MUSIQUE [COLOR red]•[/COLOR][/B]</title>
+<link>http://hlslive.lcdn.une.net.co/v1/AUTH_HLSLIVE/MMHD/tu1_1.m3u8</link>
+<thumbnail>http://dj-josemix.hol.es/fotomusica/mimusica.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] SPIRIT TELEVISION [COLOR red]•[/COLOR][/B]</title>
+<link>http://cdn.rbm.tv/rightbrainmedia-live-109/_definst_/smil:spirit_all.smil/playlist.m3u8</link>
+<thumbnail>http://www.newrokuchannels.com/wp-content/uploads/2014/01/253x190xRoku_Channels_2014_Spirit_Television.jpg.pagespeed.ic.ovCjdbQayN.jpg</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] HEART TV [COLOR red]•[/COLOR][/B]</title>
+<link>http://ooyalahd2-f.akamaihd.net/i/globalradio02_delivery@156522/master.m3u8$$lsname=Heart</link>
+<link>http://ooyalahd2-f.akamaihd.net/i/globalradio02_delivery@156522/index_656_av-p.m3u8?sd=10&amp;rebase;=on$$lsname=Heart</link>
+<thumbnail>http://i3.mirror.co.uk/incoming/article7729903.ece/ALTERNATES/s615b/Heart-FM.jpg</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] MUZ TV  [COLOR red]• [COLOR magenta]Live Concerts[/COLOR][/B]</title>
+<link>http://85.132.78.6:1935/live/muztv.stream/younessiptv.m3u8</link>
+<thumbnail>http://www.myvideo.az/v3_imgs/tv/tv_muztv_100.jpg</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] BEATZ TV [COLOR red]•[/COLOR] [COLOR magenta][/B][/COLOR]</title>
+<link>http://rtmp.infomaniak.ch/livecast/beats_1/playlist.m3u8</link>
+<thumbnail>https://rpmedia.radiopilatus.ch/media/1/15664_23-07-2013_18-37-34_large.jpg</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] R101 [COLOR red]•[/COLOR][/B]</title>
+<link>http://se-mi2-8.se.hlslive.msf.ticdn.it/hls/CH10/live_Layer3.m3u8</link>
+<thumbnail>https://static-media.streema.com/media/object-images/4ac54697-9445-4eb7-8377-c07e8b2879ab.jpg</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] Reality Kings TV [COLOR red]•[/COLOR][/B]</title>
+<link>http://bitcdn-kronehit-live.bitmovin.com/hls/3000k/bitcodin.m3u8</link>
+<thumbnail>http://randlsatellite.com/pub/decentrix.com/img/packages-specialty-channels-adult-programming-logos-reality-kings-tv.jpg</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] Ocko Gold [COLOR red]•[/COLOR][COLOR white] [/COLOR][/B]</title>
+<link>http://ocko-live.service.cdn.cra.cz/playlist/live/ocko_gold/live_hq.m3u8</link>
+<thumbnail>http://a444.phobos.apple.com/us/r30/Purple/v4/2e/02/ed/2e02ed3b-0278-a5f0-b518-9bcbb0027c93/mzl.gjsfzjvd.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] OTTO 8 FM TV[COLOR red]•[/COLOR][COLOR white] [/COLOR][/B]</title>
+<link>http://live.youiptv.ch:1935/8FM/8FM/livestream.m3u8</link>
+<thumbnail>http://www.ottofmtv.com/img/logo.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] BOX MUSIC [COLOR red]•[/COLOR][/B]</title>
+<link>http://212.26.132.86/hls/mb_ua_2500.m3u8$$lsname=Box M</link>
+<link>http://94.43.239.178:8080/CHANNEL470/BITRATE0/playlist.m3u8$$lsname=Box M</link>
+<thumbnail>http://vignette2.wikia.nocookie.net/tvpedia/images/9/95/Music_Box_(%D0%BF%D1%8F%D1%82%D0%BD%D0%B0).png/revision/latest?cb=20140303085013&path-prefix=ru</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] RETRO MUSIC [COLOR red]•[/COLOR][/B]</title>
+<link>http://stream.mediawork.cz/retrotv//retrotvHQ1/playlist.m3u8</link>
+<thumbnail>http://okteve.com/wp-content/uploads/media/ce702977d6c9d02d36d78bc8ba517c42.jpeg</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] ESKA TV  [COLOR red]•[/COLOR][/B]</title>
+<link>http://stream.smcloud.net/live/eskatv/aylist.m3u8</link>
+<link>rtmp://stream.smcloud.net/tv/eska_rock/eska_rock_720p</link>
+<thumbnail>http://www.digitaltveurope.net/wp-content/uploads/2011/09/Eska-TV.jpg</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] SLAM TV  [COLOR red]•[/COLOR][/B]</title>
+<link>http://hls2.slamfm.nl/content/slamtv/slamtv_0.m3u8</link>
+<thumbnail>https://upload.wikimedia.org/wikipedia/commons/b/b3/Slam!TV_Logo.jpg</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] TELE MUSICA [COLOR red]•[/COLOR] [COLOR magenta][Latino][/B][/COLOR]</title>
+<link>rtmp://186.155.200.118:1935/live/telemusica</link>
+<thumbnail>http://s4.postimg.org/rogbj2eql/TEM.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] AMAZING TV [COLOR red]•[/COLOR][COLOR white] [POL][/COLOR][/B]</title>
+<link>http://n-4-16.dcs.redcdn.pl/hls/mm/multimedia/live/amazing/live.livx/playlist.m3u8$$lsname=Amazing</link>
+<link>http://redir.atmcdn.pl/hls/mm/multimedia/live/amazing/live.livx/playlist.m3u8$$lsname=Amazing</link>
+<thumbnail>http://www.a-mazingshop.com/wp-content/uploads/2015/01/AMAZING-LOGO-BRANCO3.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] RADIO MONTECARLO [COLOR red]•[/COLOR][/B]</title>
+<link>http://wow01.105.net/live/rmc1/playlist.m3u8</link>
+<link>http://fms.105.net:1935/live/rmc1/livestream.m3u8</link>
+
+<thumbnail>http://www.fancystreems.com/channelthumb/radiomontecarlo.jpg</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] ATOMIC [COLOR red]•[/COLOR][/B]</title>
+<link>http://5.154.185.153/hls/live.m3u8</link>
+<thumbnail>http://oi64.tinypic.com/2u584kp.jpg</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] City Radio & TV [COLOR red]•[/COLOR] [COLOR magenta][BULGARIA][/B][/COLOR]</title>
+<link>http://nodeb.gocaster.net:1935/CGL/_definst_/TODAYFM_TEST2/.m3u8</link>
+<thumbnail>https://upload.wikimedia.org/wikipedia/en/b/b4/City_tv_bulgaria.gif</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] HARDLIFE [COLOR red]•[/COLOR] [COLOR magenta] [/B][/COLOR]</title>
+<link>http://stream.hardlife.tv:8134/hls-live/livepkgr/_definst_/liveevent/hl.m3u8</link>
+<thumbnail>http://tv-online.at.ua/1logo/1/HardLife_TV_2.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] REAL HIP HOP TV [COLOR red]•[/COLOR][/B]</title>
+<link>http://rhn.tulix.tv/live/Stream1/playlist.m3u8</link>
+<thumbnail>http://media1.webgarden.com/images/media1:507efeceec68e.jpg/real-hip-hop-1.jpg</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] RTL 102.5 [COLOR red]•[/COLOR] [COLOR magenta][IT][/B][/COLOR]</title>
+<link>http://origin-rtl-radio-stream.4mecloud.it/live-video/radiovisione/ngrp:radiovisione_mobile/playlist.m3u8</link>
+<thumbnail>https://upload.wikimedia.org/wikipedia/it/3/34/Logo-RTL.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] FOR MUSIC TV [COLOR red]•[/COLOR] [COLOR magenta][IT][/B][/COLOR]</title>
+<link>http://wowza1.top-ix.org/quartaretetv1/formusicweb/index.m3u8</link>
+<thumbnail>https://pbs.twimg.com/profile_images/572029553032175616/D_Lw88lW.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] ReTV Jamaica [COLOR red]•[/COLOR][/B]</title>
+<link>http://univ-i.akamaihd.net/hls/live/222631/group1/playlist.m3u8</link>
+<thumbnail>http://realjamaicantelevision.com/sites/default/files/retv_logo.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] DOT DANCE [COLOR red]•[/COLOR][/B]</title>
+<link>http://live.dotdance.cdnvideo.ru/dotdance/dotdance.sdp/playlist.m3u8</link>
+<thumbnail>http://dotdance.tv/wp-content/uploads/2015/09/logo-400x400-on-Alpha.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] Electro Sound Tv [COLOR red]•[/COLOR][/B]</title>
+<link>http://www.electrosound.tv:1935/public/stream/chunklist.m3u8</link>
+<thumbnail>http://static.radio.net/images/broadcasts/0b/10/3697/c175.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] VISUAL RADIO TV [COLOR red]•[/COLOR][/B]</title>
+<link>http://wms.shared.streamshow.it/visualradio/visualradio_mobile/playlist.m3u8</link>
+<thumbnail>http://oi63.tinypic.com/rk7i44.jpg</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] DREAM TV [COLOR red]•[/COLOR][/B]</title>
+<link>http://212.224.108.80/S1/HLS_LIVE/dreamtv/1000/prog_index.m3u8</link>
+<thumbnail>http://vector.me/files/images/1/1/11221/dream_tv.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] M20 TV [COLOR red]•[/COLOR][/B]</title>
+<link>http://m2otv-lh.akamaihd.net/i/m2oTv_1@186074/index_600_av-b.m3u8?sd=10&amp;rebase=on</link>
+<thumbnail>https://upload.wikimedia.org/wikipedia/it/2/2d/Logo_m2o_(2012).png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] Radio 105 TV [COLOR red]•[/COLOR][/B]</title>
+<link>http://fms.105.net:1935/live/105Test1/playlist.m3u8</link>
+<thumbnail>https://upload.wikimedia.org/wikipedia/en/c/cf/Radio_105_Network.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] Heavy Metal [COLOR red]•[/COLOR][/B]</title>
+<link>rtmp://70.166.98.130:1935/hmtv/myStream</link>
+<thumbnail>https://s3.amazonaws.com/fundanything/uploads/redactor/bd314f8905075e8b64c53bd6527d9d5b088f2c99/1736fcc6-a8b6-49ba-8e6a-1650833de8ea_815d3c7f68a722da2112085cd1b12cce2dbf5d8b.jpg</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+<item>
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] DELUXE MUSIC [COLOR red]•[/COLOR][/B]</title>
+<link>http://server55.livestreamingcdn.com:1935/tulixdemo/tulixdemo/playlist.m3u8</link>
+<thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/DeluxeMusic2013.svg/2000px-DeluxeMusic2013.svg.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] MELODY CHANNEL [COLOR red]•[/COLOR][/B]</title>
+<link>http://186.155.200.118:1935/live/MelodyChannel/playlist.m3u8</link>
+<thumbnail>http://2.bp.blogspot.com/-qfJfjGjelOg/VRyOzuz2Z2I/AAAAAAAABdo/VvVRbP1lDBs/s1600/melody-channel-tv.jpg</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+<item>  
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] DJING TV [COLOR red]•[/COLOR][/B]</title>                                               
+<link>http://www.djing.com/tv/05.m3u8</link> 
+<thumbnail>http://www.djing.com/img/facebook.png</thumbnail>                                               
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+<item>  
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] DJING HITS [COLOR red]•[/COLOR][/B]</title>                                               
+<link>http://www.djing.com/tv/d-04.m3u8</link> 
+<thumbnail>http://www.djing.com/img/facebook.png</thumbnail>                                               
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+<item>  
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] DJING UNDERGROUND [COLOR red]•[/COLOR][/B]</title>                                               
+<link>http://www.djing.com/tv/u-05.m3u8</link> 
+<thumbnail>http://www.djing.com/img/facebook.png</thumbnail>                                               
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+<item>  
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] DJING HOT HOT  [COLOR red]•[/COLOR][/B]</title>                                               
+<link>http://www.djing.com/tv/h-05.m3u8</link> 
+<thumbnail>http://www.djing.com/img/facebook.png</thumbnail>                                               
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+<item>  
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] DJING DANCEFLOOR [COLOR red]•[/COLOR][/B]</title>                                               
+<link>http://cdn.djing.com/tv/d-03.m3u8</link> 
+<thumbnail>http://www.djing.com/img/facebook.png</thumbnail>                                               
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+<item>  
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] DJING ANIMATION [COLOR red]•[/COLOR][/B]</title>                                               
+<link>http://www.djing.com/tv/a-05.m3u8</link> 
+<thumbnail>http://www.djing.com/img/facebook.png</thumbnail>                                               
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] GLOBO TV [COLOR red]•[/COLOR][/B]</title>
+<link>http://tv.aliasdns.info:8979/live/g13/playlist.m3u8</link>
+<thumbnail></thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] MILK PLAY[/COLOR] [COLOR red]•[/COLOR][COLOR magenta] [BR] [/COLOR][/B]</title>
+<link>http://stmv1.hostgs.net:1935/jtvmilk/jtvmilk/live.m3u8</link>
+<thumbnail>http://oi63.tinypic.com/250v6yo.jpg</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] MTV [COLOR red]•[/COLOR][/B]</title>
+
+<thumbnail>http://img4.wikia.nocookie.net/__cb20140730081259/the-hills/images/7/75/MTV_Logo_white1.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] VH1 CLASSIC [COLOR red]•[/COLOR][/B]</title>
+<thumbnail>http://spotlightupload.s3.amazonaws.com/VH1_Classic%20reverse.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] MCM TOP [COLOR red]•[/COLOR][/B]</title>
+<thumbnail>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0NCA-iiDDbkfPtIwUy9jDlWCPAAEP_SkAfsMsiceLHTtmVOEddw</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] VH1 [COLOR red]•[/COLOR][/B]</title>
+<link></link>
+<thumbnail>https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/VH1_Denmark.svg/1280px-VH1_Denmark.svg.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] iConcerts [COLOR red]•[/COLOR][/B]</title>
+<link></link>
+<thumbnail>https://www.thematv.com/medias/channels/iconcerts/iConcerts_logo_officiel_300dpi.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] AFRO MUSIC [COLOR red]•[/COLOR][/B]</title>
+<link></link>
+<thumbnail>http://ttmusic.pt/wp-content/uploads/2015/04/AfroMusic-TT.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] CLASSIC MUSIC [COLOR red]•[/COLOR][/B]</title>
+<link></link>
+<thumbnail>https://i.ytimg.com/vi/jgpJVI3tDbY/maxresdefault.jpg</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Inspi[я]ation Links © 2017 All rights reserved

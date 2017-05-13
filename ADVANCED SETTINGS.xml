@@ -1,0 +1,21 @@
+
+
+
+<item>
+<title>[COLOR darkgrey][B][COLOR red]•[/COLOR] MAINTENANCE TOOL [COLOR red]•[/COLOR][/B]</title>
+<link>http://fui.me</link>
+<jsonrpc>plugin://plugin.video.xbmchubmaintenance/?action==toolClearcache</jsonrpc>
+<thumbnail>http://i.imgur.com/YtkzGd0.png</thumbnail>
+<fanart>http://s10.postimg.org/jab6prba1/fanart.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR darkgrey][B][COLOR red]•[/COLOR] ADDON INSTALLER [COLOR red]•[/COLOR][/B]</title>
+<link>http://fui.me</link>
+<jsonrpc>plugin://plugin.program.addoninstaller/?action=toolNavigator</jsonrpc>
+<thumbnail>http://i.imgur.com/JqDZYz2.png</thumbnail>
+<fanart>http://s10.postimg.org/jab6prba1/fanart.jpg</fanart>
+</item>
+
+
+

@@ -1,0 +1,1428 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=====================================================================================================================
+<item>
+<title>[B][COLOR blue]==[COLOR navy]vv[COLOR blue]==[COLOR white] AGENDAS [/COLOR][COLOR blue]==[COLOR navy]vv[COLOR blue]==[/COLOR][/B]</title> 
+<link>http://fui.me</link>
+<thumbnail>http://upimagens.com/di/2QB1/logoinspiration.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+=====================================================================================================================
+
+
+
+
+
+
+
+<item> 
+<title>[B][COLOR green]•[/COLOR][COLOR darkorange]•[/COLOR][COLOR navy]•[/COLOR][COLOR darkorange] SPORTS [COLOR lavenderblush]365 [COLOR navy]•[/COLOR][/B]</title> 
+<link>http://fui.me</link>
+<jsonrpc>plugin://plugin.video.ZemTV-shani/?mode=56;name=Inspiration&amp;url=sss</jsonrpc>
+<thumbnail>http://1.bp.blogspot.com/-3Nfkgkf_Btw/UXBV47MlarI/AAAAAAAAG3g/60F32Jtazi0/w1200-h630-p-nu/image+logo+sport365+channel+tv.png</thumbnail> 
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+=====================================================================================================================
+
+
+<item>
+<title>[B][COLOR green]•[/COLOR][COLOR darkorange]•[/COLOR][COLOR navy]•[/COLOR][COLOR lavenderblush] AREN[COLOR red]AV[/COLOR]ISION [COLOR darkorange]AGENDA[COLOR magenta] (fuso +1 Hora Madrid) [/COLOR][/B]</title> 
+<link>$doregex[makelist]</link>
+<thumbnail>http://arenavision.in/sites/default/files/FAVICON_AV2015.png</thumbnail>
+<fanart>http://s15.postimg.org/pyrcvek2z/PLEXUS.jpg</fanart>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[COLOR aquamarine] Agenda [makelist.param1][/COLOR]</title>
+<link>$doregex[makelist1]</link>
+<thumbnail>http://upimagens.com/di/2QB1/logoinspiration.png</thumbnail>
+<fanart>http://s15.postimg.org/pyrcvek2z/PLEXUS.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[colspan="2".*?([0-9][0-9]\/[0-9][0-9]\/[0-9][0-9])(?s)(.*?)class="warning"]]></expres>
+<page>https://avezy.tk/</page>
+<thumbnail>http://arenavision.in/sites/default/files/FAVICON_AV2015.png</thumbnail>
+<fanart>http://s15.postimg.org/pyrcvek2z/PLEXUS.jpg</fanart>
+<agent></agent>
+</regex>
+<regex>
+<name>makelist1</name>
+<listrepeat><![CDATA[
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] [makelist1.param2][/COLOR] - [COLOR lightyellow][makelist1.param4]:[/COLOR] [COLOR lightgreen][makelist1.param5][/B][/COLOR]</title>
+<link>$doregex[makelist2]</link>
+<thumbnail>http://arenavision.in/sites/default/files/FAVICON_AV2015.png</thumbnail>
+<fanart>http://s15.postimg.org/pyrcvek2z/PLEXUS.jpg</fanart>
+<page>[makelist1.param3][makelist1.param3]</page>
+]]></listrepeat>
+<expres><![CDATA[align='center'>(.*?)<br>(.*?)<.*?src="(.*?)".*?[\w\W\s]{0,80}<td>(.*?)<br>.*?:(.*?)<(?s)(.*?class="")]]></expres>
+<page>[makelist.param2]</page>
+<agent></agent>
+</regex>
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[COLOR skyblue][makelist2.param2][/COLOR]</title>
+<link>plugin://plugin.video.p2p-streams/?url=[makelist2.param1]&amp;mode=1&amp;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR][makelist2.param2]</link>
+<link>plugin://program.plexus/?url=[makelist2.param1]&amp;mode=1&amp;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR][makelist2.param2]</link>
+<thumbnail>http://arenavision.in/sites/default/files/FAVICON_AV2015.png</thumbnail>
+<fanart>http://s15.postimg.org/pyrcvek2z/PLEXUS.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[acestream:\/\/(.*?)"(?s).*?>(AV.*?)<]]></expres>
+<page>$doregex[getace]</page>
+<agent></agent>
+</regex>
+<regex>
+<name>getace</name>
+<expres>[makelist1.param5](?s)(.*?class="")</expres>
+<page>https://avezy.tk/</page>
+<agent></agent>
+</regex>
+<thumbnail>http://arenavision.in/sites/default/files/FAVICON_AV2015.png</thumbnail>
+<fanart>http://s15.postimg.org/pyrcvek2z/PLEXUS.jpg</fanart></item>
+
+
+
+<item>
+<title>[B][COLOR green]•[/COLOR][COLOR darkorange]•[/COLOR][COLOR navy]•[/COLOR][COLOR lavenderblush] AREN[COLOR red]AV[/COLOR]ISION [COLOR darkorange]AGENDA[COLOR magenta] [1|30] [/COLOR][/B]</title> 
+<link>http://fui.me</link>
+<externallink>https://pastebin.com/raw/Th1NbyYy</externallink>
+<thumbnail>http://arenavision.in/sites/default/files/FAVICON_AV2015.png</thumbnail>
+<fanart>http://s15.postimg.org/pyrcvek2z/PLEXUS.jpg</fanart></item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=====================================================================================================================
+<item>
+<title>[B][COLOR blue]==[COLOR navy]vv[COLOR blue]== [COLOR white]PORTUGUESE SPORTS[COLOR blue]==[COLOR navy]vv[COLOR blue]==[/COLOR][/B]</title> 
+<link>http://fui.me</link>
+<thumbnail>http://upimagens.com/di/2QB1/logoinspiration.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+=====================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B][COLOR green]•[/COLOR][COLOR darkorange]•[/COLOR][COLOR navy]•[/COLOR][COLOR lavenderblush] Eurosport [COLOR red]2[/B][/COLOR][COLOR springgreen] (f4m|Plexus) [/COLOR]</title>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://ghosttechuk.ddns.net:25461/live/mark%20collins/wUf0C9f8PD/641.ts</link>
+
+<link>plugin://program.plexus/?url=http://content.asplaylist.net/Z0dsenhpeEYvWG4wTUJPQXpvR1l5Mk1hODJtMkNhVWp4SWtiNzU4amZoNkIxR2huc1p5Z1dMdG5LUGpOU1pqK0tvUlUxQlRyODhpQjRmU2ZsQm1BTFE9PQ/cdn/6_reg.acelive&amp;mode=1&amp;name=Mudar audio P/UK</link>
+<link>plugin://program.plexus/?url=http://content.asplaylist.net/TzJlSnpUeGtqT2l1a0JIanJ3TTNCNklkaFZRbzdsZkdlc0hDVERsdkxQcm5sa2tydmNUeEtmYWR4U0QyTWRtT0xJdmRtemx3b05HYUFqd0kwNEFINWc9PQ/cdn/6_reg.acelive&amp;mode=1&amp;name=Euro2</link>
+
+<thumbnail>https://www.thelogodb.com/images/media/logo/xspptq1458425622.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+
+
+
+=====================================================================================================================
+
+
+
+
+
+
+<item>
+<title>[B][COLOR green]•[/COLOR][COLOR darkorange]•[/COLOR][COLOR navy]•[/COLOR][COLOR lavenderblush] Sp[COLOR gold]o[/COLOR]rt TV [COLOR gold]+[/B][/COLOR][COLOR springgreen] (f4m|Plexus) [/COLOR]</title>
+
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://iptvsbh.ddns.net:8003/live/moreira/moreira/1520.ts</link>
+<link>plugin://plugin.video.f4mTester/?streamtype=HLSRETRY;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://iptvsensation.ddns.net:6500/live/James1/zkdZbEUp2X/15368.m3u8</link>
+
+<link>plugin://program.plexus/?url=&amp;mode=1&amp;name=Sporttv+</link>
+
+<thumbnail>http://www.thelogodb.com/images/media/logo/trtupx1481664790.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B][COLOR green]•[/COLOR][COLOR darkorange]•[/COLOR][COLOR navy]•[/COLOR][COLOR lavenderblush] Sp[COLOR gold]o[/COLOR]rt TV [COLOR gold]1[/B][/COLOR][COLOR springgreen] [/COLOR]</title>
+<link>$doregex[getLink]|Cookie=$get_cookies$&amp;User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0</link>
+<regex>
+<name>getLink</name>
+<expres>videoLink = '(.*?)'</expres>
+<page>http://www.livesport.pw/Sport1PT.html</page>
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://sck.pm/Hw</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] SP[COLOR gold]O[/COLOR]RT [COLOR gold]•[/COLOR] TV [COLOR gold]1[/B][/COLOR][COLOR springgreen] (f4m|sportdevil) [/COLOR]</title>
+<link>http://85.7.107.8:8011/play/a016</link>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://vip6.ddns.net:8000/live/redmosiptv/redmos40ch/1912.ts</link>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://109.236.90.101:8000/live/ZLS0QMxatlrteam/ZLS0QXmtarletam/252.ts</link>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://alphatwo.ddns.net:8000/live/shaun/shaun/415.ts</link>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://sutverduz.com:8080/live/miki/miki/2989.ts</link>
+
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://sharecast.eu/embed/live1-rbi6c</link>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://www.dailydeportes.pw/no/stream17.html</link>
+
+<thumbnail>https://sck.pm/Hw</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B][COLOR green]•[/COLOR][COLOR darkorange]•[/COLOR][COLOR navy]•[/COLOR][COLOR lavenderblush] Sp[COLOR gold]o[/COLOR]rt TV [COLOR gold]2[/B][/COLOR][COLOR springgreen] [/COLOR]</title>
+<link>$doregex[getLink]|Cookie=$get_cookies$&amp;User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0</link>
+<regex>
+<name>getLink</name>
+<expres>videoLink = '(.*?)'</expres>
+<page>http://www.livesport.pw/Sport2PT.html</page>
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://sck.pm/58</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[B][COLOR green]•[/COLOR][COLOR darkorange]•[/COLOR][COLOR navy]•[/COLOR][COLOR lavenderblush] Sp[COLOR gold]o[/COLOR]rt TV [COLOR gold]2[/B][/COLOR][COLOR springgreen] (f4m|sportdevil) [/COLOR]</title>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://109.236.90.101:8000/live/ZLS0QMxatlrteam/ZLS0QXmtarletam/253.ts</link>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://sharecast.eu/embed/live2-bipmr&type=p2p</link>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://sharecast.eu/embed/wfeae2-3ltjw&type=p2p</link>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://www.liveonlinetv247.info/embed/sporttv2.php</link>
+
+<thumbnail>https://sck.pm/58</thumbnail>
+
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B][COLOR green]•[/COLOR][COLOR darkorange]•[/COLOR][COLOR navy]•[/COLOR][COLOR lavenderblush] Sp[COLOR gold]o[/COLOR]rt TV [COLOR gold]3[/B][/COLOR][COLOR springgreen] [/COLOR]</title>
+<link>$doregex[getLink]|Cookie=$get_cookies$&amp;User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0</link>
+<regex>
+<name>getLink</name>
+<expres>videoLink = '(.*?)'</expres>
+<page>http://www.livesport.pw/Sport3PT.html</page>
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://sck.pm/9M</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+<item>
+<title>[B][COLOR green]•[/COLOR][COLOR darkorange]•[/COLOR][COLOR navy]•[/COLOR][COLOR lavenderblush] Sp[COLOR gold]o[/COLOR]rt TV [COLOR gold]3[/B][/COLOR][COLOR springgreen] (f4m|Plexus) [/COLOR]</title>
+<link>http://85.7.107.8:8011/play/a010</link>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://109.236.90.101:8000/live/ZLS0QMxatlrteam/ZLS0QXmtarletam/254.ts</link>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://alphatwo.ddns.net:8000/live/belle/belle/417.ts</link>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://sutverduz.com:8080/live/miki/miki/2991.ts</link>
+
+<link>plugin://program.plexus/?url=&amp;mode=1&amp;name=Sporttv3</link>
+
+<thumbnail>https://sck.pm/9M</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+<item>
+<title>[B][COLOR green]•[/COLOR][COLOR darkorange]•[/COLOR][COLOR navy]•[/COLOR][COLOR lavenderblush] Sp[COLOR gold]o[/COLOR]rt TV [COLOR gold]3[/B][COLOR springgreen] (sportdevil) [/COLOR]</title>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://sharecast.eu/embed/live3-qszlx</link>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://www.liveonlinetv247.info/embed/sporttv3.php</link>
+<thumbnail>https://sck.pm/9M</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B][COLOR green]•[/COLOR][COLOR darkorange]•[/COLOR][COLOR navy]•[/COLOR][COLOR lavenderblush] Sp[COLOR gold]o[/COLOR]rt TV [COLOR gold]4[/B][/COLOR][COLOR springgreen] [/COLOR]</title>
+<link>$doregex[getLink]|Cookie=$get_cookies$&amp;User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0</link>
+<regex>
+<name>getLink</name>
+<expres>videoLink = '(.*?)'</expres>
+<page>http://www.livesport.pw/Sport4PT.html</page>
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://sck.pm/aAr</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+
+
+
+
+
+
+
+
+
+=====================================================================================================================
+
+
+
+
+
+
+
+<item>
+<title>[B][COLOR green]•[/COLOR][COLOR darkorange]•[/COLOR][COLOR navy]•[/COLOR][COLOR lavenderblush] Sp[COLOR gold]o[/COLOR]rt TV [COLOR gold]5[/B][/COLOR][COLOR springgreen] [/COLOR]</title>
+<link>$doregex[getLink]|Cookie=$get_cookies$&amp;User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0</link>
+<regex>
+<name>getLink</name>
+<expres>videoLink = '(.*?)'</expres>
+<page>http://www.livesport.pw/Sport5PT.html</page>
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://sck.pm/aAr</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+<item>
+<title>[B][COLOR green]•[/COLOR][COLOR darkorange]•[/COLOR][COLOR navy]•[/COLOR][COLOR lavenderblush] Sp[COLOR gold]o[/COLOR]rt TV [COLOR gold]5[/B][/COLOR][COLOR springgreen]  [/COLOR]</title>
+
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://151.80.35.29:25461/live/portugal/portugal/441.ts</link>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://109.236.90.101:8000/live/ZLS0QMxatlrteam/ZLS0QXmtarletam/256.ts</link>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://sutverduz.com:8080/live/miki/miki/3087.ts</link>
+
+<link>plugin://program.plexus/?url=&amp;mode=1&amp;name=Sporttv5</link>
+
+<thumbnail>https://sck.pm/aAr</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+<item>
+<title>[B][COLOR green]•[/COLOR][COLOR darkorange]•[/COLOR][COLOR navy]•[/COLOR][COLOR lavenderblush] Sp[COLOR gold]o[/COLOR]rt TV [COLOR gold]5[/B][/COLOR][COLOR springgreen] (sportdevil) [/COLOR]</title>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://sharecast.eu/embed/live4-w04by&type=p2p</link>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://www.liveonlinetv247.info/embed/sporttv5.php</link>
+<thumbnail>https://sck.pm/aAr</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B][COLOR green]•[/COLOR][COLOR darkorange]•[/COLOR][COLOR navy]•[/COLOR][COLOR red] B[/COLOR]tv1[/B][COLOR springgreen] (f4m) [/COLOR]</title>
+
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://151.80.35.29:25461/live/portugal/portugal/435.ts</link>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://217.182.192.199:25461/live/may7/20177/278.ts</link>
+<link>plugin://plugin.video.f4mTester/?streamtype=HLSRETRY;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://iptvsensation.ddns.net:6500/live/James1/zkdZbEUp2X/7742.m3u8</link>
+
+<thumbnail>https://www.thelogodb.com/images/media/logo/yxyxqp1437951545.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+<item>
+<title>[B][COLOR green]•[/COLOR][COLOR darkorange]•[/COLOR][COLOR navy]•[/COLOR][COLOR red] B[/COLOR]tv1[/B][COLOR springgreen] (sportdevil) [/COLOR]</title>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://sharecast.eu/embed/btv-md504</link>
+<thumbnail>https://www.thelogodb.com/images/media/logo/yxyxqp1437951545.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=====================================================================================================================
+<item>
+<title>[B][COLOR blue]==[COLOR navy]vv[COLOR blue]==[COLOR white] BRASIL SPORTS [COLOR blue]==[COLOR navy]vv[COLOR blue]==[/COLOR][/B]</title> 
+<link>http://fui.me</link>
+<thumbnail>https://upimagens.com/di/2QB1/logoinspiration.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+=====================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B][COLOR navy]•[/COLOR][COLOR red] EI [COLOR white]Maxx[COLOR gold] 1[/B][COLOR springgreen] [http] [/COLOR]</title>
+
+<link>$doregex[getUrl]</link>
+<regex>
+<name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+import requests, re, urllib2
+def GetLSProData(page_data,Cookie_Jar,m):
+  html = re.findall('src="(.*embed/.*?)"', page_data)[0]
+  source = requests.get(html, headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; rv:36.0) Gecko/20100101 Firefox/36.04', 'Referer': 'http://ekostreams.co/ch/sportvhd.php', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}).text
+  link = re.findall('"(h.*?m3u8)"', source)[0]
+  location = urllib2.urlopen(link)
+  return location.geturl()
+]]></expres>
+<page>http://ekostreams.co/ch/eimax.php</page>
+<referer>http://ekostreams.co/</referer>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://1.bp.blogspot.com/-zdMUeBUfoPI/VhMPoo8p1rI/AAAAAAAAB4E/eTTwH6i16TY/s640/EIMAXX-NOVO.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+
+<item>
+<title>[B][COLOR navy]•[/COLOR][COLOR red] EI [COLOR white]Maxx[COLOR gold] 1[/B][COLOR springgreen] [transmission Liga PT] [/COLOR]</title>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://158.69.55.98:25461/live/LucianoAlbuquerque/333333/182.ts</link>
+<thumbnail>http://1.bp.blogspot.com/-zdMUeBUfoPI/VhMPoo8p1rI/AAAAAAAAB4E/eTTwH6i16TY/s640/EIMAXX-NOVO.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+<item>
+<title>[B][COLOR navy]•[/COLOR][COLOR red] EI [COLOR white]Maxx[COLOR gold] Interativo[/B][COLOR springgreen] [transmission Liga PT] [/COLOR]</title>
+<link>http://enlsso9vfh.singularcdn.net.br/live/canal_12/playlist-720p.m3u8|User-Agent=Mozilla/5.0 (Windows NT 6.1; rv:51.0) Gecko/20100101 Firefox/51.0</link>
+<thumbnail>http://1.bp.blogspot.com/-zdMUeBUfoPI/VhMPoo8p1rI/AAAAAAAAB4E/eTTwH6i16TY/s640/EIMAXX-NOVO.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+<item>
+<title>[B][COLOR navy]•[/COLOR][COLOR red] EI [COLOR white]Maxx[COLOR gold] 2[/B][COLOR springgreen] [http] [/COLOR]</title>
+
+<link>$doregex[getUrl]</link>
+<regex>
+<name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+import requests, re, urllib2
+def GetLSProData(page_data,Cookie_Jar,m):
+  html = re.findall('src="(.*embed/.*?)"', page_data)[0]
+  source = requests.get(html, headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; rv:36.0) Gecko/20100101 Firefox/36.04', 'Referer': 'http://ekostreams.co/ch/sportvhd.php', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}).text
+  link = re.findall('"(h.*?m3u8)"', source)[0]
+  location = urllib2.urlopen(link)
+  return location.geturl()
+]]></expres>
+<page>http://ekostreams.co/ch/eimax2.php</page>
+<referer>http://ekostreams.co/</referer>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://1.bp.blogspot.com/-zdMUeBUfoPI/VhMPoo8p1rI/AAAAAAAAB4E/eTTwH6i16TY/s640/EIMAXX-NOVO.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+<item>
+<title>[B][COLOR navy]•[/COLOR][COLOR red] EI [COLOR white]Maxx[COLOR gold] 2[/B][COLOR springgreen] [transmission Liga PT] [/COLOR]</title>
+<link>http://enlsso9vfh.singularcdn.net.br/live/canal_11/playlist-720p.m3u8|User-Agent=Mozilla/5.0 (Windows NT 6.1; rv:51.0) Gecko/20100101 Firefox/51.0</link>
+<thumbnail>http://1.bp.blogspot.com/-zdMUeBUfoPI/VhMPoo8p1rI/AAAAAAAAB4E/eTTwH6i16TY/s640/EIMAXX-NOVO.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+<item>
+<title>[B][COLOR navy]•[/COLOR][COLOR red] EI [COLOR white]Maxx[COLOR gold] 2[/B][COLOR springgreen] [transmission Liga PT] [/COLOR]</title>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://ekostreams.co/ch/eimax2.php?width=600&amp;height=384</link>
+<thumbnail>http://1.bp.blogspot.com/-zdMUeBUfoPI/VhMPoo8p1rI/AAAAAAAAB4E/eTTwH6i16TY/s640/EIMAXX-NOVO.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+<item>
+<title>[B][COLOR navy]•[/COLOR][COLOR red] Band [COLOR white]Sport [/B][COLOR springgreen] [transmission Liga PT] [/COLOR]</title>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://158.69.55.98:25461/live/LucianoAlbuquerque/333333/192.ts</link>
+<thumbnail>https://www.thelogodb.com/images/media/logo/yrtrty1437611592.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=====================================================================================================================
+<item>
+<title>[B][COLOR blue]==[COLOR navy]vv[COLOR blue]==[/COLOR][COLOR white] EUROPEAN BEST SPORTS [/COLOR][COLOR blue]==[COLOR navy]vv[COLOR blue]==[/COLOR][/B]</title> 
+<link>http://fui.me</link>
+<thumbnail>http://upimagens.com/di/2QB1/logoinspiration.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+=====================================================================================================================
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B][COLOR navy]•[/COLOR][COLOR red] BT [COLOR lavenderblush]SPORT [COLOR blue]1[/B][/COLOR][COLOR springgreen] [transmission Liga PT] [/COLOR]</title>
+
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://www.liveonlinetv247.info/btsport1.php</link>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://www.mamahd.com/bt-sport-1-live-stream1-1.html</link>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://www.shadow-net.org/channels/BT-Sport-1.html</link>
+
+<link>plugin://program.plexus/?url=http://content.asplaylist.net/SDdBQTNDNGxFUjNpOFZLZG13ZlVKYWY1anNZTUlya2ZReUtpM3RBQytOWmFFTDdYZzJVdVRmV09uc1FySHdReGRlcGw1bjNtTVVhYklWVDBaS09VaUE9PQ/10634.acelive&amp;mode=1&amp;name=BTSport1</link>
+
+<thumbnail>https://www.thelogodb.com/images/media/logo/wysstw1434038860.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[B][COLOR navy]•[/COLOR][COLOR red] BT [COLOR lavenderblush]SPORT [COLOR blue]2[/B][/COLOR][COLOR springgreen] [transmission Liga PT] [/COLOR]</title>
+<link>http://5.255.90.223:2082/play/a01t</link>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://livesport.pw/BTSport2.html</link>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://www.mamahd.com/bt-sport-2-live-stream-1.html;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR];iconImage=?#SportsDevil_BT2</link>
+
+<link>plugin://program.plexus/?url=http://content.asplaylist.net/TTllNktnbGRmV3FEc0RSWXVoWFEySCthT2JSWTBiYW9GS3BseVB0TWgvWWV3NDZIQmtDY3g5czB6cEZsUVk1OElOeHZrcjhzOVZ3MDZma2xITWlPMUE9PQ/9220.acelive&amp;mode=1&amp;name=BTSport2</link>
+
+<thumbnail>https://www.thelogodb.com/images/media/logo/wysstw1434038860.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[B][COLOR navy]•[/COLOR][COLOR red] BT [COLOR lavenderblush]SPORT [COLOR blue]3[/B][/COLOR][COLOR springgreen] [transmission Liga PT] [/COLOR]</title>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://livesport.pw/BTSport3.html</link>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://www.mamahd.com/front_embed_1131.html</link>
+<thumbnail>https://www.thelogodb.com/images/media/logo/wysstw1434038860.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+<item>
+<title>[B][COLOR navy]•[/COLOR][COLOR red] BT [COLOR lavenderblush]SPORT [COLOR blue]ESPN [/B][/COLOR][COLOR springgreen] [transmission Liga PT] [/COLOR]</title>
+<link>http://5.255.90.223:2082/play/a01w</link>
+
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://www.liveonlinetv247.info/btsportespn.php</link>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://www.shadow-net.org/channels/BT-Sport-ESPN.html</link>
+<thumbnail>https://www.thelogodb.com/images/media/logo/wysstw1434038860.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B][COLOR navy]•[/COLOR][COLOR lavenderblush] SPORT [COLOR red]KLUB [COLOR lavenderblush]1[/B][/COLOR][COLOR springgreen] [transmission Liga PT] [/COLOR]</title>
+<link>$doregex[getLink]|Cookie=$get_cookies$&amp;User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0</link>
+<regex>
+<name>getLink</name>
+<expres>videoLink = '(.*?)'</expres>
+<page>http://www.livesport.pw/SportKlub1.html</page>
+      http://www.livesport.pw/SportKlub1.html
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://www.thelogodb.com/images/media/logo/vusutv1462898242.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+<item>
+<title>[B][COLOR navy]•[/COLOR][COLOR lavenderblush] SPORT [COLOR red]KLUB [COLOR lavenderblush]2[/B][/COLOR][COLOR springgreen] [transmission Liga PT] [/COLOR]</title>
+<link>$doregex[getLink]|Cookie=$get_cookies$&amp;User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0</link>
+<regex>
+<name>getLink</name>
+<expres>videoLink = '(.*?)'</expres>
+<page>http://www.livesport.pw/SportKlub2.html</page>
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://www.thelogodb.com/images/media/logo/vusutv1462898242.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+<item>
+<title>[B][COLOR navy]•[/COLOR][COLOR lavenderblush] SPORT [COLOR red]KLUB [COLOR lavenderblush]3[/B][/COLOR][COLOR springgreen] [transmission Liga PT] [/COLOR]</title>
+<link>$doregex[getLink]|Cookie=$get_cookies$&amp;User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0</link>
+<regex>
+<name>getLink</name>
+<expres>videoLink = '(.*?)'</expres>
+<page>http://www.livesport.pw/SportKlub3.html</page>
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://www.thelogodb.com/images/media/logo/vusutv1462898242.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+
+
+
+
+
+
+
+
+
+=====================================================================================================================
+<item>
+<title>[B][COLOR blue]==[COLOR navy]vv[COLOR blue]==[/COLOR][COLOR white] OTHERS SPORTS [/COLOR][COLOR blue]==[COLOR navy]vv[COLOR blue]==[/COLOR][/B]</title> 
+<link>http://fui.me</link>
+<thumbnail>http://upimagens.com/di/2QB1/logoinspiration.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+=====================================================================================================================
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B][COLOR navy]•[/COLOR][COLOR lavenderblush] NBA [COLOR red]USA[/COLOR][/B][COLOR springgreen] [f4m|sportdevil] [/COLOR]</title>
+<link>http://31.204.150.12:8080/edge/4304/tracks-v1a1/index.m3u8?token=17.18.1487.6d44eab61dcf5b1f0e6fa8f6595ee1bc.1.1.1.641.0.0.71875765cf0ee5df30360b6487a7b6ec?[NBA3]</link>
+
+<link>plugin://plugin.video.f4mTester/?streamtype=HLSRETRY;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR];iconImage=;url=http://alphatwo.ddns.net:8000/live/belle/belle/2946.m3u8</link>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR];iconImage=;url=http://ghosttechuk.ddns.net:25461/live/mark%20collins/wUf0C9f8PD/861.ts</link>
+
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://www.shadow-net.org/channels/NBA-TV.html</link>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://livesport.pw/NBA.html</link>
+
+<thumbnail>https://www.thelogodb.com/images/media/logo/vvvvtw1465807769.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+<item>
+<title>[B][COLOR navy]•[/COLOR][COLOR lavenderblush] GOL [/COLOR][COLOR red]TV[/COLOR][/B][COLOR springgreen] (http) [/COLOR]</title>
+<link>http://149.100.19.147:8000/play/a010</link>
+<thumbnail>http://66.media.tumblr.com/d5c50cba2aea4da8331dc2d17e0f0dde/tumblr_mxuyedLhQM1rdkn3to1_r1_1280.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+<item>
+<title>[B][COLOR navy]•[/COLOR][COLOR blue] FS[COLOR lavenderblush]1[/B][COLOR springgreen] [f4m] [/COLOR]</title>
+
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://ghosttechuk.ddns.net:25461/live/mark%20collins/wUf0C9f8PD/824.ts</link>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://ksportiptv.com:1557/live/metti/metti/2402.ts</link>
+
+
+<thumbnail>http://b.fssta.com/sta/images/navSection/images/shows/nav_shows_fs1.vadapt.160.high.0.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[B][COLOR navy]•[/COLOR][COLOR red] Fight[COLOR white]|[/COLOR]UFC[COLOR white]|[/COLOR]KOMBAT [COLOR lavenderblush]SPORTS[/B][/COLOR][COLOR springgreen] [/COLOR]</title>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://ghosttechuk.ddns.net:25461/live/mark%20collins/wUf0C9f8PD/800.ts</link>
+
+<thumbnail>https://upimagens.com/di/AP16/Ufc.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=====================================================================================================================
+<item>
+<title>[B][COLOR blue]==[COLOR navy]vv[COLOR blue]==[COLOR white] AGENDAS [/COLOR][COLOR blue]==[COLOR navy]vv[COLOR blue]==[/COLOR][/B]</title> 
+<link>http://fui.me</link>
+<thumbnail>http://upimagens.com/di/2QB1/logoinspiration.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+=====================================================================================================================
+
+
+
+
+
+
+
+<item> 
+<title>[B][COLOR green]•[/COLOR][COLOR darkorange]•[/COLOR][COLOR navy]•[/COLOR][COLOR darkorange] SPORTS [COLOR lavenderblush]365 [COLOR navy]•[/COLOR][/B]</title> 
+<link>http://fui.me</link>
+<jsonrpc>plugin://plugin.video.ZemTV-shani/?mode=56;name=Inspiration&url=sss</jsonrpc>
+<thumbnail>http://1.bp.blogspot.com/-3Nfkgkf_Btw/UXBV47MlarI/AAAAAAAAG3g/60F32Jtazi0/w1200-h630-p-nu/image+logo+sport365+channel+tv.png</thumbnail> 
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+=====================================================================================================================
+
+
+<item>
+<title>[B][COLOR green]•[/COLOR][COLOR darkorange]•[/COLOR][COLOR navy]•[/COLOR][COLOR lavenderblush] AREN[COLOR red]AV[/COLOR]ISION [COLOR darkorange]AGENDA[COLOR magenta] (fuso +1 Hora Madrid) [/COLOR][/B]</title> 
+<link>$doregex[makelist]</link>
+<thumbnail>http://arenavision.in/sites/default/files/FAVICON_AV2015.png</thumbnail>
+<fanart>http://s15.postimg.org/pyrcvek2z/PLEXUS.jpg</fanart>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[COLOR aquamarine] Agenda [makelist.param1][/COLOR]</title>
+<link>$doregex[makelist1]</link>
+<thumbnail>http://upimagens.com/di/2QB1/logoinspiration.png</thumbnail>
+<fanart>http://s15.postimg.org/pyrcvek2z/PLEXUS.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[colspan="2".*?([0-9][0-9]\/[0-9][0-9]\/[0-9][0-9])(?s)(.*?)class="warning"]]></expres>
+<page>https://avezy.tk/</page>
+<thumbnail>http://arenavision.in/sites/default/files/FAVICON_AV2015.png</thumbnail>
+<fanart>http://s15.postimg.org/pyrcvek2z/PLEXUS.jpg</fanart>
+<agent></agent>
+</regex>
+<regex>
+<name>makelist1</name>
+<listrepeat><![CDATA[
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] [makelist1.param2][/COLOR] - [COLOR lightyellow][makelist1.param4]:[/COLOR] [COLOR lightgreen][makelist1.param5][/B][/COLOR]</title>
+<link>$doregex[makelist2]</link>
+<thumbnail>http://arenavision.in/sites/default/files/FAVICON_AV2015.png</thumbnail>
+<fanart>http://s15.postimg.org/pyrcvek2z/PLEXUS.jpg</fanart>
+<page>[makelist1.param3][makelist1.param3]</page>
+]]></listrepeat>
+<expres><![CDATA[align='center'>(.*?)<br>(.*?)<.*?src="(.*?)".*?[\w\W\s]{0,80}<td>(.*?)<br>.*?:(.*?)<(?s)(.*?class="")]]></expres>
+<page>[makelist.param2]</page>
+<agent></agent>
+</regex>
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[COLOR skyblue][makelist2.param2][/COLOR]</title>
+<link>plugin://plugin.video.p2p-streams/?url=[makelist2.param1]&mode=1&name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR][makelist2.param2]</link>
+<link>plugin://program.plexus/?url=[makelist2.param1]&mode=1&name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR][makelist2.param2]</link>
+<thumbnail>http://arenavision.in/sites/default/files/FAVICON_AV2015.png</thumbnail>
+<fanart>http://s15.postimg.org/pyrcvek2z/PLEXUS.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[acestream:\/\/(.*?)"(?s).*?>(AV.*?)<]]></expres>
+<page>$doregex[getace]</page>
+<agent></agent>
+</regex>
+<regex>
+<name>getace</name>
+<expres>[makelist1.param5](?s)(.*?class="")</expres>
+<page>https://avezy.tk/</page>
+<agent></agent>
+</regex>
+<thumbnail>http://arenavision.in/sites/default/files/FAVICON_AV2015.png</thumbnail>
+<fanart>http://s15.postimg.org/pyrcvek2z/PLEXUS.jpg</fanart></item>
+
+
+
+<item>
+<title>[B][COLOR green]•[/COLOR][COLOR darkorange]•[/COLOR][COLOR navy]•[/COLOR][COLOR lavenderblush] AREN[COLOR red]AV[/COLOR]ISION [COLOR darkorange]AGENDA[COLOR magenta] [1|30] [/COLOR][/B]</title> 
+<link>http://fui.me</link>
+<externallink>https://pastebin.com/raw/Th1NbyYy</externallink>
+<thumbnail>http://arenavision.in/sites/default/files/FAVICON_AV2015.png</thumbnail>
+<fanart>http://s15.postimg.org/pyrcvek2z/PLEXUS.jpg</fanart></item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=====================================================================================================================
+<item>
+<title>[B][COLOR blue]==[COLOR navy]vv[COLOR blue]== [COLOR white]PORTUGUESE SPORTS[COLOR blue]==[COLOR navy]vv[COLOR blue]==[/COLOR][/B]</title> 
+<link>http://fui.me</link>
+<thumbnail>http://upimagens.com/di/2QB1/logoinspiration.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+=====================================================================================================================
+
+
+
+
+
+
+
+<item>
+<title>[B][COLOR green]•[/COLOR][COLOR darkorange]•[/COLOR][COLOR navy]•[/COLOR][COLOR lavenderblush] Sp[COLOR gold]o[/COLOR]rt TV [COLOR gold]1[/B][/COLOR][COLOR springgreen] [/COLOR]</title>
+<link>$doregex[getLink]|Cookie=$get_cookies$&User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0</link>
+<regex>
+<name>getLink</name>
+<expres>videoLink = '(.*?)'</expres>
+<page>http://www.livesport.pw/Sport1PT.html</page>
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://sck.pm/Hw</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[B][COLOR green]•[/COLOR][COLOR darkorange]•[/COLOR][COLOR navy]•[/COLOR][COLOR lavenderblush] Sp[COLOR gold]o[/COLOR]rt TV [COLOR gold]2[/B][/COLOR][COLOR springgreen] [/COLOR]</title>
+<link>$doregex[getLink]|Cookie=$get_cookies$&User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0</link>
+<regex>
+<name>getLink</name>
+<expres>videoLink = '(.*?)'</expres>
+<page>http://www.livesport.pw/Sport2PT.html</page>
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://sck.pm/58</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[B][COLOR green]•[/COLOR][COLOR darkorange]•[/COLOR][COLOR navy]•[/COLOR][COLOR lavenderblush] Sp[COLOR gold]o[/COLOR]rt TV [COLOR gold]3[/B][/COLOR][COLOR springgreen] [/COLOR]</title>
+<link>$doregex[getLink]|Cookie=$get_cookies$&User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0</link>
+<regex>
+<name>getLink</name>
+<expres>videoLink = '(.*?)'</expres>
+<page>http://www.livesport.pw/Sport3PT.html</page>
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://sck.pm/9M</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+
+<item>
+<title>[B][COLOR green]•[/COLOR][COLOR darkorange]•[/COLOR][COLOR navy]•[/COLOR][COLOR lavenderblush] Sp[COLOR gold]o[/COLOR]rt TV [COLOR gold]4[/B][/COLOR][COLOR springgreen] [/COLOR]</title>
+<link>$doregex[getLink]|Cookie=$get_cookies$&User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0</link>
+<regex>
+<name>getLink</name>
+<expres>videoLink = '(.*?)'</expres>
+<page>http://www.livesport.pw/Sport4PT.html</page>
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://sck.pm/aAr</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+
+<item>
+<title>[B][COLOR green]•[/COLOR][COLOR darkorange]•[/COLOR][COLOR navy]•[/COLOR][COLOR lavenderblush] Sp[COLOR gold]o[/COLOR]rt TV [COLOR gold]5[/B][/COLOR][COLOR springgreen] [/COLOR]</title>
+<link>$doregex[getLink]|Cookie=$get_cookies$&User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0</link>
+<regex>
+<name>getLink</name>
+<expres>videoLink = '(.*?)'</expres>
+<page>http://www.livesport.pw/Sport5PT.html</page>
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://sck.pm/aAr</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+
+
+
+
+
+=====================================================================================================================
+<item>
+<title>[B][COLOR blue]==[COLOR navy]vv[COLOR blue]==[COLOR white] BRASIL SPORTS [COLOR blue]==[COLOR navy]vv[COLOR blue]==[/COLOR][/B]</title> 
+<link>http://fui.me</link>
+<thumbnail>https://upimagens.com/di/2QB1/logoinspiration.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+=====================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B][COLOR navy]•[/COLOR][COLOR red] EI [COLOR white]Maxx[COLOR gold] 1[/B][COLOR springgreen] [http] [/COLOR]</title>
+
+<link>$doregex[getUrl]</link>
+<regex>
+<name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+import requests, re, urllib2
+def GetLSProData(page_data,Cookie_Jar,m):
+  html = re.findall('src="(.*embed/.*?)"', page_data)[0]
+  source = requests.get(html, headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; rv:36.0) Gecko/20100101 Firefox/36.04', 'Referer': 'http://ekostreams.co/ch/sportvhd.php', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}).text
+  link = re.findall('"(h.*?m3u8)"', source)[0]
+  location = urllib2.urlopen(link)
+  return location.geturl()
+]]></expres>
+<page>http://ekostreams.co/ch/eimax.php</page>
+<referer>http://ekostreams.co/</referer>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://1.bp.blogspot.com/-zdMUeBUfoPI/VhMPoo8p1rI/AAAAAAAAB4E/eTTwH6i16TY/s640/EIMAXX-NOVO.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+<item>
+<title>[B][COLOR navy]•[/COLOR][COLOR red] EI [COLOR white]Maxx[COLOR gold] Interativo[/B][COLOR springgreen] [transmission Liga PT] [/COLOR]</title>
+<link>http://enlsso9vfh.singularcdn.net.br/live/canal_12/playlist-720p.m3u8|User-Agent=Mozilla/5.0 (Windows NT 6.1; rv:51.0) Gecko/20100101 Firefox/51.0</link>
+<thumbnail>http://1.bp.blogspot.com/-zdMUeBUfoPI/VhMPoo8p1rI/AAAAAAAAB4E/eTTwH6i16TY/s640/EIMAXX-NOVO.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+<item>
+<title>[B][COLOR navy]•[/COLOR][COLOR red] EI [COLOR white]Maxx[COLOR gold] 2[/B][COLOR springgreen] [http] [/COLOR]</title>
+
+<link>$doregex[getUrl]</link>
+<regex>
+<name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+import requests, re, urllib2
+def GetLSProData(page_data,Cookie_Jar,m):
+  html = re.findall('src="(.*embed/.*?)"', page_data)[0]
+  source = requests.get(html, headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; rv:36.0) Gecko/20100101 Firefox/36.04', 'Referer': 'http://ekostreams.co/ch/sportvhd.php', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}).text
+  link = re.findall('"(h.*?m3u8)"', source)[0]
+  location = urllib2.urlopen(link)
+  return location.geturl()
+]]></expres>
+<page>http://ekostreams.co/ch/eimax2.php</page>
+<referer>http://ekostreams.co/</referer>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://1.bp.blogspot.com/-zdMUeBUfoPI/VhMPoo8p1rI/AAAAAAAAB4E/eTTwH6i16TY/s640/EIMAXX-NOVO.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+<item>
+<title>[B][COLOR navy]•[/COLOR][COLOR red] EI [COLOR white]Maxx[COLOR gold] 2[/B][COLOR springgreen] [transmission Liga PT] [/COLOR]</title>
+<link>http://enlsso9vfh.singularcdn.net.br/live/canal_11/playlist-720p.m3u8|User-Agent=Mozilla/5.0 (Windows NT 6.1; rv:51.0) Gecko/20100101 Firefox/51.0</link>
+<thumbnail>http://1.bp.blogspot.com/-zdMUeBUfoPI/VhMPoo8p1rI/AAAAAAAAB4E/eTTwH6i16TY/s640/EIMAXX-NOVO.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+<item>
+<title>[B][COLOR navy]•[/COLOR][COLOR red] EI [COLOR white]Maxx[COLOR gold] 2[/B][COLOR springgreen] [transmission Liga PT] [/COLOR]</title>
+<link>plugin://plugin.video.SportsDevil/?mode=1&item=catcher%3Dstreams%26url=http://ekostreams.co/ch/eimax2.php?width=600&height=384</link>
+<thumbnail>http://1.bp.blogspot.com/-zdMUeBUfoPI/VhMPoo8p1rI/AAAAAAAAB4E/eTTwH6i16TY/s640/EIMAXX-NOVO.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+
+
+
+
+
+
+
+=====================================================================================================================
+<item>
+<title>[B][COLOR blue]==[COLOR navy]vv[COLOR blue]==[/COLOR][COLOR white] EUROPEAN BEST SPORTS [/COLOR][COLOR blue]==[COLOR navy]vv[COLOR blue]==[/COLOR][/B]</title> 
+<link>http://fui.me</link>
+<thumbnail>http://upimagens.com/di/2QB1/logoinspiration.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+=====================================================================================================================
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B][COLOR navy]•[/COLOR][COLOR red] BT [COLOR lavenderblush]SPORT [COLOR blue]1[/B][/COLOR][COLOR springgreen] [transmission Liga PT] [/COLOR]</title>
+
+<link>plugin://plugin.video.SportsDevil/?mode=1&item=catcher%3Dstreams%26url=http://www.liveonlinetv247.info/btsport1.php</link>
+<link>plugin://plugin.video.SportsDevil/?mode=1&item=catcher%3Dstreams%26url=http://www.mamahd.com/bt-sport-1-live-stream1-1.html</link>
+<link>plugin://plugin.video.SportsDevil/?mode=1&item=catcher%3Dstreams%26url=http://www.shadow-net.org/channels/BT-Sport-1.html</link>
+
+<link>plugin://program.plexus/?url=http://content.asplaylist.net/SDdBQTNDNGxFUjNpOFZLZG13ZlVKYWY1anNZTUlya2ZReUtpM3RBQytOWmFFTDdYZzJVdVRmV09uc1FySHdReGRlcGw1bjNtTVVhYklWVDBaS09VaUE9PQ/10634.acelive&mode=1&name=BTSport1</link>
+
+<thumbnail>https://www.thelogodb.com/images/media/logo/wysstw1434038860.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[B][COLOR navy]•[/COLOR][COLOR red] BT [COLOR lavenderblush]SPORT [COLOR blue]2[/B][/COLOR][COLOR springgreen] [transmission Liga PT] [/COLOR]</title>
+<link>http://5.255.90.223:2082/play/a01t</link>
+<link>plugin://plugin.video.SportsDevil/?mode=1&item=catcher%3Dstreams%26url=http://livesport.pw/BTSport2.html</link>
+<link>plugin://plugin.video.SportsDevil/?mode=1&item=catcher%3Dstreams%26url=http://www.mamahd.com/bt-sport-2-live-stream-1.html;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR];iconImage=?#SportsDevil_BT2</link>
+
+<link>plugin://program.plexus/?url=http://content.asplaylist.net/TTllNktnbGRmV3FEc0RSWXVoWFEySCthT2JSWTBiYW9GS3BseVB0TWgvWWV3NDZIQmtDY3g5czB6cEZsUVk1OElOeHZrcjhzOVZ3MDZma2xITWlPMUE9PQ/9220.acelive&mode=1&name=BTSport2</link>
+
+<thumbnail>https://www.thelogodb.com/images/media/logo/wysstw1434038860.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[B][COLOR navy]•[/COLOR][COLOR red] BT [COLOR lavenderblush]SPORT [COLOR blue]3[/B][/COLOR][COLOR springgreen] [transmission Liga PT] [/COLOR]</title>
+<link>plugin://plugin.video.SportsDevil/?mode=1&item=catcher%3Dstreams%26url=http://livesport.pw/BTSport3.html</link>
+<link>plugin://plugin.video.SportsDevil/?mode=1&item=catcher%3Dstreams%26url=http://www.mamahd.com/front_embed_1131.html</link>
+<thumbnail>https://www.thelogodb.com/images/media/logo/wysstw1434038860.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+<item>
+<title>[B][COLOR navy]•[/COLOR][COLOR red] BT [COLOR lavenderblush]SPORT [COLOR blue]ESPN [/B][/COLOR][COLOR springgreen] [transmission Liga PT] [/COLOR]</title>
+<link>http://5.255.90.223:2082/play/a01w</link>
+
+<link>plugin://plugin.video.SportsDevil/?mode=1&item=catcher%3Dstreams%26url=http://www.liveonlinetv247.info/btsportespn.php</link>
+<link>plugin://plugin.video.SportsDevil/?mode=1&item=catcher%3Dstreams%26url=http://www.shadow-net.org/channels/BT-Sport-ESPN.html</link>
+<thumbnail>https://www.thelogodb.com/images/media/logo/wysstw1434038860.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B][COLOR navy]•[/COLOR][COLOR lavenderblush] SPORT [COLOR red]KLUB [COLOR lavenderblush]1[/B][/COLOR][COLOR springgreen] [transmission Liga PT] [/COLOR]</title>
+<link>$doregex[getLink]|Cookie=$get_cookies$&User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0</link>
+<regex>
+<name>getLink</name>
+<expres>videoLink = '(.*?)'</expres>
+<page>http://www.livesport.pw/SportKlub1.html</page>
+      http://www.livesport.pw/SportKlub1.html
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://www.thelogodb.com/images/media/logo/vusutv1462898242.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+<item>
+<title>[B][COLOR navy]•[/COLOR][COLOR lavenderblush] SPORT [COLOR red]KLUB [COLOR lavenderblush]2[/B][/COLOR][COLOR springgreen] [transmission Liga PT] [/COLOR]</title>
+<link>$doregex[getLink]|Cookie=$get_cookies$&User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0</link>
+<regex>
+<name>getLink</name>
+<expres>videoLink = '(.*?)'</expres>
+<page>http://www.livesport.pw/SportKlub2.html</page>
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://www.thelogodb.com/images/media/logo/vusutv1462898242.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+<item>
+<title>[B][COLOR navy]•[/COLOR][COLOR lavenderblush] SPORT [COLOR red]KLUB [COLOR lavenderblush]3[/B][/COLOR][COLOR springgreen] [transmission Liga PT] [/COLOR]</title>
+<link>$doregex[getLink]|Cookie=$get_cookies$&User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0</link>
+<regex>
+<name>getLink</name>
+<expres>videoLink = '(.*?)'</expres>
+<page>http://www.livesport.pw/SportKlub3.html</page>
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://www.thelogodb.com/images/media/logo/vusutv1462898242.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+
+
+
+
+
+
+
+
+
+=====================================================================================================================
+<item>
+<title>[B][COLOR blue]==[COLOR navy]vv[COLOR blue]==[/COLOR][COLOR white] OTHERS SPORTS [/COLOR][COLOR blue]==[COLOR navy]vv[COLOR blue]==[/COLOR][/B]</title> 
+<link>http://fui.me</link>
+<thumbnail>http://upimagens.com/di/2QB1/logoinspiration.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+=====================================================================================================================
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B][COLOR navy]•[/COLOR][COLOR lavenderblush] NBA [COLOR red]USA[/COLOR][/B][COLOR springgreen] [f4m|sportdevil] [/COLOR]</title>
+<link>http://31.204.150.12:8080/edge/4304/tracks-v1a1/index.m3u8?token=17.18.1487.6d44eab61dcf5b1f0e6fa8f6595ee1bc.1.1.1.641.0.0.71875765cf0ee5df30360b6487a7b6ec?[NBA3]</link>
+
+<link>plugin://plugin.video.SportsDevil/?mode=1&item=catcher%3Dstreams%26url=http://www.shadow-net.org/channels/NBA-TV.html</link>
+<link>plugin://plugin.video.SportsDevil/?mode=1&item=catcher%3Dstreams%26url=http://livesport.pw/NBA.html</link>
+
+<thumbnail>https://www.thelogodb.com/images/media/logo/vvvvtw1465807769.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Inspi[я]ation Links © 2017 All rights reserved

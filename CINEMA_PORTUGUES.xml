@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B][COLOR white]•[/COLOR][COLOR yellowgreen] A Canção de Lisboa [COLOR springgreen] [COLOR white] [/COLOR][/B]</title>
+<link>http://vidto.me/embed-avmf0vxbqomj-900x500.html</link>
+<link>http://vidzi.tv/embed-4qc3k40bjk93-900x500.html</link>
+<thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BZGNiYjk0YzMtY2FjOS00MTQ3LTk5YzItMDFhMTYzZmI0YTA4XkEyXkFqcGdeQXVyMjk0NTMwMzM@._V1_SY1000_CR0,0,711,1000_AL_.jpg</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[B][COLOR white]•[/COLOR][COLOR yellowgreen] António Raminhos Apresenta: As Marias[COLOR springgreen]  [/COLOR][/B]</title>
+<link>http://vidzi.tv/embed-vxwqau6l3qke-900x500.html</link>
+<thumbnail>http://school.worldacademy.pt/pluginfile.php/35/mod_forum/post/18/Ant%C3%B3nio-Raminhos-As-Marias.jpg</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+<item>
+<title>[B][COLOR white]•[/COLOR][COLOR yellowgreen] Os Maias [COLOR white] [/COLOR][/B]</title>
+<utube>FO1UANjIpVE</utube>
+<thumbnail>http://sm2.imgs.sapo.pt/mb/e/5/d7cf0d085f4239da35a69950a918abcbcb64a5.jpg</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[B][COLOR white]•[/COLOR][COLOR yellowgreen] Bairro [COLOR white] 2013 [/COLOR][/B]</title>
+<utube>qXOo7OoVomo</utube>
+<thumbnail>https://upimagens.com/di/48BX/semcapa.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+<item>
+<title>[B][COLOR white]•[/COLOR][COLOR yellowgreen] O Discípulo [COLOR white] 2013 [/COLOR][/B]</title>
+<utube>67vVkZ1Y0Lw</utube>
+<thumbnail>https://upimagens.com/di/48BX/semcapa.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+<item>
+<title>[B][COLOR white]•[/COLOR][COLOR yellowgreen] Crime do Padre Amaro [COLOR white] 2005 [/COLOR][/B]</title>
+<utube>Gp0syd5BQOE</utube>
+<thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BOWI3NGZkYmUtNjgxMC00NzEwLThhNzgtYzc4N2E2MmUwM2FmXkEyXkFqcGdeQXVyMzAwMjcwMDY@._V1_SY1000_CR0,0,695,1000_AL_.jpg</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+<item>
+<title>[B][COLOR white]•[/COLOR][COLOR yellowgreen] Amor a Preto & Branco [COLOR white] [/COLOR][/B]</title>
+<utube>5CWAZN0KGoQ</utube>
+<thumbnail>https://upimagens.com/di/48BX/semcapa.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+<item>
+<title>[B][COLOR white]•[/COLOR][COLOR yellowgreen] Cartão de Memoria "CHIP" - "O COMEÇO"  [COLOR white] [/COLOR][/B]</title>
+<utube>LYhK4iF260A</utube>
+<thumbnail>https://upimagens.com/di/48BX/semcapa.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+=====================================================================================================================
+
+<item>
+<title>[B][COLOR white]•[/COLOR][COLOR yellowgreen] 7 Pecados Rurais [COLOR springgreen]  [/COLOR][/B]</title>
+<utube>z6-gaVeYyZ8</utube>
+<thumbnail>http://sm2.imgs.sapo.pt/mb/5/,/9/zr2siErC7mEq55CypjIW80X0_.jpg</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+=====================================================================================================================
+
+<item>
+<title>[B][COLOR white]•[/COLOR][COLOR yellowgreen] Mixórdia de Temáticas [COLOR springgreen] [/COLOR][/B]</title>
+<link>$doregex[makelist2]</link>
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>page [makelist2.param1]</title>
+<link>$doregex[makelist3]</link>
+<referer></referer>
+<thumbnail></thumbnail>
+]]></listrepeat>
+<expres> (.*?),</expres>
+<page>$doregex[get-number]</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+            <name>makelist3</name>
+            <listrepeat><![CDATA[
+                        <title>[makelist3.param2]</title>
+                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist3.param1]</link>
+                        <thumbnail>https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRv7zAXyyag7bqSD8DtqysQk2Wzgn1_MdBSdDWrMFobAvkD0g9bdD0dcjA</thumbnail>
+                        <fanart>http://s21.postimg.org/6ngdod4uv/fanart.jpg</fanart>
+            ]]></listrepeat>
+            <expres>spf-link " dir="ltr" href="\/watch\?v=(.*?)&amp;.*?\n(.*)</expres>
+            <page>$doregex[get-source-page]</page>
+            <cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>get-number</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='https://www.youtube.com/playlist?list=PLApeWLOGy4Ab8Cxlo77-uCusS6xJOQvUx'):
+
+ import requests
+ import re
+
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Accept-Language': 'en-US'}
+
+ rr = requests.get(url, headers=headers)
+ number = re.findall('</a></li><li>(.*?) vid', rr.text)[0]
+ #number = number.encode('unicode-escape')
+ number = number.replace(',', '')
+ real = int(float(number)) / 100
+ real2 = real + 3
+
+ liste = list(range(real2))
+ return liste
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='https://www.youtube.com/playlist?list=PLApeWLOGy4Ab8Cxlo77-uCusS6xJOQvUx'):
+
+ import requests
+ import re
+ import json
+
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0'}
+ r1 = requests.get(url, headers = headers)
+ source = r1.text
+ page = [makelist2.param1]
+ N = int(float(page))
+ pre = 'https://www.youtube.com'
+ if (N > 1):
+
+  for itr in range (1,N):
+    continuex = re.findall('data-uix-load-more-href="(.*?)"', source)[0]
+    continuationx = pre + continuex
+    r = requests.get(continuationx, headers = headers)
+    source = r.text
+    jdata = json.loads(source)
+    source = jdata["load_more_widget_html"]
+    page = jdata["content_html"]
+  return page
+   
+ else:
+
+  return source
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRv7zAXyyag7bqSD8DtqysQk2Wzgn1_MdBSdDWrMFobAvkD0g9bdD0dcjA</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+=====================================================================================================================
+
+
+<item>
+<title>[B][COLOR white]•[/COLOR][COLOR yellowgreen] A Verdadeira Treta [COLOR springgreen]  [/COLOR][/B]</title>
+<utube>1b0s2KiYsII</utube>
+<thumbnail>http://i44.tinypic.com/2vv1jt4.jpg</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+<item>
+<title>[B][COLOR white]•[/COLOR][COLOR yellowgreen] Filme da Treta [COLOR springgreen]  [/COLOR][/B]</title>
+<utube>xTmCPC_m0Ew</utube>
+<thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BZDI5ODQzMTYtMjBmOS00MmQ1LWE0NDktODI4ZTZhNDBmNTY5XkEyXkFqcGdeQXVyMzAwMjcwMDY@._V1_.jpg</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+<item>
+<title>[B][COLOR white]•[/COLOR][COLOR yellowgreen] A Treta Continua [COLOR springgreen]  [/COLOR][/B]</title>
+<utube>eVR0YImHZP8</utube>
+<thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BOTkxOGI5Y2ItNzEyNi00MmM0LWE5ZjUtNjI1NmFmOTU1OTE1XkEyXkFqcGdeQXVyMjUyMTE3MTc@._V1_SY1000_CR0,0,710,1000_AL_.jpg</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+=====================================================================================================================
+
+<item>
+<title>[B][COLOR white]•[/COLOR][COLOR yellowgreen] Gato Fedorento [COLOR white] [Serie: Lopes da Silva] [/COLOR][/B]</title>
+<link>$doregex[makelist2]</link>
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>page [makelist2.param1]</title>
+<link>$doregex[makelist3]</link>
+<referer></referer>
+<thumbnail></thumbnail>
+]]></listrepeat>
+<expres> (.*?),</expres>
+<page>$doregex[get-number]</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+            <name>makelist3</name>
+            <listrepeat><![CDATA[
+                        <title>[makelist3.param2]</title>
+                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist3.param1]</link>
+                        <thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BYWMwZTEwM2MtYjMwNy00OTZlLWEzYzEtM2QyYWRhNDlmOTQ2XkEyXkFqcGdeQXVyMjUyMTE3MTc@._V1_UY268_CR3,0,182,268_AL_.jpg</thumbnail>
+                        <fanart>http://s21.postimg.org/6ngdod4uv/fanart.jpg</fanart>
+            ]]></listrepeat>
+            <expres>spf-link " dir="ltr" href="\/watch\?v=(.*?)&amp;.*?\n(.*)</expres>
+            <page>$doregex[get-source-page]</page>
+            <cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>get-number</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='https://www.youtube.com/playlist?list=PL7E447D4D8AF598BA'):
+
+ import requests
+ import re
+
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Accept-Language': 'en-US'}
+
+ rr = requests.get(url, headers=headers)
+ number = re.findall('</a></li><li>(.*?) vid', rr.text)[0]
+ #number = number.encode('unicode-escape')
+ number = number.replace(',', '')
+ real = int(float(number)) / 100
+ real2 = real + 3
+
+ liste = list(range(real2))
+ return liste
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='https://www.youtube.com/playlist?list=PL7E447D4D8AF598BA'):
+
+ import requests
+ import re
+ import json
+
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0'}
+ r1 = requests.get(url, headers = headers)
+ source = r1.text
+ page = [makelist2.param1]
+ N = int(float(page))
+ pre = 'https://www.youtube.com'
+ if (N > 1):
+
+  for itr in range (1,N):
+    continuex = re.findall('data-uix-load-more-href="(.*?)"', source)[0]
+    continuationx = pre + continuex
+    r = requests.get(continuationx, headers = headers)
+    source = r.text
+    jdata = json.loads(source)
+    source = jdata["load_more_widget_html"]
+    page = jdata["content_html"]
+  return page
+   
+ else:
+
+  return source
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BYWMwZTEwM2MtYjMwNy00OTZlLWEzYzEtM2QyYWRhNDlmOTQ2XkEyXkFqcGdeQXVyMjUyMTE3MTc@._V1_UY268_CR3,0,182,268_AL_.jpg</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+=====================================================================================================================
+
+<item>
+<title>[B][COLOR white]•[/COLOR][COLOR yellowgreen] Gato Fedorento [COLOR white] [Serie: Meireles] [/COLOR][/B]</title>
+<link>$doregex[makelist2]</link>
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>page [makelist2.param1]</title>
+<link>$doregex[makelist3]</link>
+<referer></referer>
+<thumbnail></thumbnail>
+]]></listrepeat>
+<expres> (.*?),</expres>
+<page>$doregex[get-number]</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+            <name>makelist3</name>
+            <listrepeat><![CDATA[
+                        <title>[makelist3.param2]</title>
+                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist3.param1]</link>
+                        <thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BYWFmZjkzZTctYWMwNy00NzkzLTk2MDAtYmUwMDBkODJiNzk5XkEyXkFqcGdeQXVyMjUyMTE3MTc@._V1_SY1000_CR0,0,699,1000_AL_.jpg</thumbnail>
+                        <fanart>http://s21.postimg.org/6ngdod4uv/fanart.jpg</fanart>
+            ]]></listrepeat>
+            <expres>spf-link " dir="ltr" href="\/watch\?v=(.*?)&amp;.*?\n(.*)</expres>
+            <page>$doregex[get-source-page]</page>
+            <cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>get-number</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='https://www.youtube.com/playlist?list=PL71EB0CBA392EA594'):
+
+ import requests
+ import re
+
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Accept-Language': 'en-US'}
+
+ rr = requests.get(url, headers=headers)
+ number = re.findall('</a></li><li>(.*?) vid', rr.text)[0]
+ #number = number.encode('unicode-escape')
+ number = number.replace(',', '')
+ real = int(float(number)) / 100
+ real2 = real + 3
+
+ liste = list(range(real2))
+ return liste
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='https://www.youtube.com/playlist?list=PL71EB0CBA392EA594'):
+
+ import requests
+ import re
+ import json
+
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0'}
+ r1 = requests.get(url, headers = headers)
+ source = r1.text
+ page = [makelist2.param1]
+ N = int(float(page))
+ pre = 'https://www.youtube.com'
+ if (N > 1):
+
+  for itr in range (1,N):
+    continuex = re.findall('data-uix-load-more-href="(.*?)"', source)[0]
+    continuationx = pre + continuex
+    r = requests.get(continuationx, headers = headers)
+    source = r.text
+    jdata = json.loads(source)
+    source = jdata["load_more_widget_html"]
+    page = jdata["content_html"]
+  return page
+   
+ else:
+
+  return source
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BYWFmZjkzZTctYWMwNy00NzkzLTk2MDAtYmUwMDBkODJiNzk5XkEyXkFqcGdeQXVyMjUyMTE3MTc@._V1_SY1000_CR0,0,699,1000_AL_.jpg</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+=====================================================================================================================
+
+
+<item>
+<title>[B][COLOR white]•[/COLOR][COLOR yellowgreen] Gato Fedorento [COLOR white] [Serie: Fonseca]  [/COLOR][/B]</title>
+<utube>n6lE3S-ydcQ</utube>
+<thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BNWQ3ZDUxZGYtNWVjZC00OWVlLThjMDAtZjkzM2I0N2FiZWY4XkEyXkFqcGdeQXVyMjUyMTE3MTc@._V1_.jpg</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+=====================================================================================================================
+
+
+<item>
+<title>[B][COLOR white]•[/COLOR][COLOR yellowgreen] Gato Fedorento [COLOR white] [Serie: Barbosa]  [/COLOR][/B]</title>
+<utube>TuW5QdxCOew</utube>
+<thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BNWQ3ZDUxZGYtNWVjZC00OWVlLThjMDAtZjkzM2I0N2FiZWY4XkEyXkFqcGdeQXVyMjUyMTE3MTc@._V1_.jpg</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+=====================================================================================================================
+
+
+
+<item>
+<title>[B][COLOR white]•[/COLOR][COLOR yellowgreen] Gato Fedorento - Espécie De Magazine  [COLOR springgreen] [/COLOR][/B]</title>
+<link>$doregex[makelist2]</link>
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>page [makelist2.param1]</title>
+<link>$doregex[makelist3]</link>
+<referer></referer>
+<thumbnail></thumbnail>
+]]></listrepeat>
+<expres> (.*?),</expres>
+<page>$doregex[get-number]</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+            <name>makelist3</name>
+            <listrepeat><![CDATA[
+                        <title>[makelist3.param2]</title>
+                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist3.param1]</link>
+                        <thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BOGVhNGVmNjAtNTYwMi00YmVjLWI0MGItOTFkZmUyMmE2MmVkXkEyXkFqcGdeQXVyMjUyMTE3MTc@._V1_.jpg</thumbnail>
+                        <fanart>http://s21.postimg.org/6ngdod4uv/fanart.jpg</fanart>
+            ]]></listrepeat>
+            <expres>spf-link " dir="ltr" href="\/watch\?v=(.*?)&amp;.*?\n(.*)</expres>
+            <page>$doregex[get-source-page]</page>
+            <cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>get-number</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='https://www.youtube.com/playlist?list=PLCB642D72D4232A96'):
+
+ import requests
+ import re
+
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Accept-Language': 'en-US'}
+
+ rr = requests.get(url, headers=headers)
+ number = re.findall('</a></li><li>(.*?) vid', rr.text)[0]
+ #number = number.encode('unicode-escape')
+ number = number.replace(',', '')
+ real = int(float(number)) / 100
+ real2 = real + 3
+
+ liste = list(range(real2))
+ return liste
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='https://www.youtube.com/playlist?list=PLCB642D72D4232A96'):
+
+ import requests
+ import re
+ import json
+
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0'}
+ r1 = requests.get(url, headers = headers)
+ source = r1.text
+ page = [makelist2.param1]
+ N = int(float(page))
+ pre = 'https://www.youtube.com'
+ if (N > 1):
+
+  for itr in range (1,N):
+    continuex = re.findall('data-uix-load-more-href="(.*?)"', source)[0]
+    continuationx = pre + continuex
+    r = requests.get(continuationx, headers = headers)
+    source = r.text
+    jdata = json.loads(source)
+    source = jdata["load_more_widget_html"]
+    page = jdata["content_html"]
+  return page
+   
+ else:
+
+  return source
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BOGVhNGVmNjAtNTYwMi00YmVjLWI0MGItOTFkZmUyMmE2MmVkXkEyXkFqcGdeQXVyMjUyMTE3MTc@._V1_.jpg</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+=====================================================================================================================
+
+<item>
+<title>[B][COLOR white]•[/COLOR][COLOR yellowgreen] Os Contemporâneos [COLOR springgreen] [/COLOR][/B]</title>
+<link>$doregex[makelist2]</link>
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>page [makelist2.param1]</title>
+<link>$doregex[makelist3]</link>
+<referer></referer>
+<thumbnail></thumbnail>
+]]></listrepeat>
+<expres> (.*?),</expres>
+<page>$doregex[get-number]</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+            <name>makelist3</name>
+            <listrepeat><![CDATA[
+                        <title>[makelist3.param2]</title>
+                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist3.param1]</link>
+                        <thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BMmY2NmIzY2YtY2U4My00NjY5LWJmNDItMWQ1MTc2NTk1YThkXkEyXkFqcGdeQXVyMjUyMTE3MTc@._V1_.jpg</thumbnail>
+                        <fanart>http://s21.postimg.org/6ngdod4uv/fanart.jpg</fanart>
+            ]]></listrepeat>
+            <expres>spf-link " dir="ltr" href="\/watch\?v=(.*?)&amp;.*?\n(.*)</expres>
+            <page>$doregex[get-source-page]</page>
+            <cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>get-number</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='https://www.youtube.com/playlist?list=PLhFKOUWgI2VN9El4cwgcnLWS_CihL2d6f'):
+
+ import requests
+ import re
+
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Accept-Language': 'en-US'}
+
+ rr = requests.get(url, headers=headers)
+ number = re.findall('</a></li><li>(.*?) vid', rr.text)[0]
+ #number = number.encode('unicode-escape')
+ number = number.replace(',', '')
+ real = int(float(number)) / 100
+ real2 = real + 3
+
+ liste = list(range(real2))
+ return liste
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='https://www.youtube.com/playlist?list=PLhFKOUWgI2VN9El4cwgcnLWS_CihL2d6f'):
+
+ import requests
+ import re
+ import json
+
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0'}
+ r1 = requests.get(url, headers = headers)
+ source = r1.text
+ page = [makelist2.param1]
+ N = int(float(page))
+ pre = 'https://www.youtube.com'
+ if (N > 1):
+
+  for itr in range (1,N):
+    continuex = re.findall('data-uix-load-more-href="(.*?)"', source)[0]
+    continuationx = pre + continuex
+    r = requests.get(continuationx, headers = headers)
+    source = r.text
+    jdata = json.loads(source)
+    source = jdata["load_more_widget_html"]
+    page = jdata["content_html"]
+  return page
+   
+ else:
+
+  return source
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BMmY2NmIzY2YtY2U4My00NjY5LWJmNDItMWQ1MTc2NTk1YThkXkEyXkFqcGdeQXVyMjUyMTE3MTc@._V1_.jpg</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+=====================================================================================================================
+
+<item>
+<title>[B][COLOR white]•[/COLOR][COLOR yellowgreen] Herman Jose - Best Off [COLOR springgreen] [/COLOR][/B]</title>
+<link>$doregex[makelist2]</link>
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>page [makelist2.param1]</title>
+<link>$doregex[makelist3]</link>
+<referer></referer>
+<thumbnail></thumbnail>
+]]></listrepeat>
+<expres> (.*?),</expres>
+<page>$doregex[get-number]</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+            <name>makelist3</name>
+            <listrepeat><![CDATA[
+                        <title>[makelist3.param2]</title>
+                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist3.param1]</link>
+                        <thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BZTAwYTU4ZTUtNjRkZi00Mzc3LTk0MjUtYzQ5NGFlZWRmMjgxXkEyXkFqcGdeQXVyMjUyMTE3MTc@._V1_.jpg</thumbnail>
+                        <fanart>http://s21.postimg.org/6ngdod4uv/fanart.jpg</fanart>
+            ]]></listrepeat>
+            <expres>spf-link " dir="ltr" href="\/watch\?v=(.*?)&amp;.*?\n(.*)</expres>
+            <page>$doregex[get-source-page]</page>
+            <cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>get-number</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='https://www.youtube.com/playlist?list=PLQDd6jnLU0TO6s_boVkSD2J-eL3altKeQ'):
+
+ import requests
+ import re
+
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Accept-Language': 'en-US'}
+
+ rr = requests.get(url, headers=headers)
+ number = re.findall('</a></li><li>(.*?) vid', rr.text)[0]
+ #number = number.encode('unicode-escape')
+ number = number.replace(',', '')
+ real = int(float(number)) / 100
+ real2 = real + 3
+
+ liste = list(range(real2))
+ return liste
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='https://www.youtube.com/playlist?list=PLQDd6jnLU0TO6s_boVkSD2J-eL3altKeQ'):
+
+ import requests
+ import re
+ import json
+
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0'}
+ r1 = requests.get(url, headers = headers)
+ source = r1.text
+ page = [makelist2.param1]
+ N = int(float(page))
+ pre = 'https://www.youtube.com'
+ if (N > 1):
+
+  for itr in range (1,N):
+    continuex = re.findall('data-uix-load-more-href="(.*?)"', source)[0]
+    continuationx = pre + continuex
+    r = requests.get(continuationx, headers = headers)
+    source = r.text
+    jdata = json.loads(source)
+    source = jdata["load_more_widget_html"]
+    page = jdata["content_html"]
+  return page
+   
+ else:
+
+  return source
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BZTAwYTU4ZTUtNjRkZi00Mzc3LTk0MjUtYzQ5NGFlZWRmMjgxXkEyXkFqcGdeQXVyMjUyMTE3MTc@._V1_.jpg</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>

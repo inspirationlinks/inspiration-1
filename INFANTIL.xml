@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+
+
+
+
+
+
+
+
+=====================================================================================================================
+
+
+<item>
+<title>[B][COLOR green]|[/COLOR][COLOR gold]|[/COLOR][COLOR red]|[/COLOR][COLOR tomato] SERIES ANIME'S[/COLOR] [COLOR red]• EXTRA[/COLOR][COLOR white] [Legendado PT-BR] [/COLOR][/B]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[COLOR green]|[/COLOR][COLOR gold]|[/COLOR][COLOR red]|[/COLOR][COLOR green] [makelist.param1][/COLOR]</title>
+<link>$doregex[makelist2]</link>
+<thumbnail>[makelist.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[(?s)li id=".*?title="(.*?)".*?href="(.*?)".*?src="(.*?)"]]></expres>
+<page>http://aniplay.esy.es/</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[COLOR snow][makelist2.param2][/COLOR]</title>
+<link>[makelist2.param1]</link>
+<thumbnail>[makelist.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[(?s)boxp.*?key=(.*?)\'.*?open_box">(.*?)<.*?]]></expres>
+<page>[makelist.param2]</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://luznafisica.wdfiles.com/local--files/deleted:animes/001</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+
+
+=====================================================================================================================
+
+<item>
+<title>[B][COLOR green]|[/COLOR][COLOR gold]|[/COLOR][COLOR red]|[/COLOR][COLOR tomato] MUSICAS DA CAROCHINHA [COLOR red]• EXTRA[/COLOR][COLOR white] [Youtube PT-PT] [/COLOR][/B]</title>
+<link>$doregex[makelist2]</link>
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>page [makelist2.param1]</title>
+<link>$doregex[makelist3]</link>
+<referer></referer>
+<thumbnail></thumbnail>
+]]></listrepeat>
+<expres> (.*?),</expres>
+<page>$doregex[get-number]</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+            <name>makelist3</name>
+            <listrepeat><![CDATA[
+                        <title>[makelist3.param2]</title>
+                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist3.param1]</link>
+                        <thumbnail>https://i.ytimg.com/vi/bvLGWsA0JeA/hqdefault.jpg</thumbnail>
+                        <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
+            ]]></listrepeat>
+            <expres>spf-link " dir="ltr" href="\/watch\?v=(.*?)&amp;.*?\n(.*)</expres>
+            <page>$doregex[get-source-page]</page>
+            <cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>get-number</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='https://www.youtube.com/playlist?list=PLgEnlY7JtEwmEAcsYpe4N-JEt4puzKgO1'):
+
+ import requests
+ import re
+
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Accept-Language': 'en-US'}
+
+ rr = requests.get(url, headers=headers)
+ number = re.findall('</a></li><li>(.*?) vid', rr.text)[0]
+ #number = number.encode('unicode-escape')
+ number = number.replace(',', '')
+ real = int(float(number)) / 100
+ real2 = real + 3
+
+ liste = list(range(real2))
+ return liste
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='https://www.youtube.com/playlist?list=PLgEnlY7JtEwmEAcsYpe4N-JEt4puzKgO1'):
+
+ import requests
+ import re
+ import json
+
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0'}
+ r1 = requests.get(url, headers = headers)
+ source = r1.text
+ page = [makelist2.param1]
+ N = int(float(page))
+ pre = 'https://www.youtube.com'
+ if (N > 1):
+
+  for itr in range (1,N):
+    continuex = re.findall('data-uix-load-more-href="(.*?)"', source)[0]
+    continuationx = pre + continuex
+    r = requests.get(continuationx, headers = headers)
+    source = r.text
+    jdata = json.loads(source)
+    source = jdata["load_more_widget_html"]
+    page = jdata["content_html"]
+  return page
+   
+ else:
+
+  return source
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://i.ytimg.com/vi/bvLGWsA0JeA/hqdefault.jpg</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+
+=====================================================================================================================
+<item>
+<title>[B][COLOR green]|[/COLOR][COLOR gold]|[/COLOR][COLOR red]|[/COLOR][COLOR tomato] SERIES CANAL - BABY TV [COLOR red]•[/COLOR][COLOR white] [Youtube] [/COLOR][/B]</title>
+<link>$doregex[makelist2]</link>
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>page [makelist2.param1]</title>
+<link>$doregex[makelist3]</link>
+<referer></referer>
+<thumbnail></thumbnail>
+]]></listrepeat>
+<expres> (.*?),</expres>
+<page>$doregex[get-number]</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+            <name>makelist3</name>
+            <listrepeat><![CDATA[
+                        <title>[makelist3.param2]</title>
+                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist3.param1]</link>
+                        <thumbnail>http://www.thelogodb.com/images/media/logo/qwyswv1433940875.png</thumbnail>
+                        <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
+            ]]></listrepeat>
+            <expres>spf-link " dir="ltr" href="\/watch\?v=(.*?)&amp;.*?\n(.*)</expres>
+            <page>$doregex[get-source-page]</page>
+            <cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>get-number</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='https://www.youtube.com/playlist?list=PLgEnlY7JtEwmWyUKvjQe3zMXac8nGEc7M'):
+
+ import requests
+ import re
+
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Accept-Language': 'en-US'}
+
+ rr = requests.get(url, headers=headers)
+ number = re.findall('</a></li><li>(.*?) vid', rr.text)[0]
+ #number = number.encode('unicode-escape')
+ number = number.replace(',', '')
+ real = int(float(number)) / 100
+ real2 = real + 3
+
+ liste = list(range(real2))
+ return liste
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='https://www.youtube.com/playlist?list=PLgEnlY7JtEwmWyUKvjQe3zMXac8nGEc7M'):
+
+ import requests
+ import re
+ import json
+
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0'}
+ r1 = requests.get(url, headers = headers)
+ source = r1.text
+ page = [makelist2.param1]
+ N = int(float(page))
+ pre = 'https://www.youtube.com'
+ if (N > 1):
+
+  for itr in range (1,N):
+    continuex = re.findall('data-uix-load-more-href="(.*?)"', source)[0]
+    continuationx = pre + continuex
+    r = requests.get(continuationx, headers = headers)
+    source = r.text
+    jdata = json.loads(source)
+    source = jdata["load_more_widget_html"]
+    page = jdata["content_html"]
+  return page
+   
+ else:
+
+  return source
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://www.thelogodb.com/images/media/logo/qwyswv1433940875.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+
+=====================================================================================================================
+
+
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR aquamarine] Baby & Baby Firts TV[/COLOR] [COLOR red]•[/COLOR][COLOR white]  [/COLOR][/B]</title>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER&amp;name=Inspir@tion&amp;url=http://ghosttechuk.ddns.net:25461/live/mark%20collins/wUf0C9f8PD/738.ts|User-Agent=VLC/2.2.2 LibVLC/2.2.17</link>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER&amp;name=Inspir@tion&amp;url=http://sadatek57.dyndns.tv:8000/live/Pailaidelande/bCfzbT9oUm/4106.ts|User-Agent=VLC/2.2.2 LibVLC/2.2.17</link>
+<thumbnail>http://www.thelogodb.com/images/media/logo/qwyswv1433940875.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR aquamarine] CANAL PANDA[/COLOR] [COLOR red]•[/COLOR][COLOR white]  [/COLOR][/B]</title>
+<link>plugin://plugin.video.f4mTester/?streamtype=HLSRETRY&amp;name=Inspir@tion&amp;url=http://vmjc.dnsfor.me:8000/live/nadytek/skype/31.m3u8|User-Agent=VLC/2.2.2 LibVLC/2.2.17</link>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER&amp;name=Inspir@tion&amp;url=http://sadatek57.dyndns.tv:8000/live/Pailaidelande/bCfzbT9oUm/4229.ts|User-Agent=VLC/2.2.2 LibVLC/2.2.17</link>
+<thumbnail>http://www.thelogodb.com/images/media/logo/srpsux1433342898.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR aquamarine] PANDA BiGGS [/COLOR] [COLOR red]•[/COLOR][COLOR white]  [/COLOR][/B]</title>
+<link>plugin://plugin.video.f4mTester/?streamtype=HLSRETRY&amp;name=Inspir@tion&amp;url=http://vmjc.dnsfor.me:8000/live/nadytek/skype/32.m3u8|User-Agent=VLC/2.2.2 LibVLC/2.2.17</link>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER&amp;name=Inspir@tion&amp;url=http://hdlivetv.de:8000/live/Tomaso3/Tomaso3/20649.ts|User-Agent=VLC/2.2.2 LibVLC/2.2.17</link>
+<thumbnail>http://s32.postimg.org/6l37pawp1/Panda_Biggs.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR aquamarine] NICKELODEON[/COLOR] [COLOR red]•[/COLOR][COLOR white]  [/COLOR][/B]</title>
+<link>plugin://plugin.video.f4mTester/?streamtype=HLSRETRY&amp;name=Inspir@tion&amp;url=http://vmjc.dnsfor.me:8000/live/nadytek/skype/172.m3u8|User-Agent=VLC/2.2.2 LibVLC/2.2.17</link>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER&amp;name=Inspir@tion&amp;url=http://xtream.iptv-streamer.com:8000/live/taharportuguese/taharportuguese/1342.ts|User-Agent=VLC/2.2.2 LibVLC/2.2.17</link>
+<link>http://tv.redecanais.com:1935/redecanaisnick/myStream/playlist.m3u8</link>
+<thumbnail>http://www.thelogodb.com/images/media/logo/turwts1438374001.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR aquamarine] JIM JAM[/COLOR] [COLOR red]•[/COLOR][COLOR white]  [/COLOR][/B]</title>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER&amp;name=Inspir@tion&amp;url=http://sadatek57.dyndns.tv:8000/live/Pailaidelande/bCfzbT9oUm/4309.ts|User-Agent=VLC/2.2.2 LibVLC/2.2.17</link>
+<link>plugin://plugin.video.f4mTester/?streamtype=HLSRETRY&amp;name=Inspir@tion&amp;url=http://vmjc.dnsfor.me:8000/live/nadytek/skype/66.m3u8|User-Agent=VLC/2.2.2 LibVLC/2.2.17</link>
+<thumbnail>http://www.thelogodb.com/images/media/logo/yupwrv1435102443.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR aquamarine] DISNEY CHANNEL [/COLOR] [COLOR red]•[/COLOR][COLOR white]  [/COLOR][/B]</title>
+<link>plugin://plugin.video.f4mTester/?streamtype=HLSRETRY&amp;name=Inspir@tion&amp;url=http://vmjc.dnsfor.me:8000/live/nadytek/skype/171.m3u8|User-Agent=VLC/2.2.2 LibVLC/2.2.17</link>
+
+<link>$doregex[get-stream] playpath=disney swfUrl=http://www.tv-msn.com/player/player.swf pageUrl=http://tv-msn.com/ token=$doregex[get-token]$$lsname=[br]</link>
+<regex>
+<name>get-stream</name>
+<expres><![CDATA[streamer=(.*)&auto]]></expres>
+<page>http://tv-msn.com/master.php</page>
+<referer>http://tv-msn.com/</referer>
+</regex>
+<regex>
+<name>get-token</name>
+<expres>(.*)</expres>
+<agent>Googlebot/2.1 (+http://www.googlebot.com/bot.html)</agent>
+<page>http://pastebin.com/raw/FKLbhr0Y</page>
+</regex>
+
+<thumbnail>https://www.thelogodb.com/images/media/logo/ruywvx1435106173.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR aquamarine] DISNEY JUNIOR [/COLOR] [COLOR red]•[/COLOR][COLOR white]  [/COLOR][/B]</title>
+<link>plugin://plugin.video.f4mTester/?streamtype=HLSRETRY&amp;name=Inspir@tion&amp;url=http://vmjc.dnsfor.me:8000/live/nadytek/skype/30.m3u8|User-Agent=VLC/2.2.2 LibVLC/2.2.17</link>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER&amp;name=Inspir@tion&amp;url=http://hdlivetv.de:8000/live/Tomaso3/Tomaso3/10282.ts|User-Agent=VLC/2.2.2 LibVLC/2.2.17</link>
+<thumbnail>https://www.thelogodb.com/images/media/logo/urqpuq1433781477.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR aquamarine] CARTOON NETWORK[/COLOR] [COLOR red]•[/COLOR][COLOR white]  [/COLOR][/B]</title>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER&amp;name=Inspir@tion&amp;url=http://sadatek57.dyndns.tv:8000/live/Pailaidelande/bCfzbT9oUm/4251.ts|User-Agent=VLC/2.2.2 LibVLC/2.2.17</link>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER&amp;name=Inspir@tion&amp;url=http://hdlivetv.de:8000/live/Tomaso3/Tomaso3/10289.ts|User-Agent=VLC/2.2.2 LibVLC/2.2.17</link>
+
+<link>http://iphone-streaming.ustream.tv/uhls/19964352/streams/live/iphone/playlist.m3u8$$lsname=[USA]</link>
+<thumbnail>http://www.thelogodb.com/images/media/logo/yvruvt1433944295.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+=====================================================================================================================
+
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR aquamarine]  TOONAMI[/COLOR] [COLOR red]•[/COLOR][COLOR white] [USA][/COLOR][/B]</title>
+<link>http://adultswimhls-i.akamaihd.net/hls/live/249295-b/adultswim_6/main/1/stream_Layer4.m3u8</link>
+<thumbnail>http://s32.postimg.org/6uhiqr9c5/animetv.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR aquamarine]  CARTOON CLASSICS [/COLOR][COLOR red]•[/COLOR][COLOR white] [UK] [/COLOR][/B]</title>
+<link>rtsp://72.13.93.186/campcartoon</link>
+<thumbnail>http://www.bridgestv.com/shows_images/kids/cartoonclassic/logo.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Inspi[я]ation Links © 2017 All rights reserved
