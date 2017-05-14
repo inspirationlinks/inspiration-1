@@ -211,15 +211,10 @@
 
 
 
-=====================================================================================================================
-
-
-
-
 
 
 <item>
-<title>[B][COLOR green]•[/COLOR][COLOR darkorange]•[/COLOR][COLOR navy]•[/COLOR][COLOR lavenderblush] Sp[COLOR gold]o[/COLOR]rt TV [COLOR gold]+[/B][/COLOR][COLOR springgreen] (f4m|Plexus) [/COLOR]</title>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] SP[COLOR gold]O[/COLOR]RT [COLOR gold]•[/COLOR] TV [COLOR gold]+[/B][/COLOR][COLOR springgreen] (f4m|sportdevil) [/COLOR]</title>
 
 <link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://iptvsbh.ddns.net:8003/live/moreira/moreira/1520.ts</link>
 <link>plugin://plugin.video.f4mTester/?streamtype=HLSRETRY;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://iptvsensation.ddns.net:6500/live/James1/zkdZbEUp2X/15368.m3u8</link>
@@ -238,30 +233,19 @@
 
 
 
-
-<item>
-<title>[B][COLOR green]•[/COLOR][COLOR darkorange]•[/COLOR][COLOR navy]•[/COLOR][COLOR lavenderblush] Sp[COLOR gold]o[/COLOR]rt TV [COLOR gold]1[/B][/COLOR][COLOR springgreen] [/COLOR]</title>
-<link>$doregex[getLink]|Cookie=$get_cookies$&amp;User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0</link>
-<regex>
-<name>getLink</name>
-<expres>videoLink = '(.*?)'</expres>
-<page>http://www.livesport.pw/Sport1PT.html</page>
-<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0</agent>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>https://sck.pm/Hw</thumbnail>
-<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
-
 <item>
 <title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] SP[COLOR gold]O[/COLOR]RT [COLOR gold]•[/COLOR] TV [COLOR gold]1[/B][/COLOR][COLOR springgreen] (f4m|sportdevil) [/COLOR]</title>
 <link>http://85.7.107.8:8011/play/a016</link>
 <link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://vip6.ddns.net:8000/live/redmosiptv/redmos40ch/1912.ts</link>
-<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://109.236.90.101:8000/live/ZLS0QMxatlrteam/ZLS0QXmtarletam/252.ts</link>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://grouprevelation.com:8000/live/Suarez/Suarez/5648.ts</link>
 <link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://alphatwo.ddns.net:8000/live/shaun/shaun/415.ts</link>
-<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://sutverduz.com:8080/live/miki/miki/2989.ts</link>
+
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://livesports.pw/embed.php?file=torotv</link>
+
 
 <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://sharecast.eu/embed/live1-rbi6c</link>
 <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://www.dailydeportes.pw/no/stream17.html</link>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://www.livesport.pw/Sport1PT.html</link>
 
 <thumbnail>https://sck.pm/Hw</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
@@ -274,34 +258,11 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 <item>
-<title>[B][COLOR green]•[/COLOR][COLOR darkorange]•[/COLOR][COLOR navy]•[/COLOR][COLOR lavenderblush] Sp[COLOR gold]o[/COLOR]rt TV [COLOR gold]2[/B][/COLOR][COLOR springgreen] [/COLOR]</title>
-<link>$doregex[getLink]|Cookie=$get_cookies$&amp;User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0</link>
-<regex>
-<name>getLink</name>
-<expres>videoLink = '(.*?)'</expres>
-<page>http://www.livesport.pw/Sport2PT.html</page>
-<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0</agent>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>https://sck.pm/58</thumbnail>
-<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] SP[COLOR gold]O[/COLOR]RT [COLOR gold]•[/COLOR] TV [COLOR gold]2[/B][/COLOR][COLOR springgreen] (f4m|sportdevil) [/COLOR]</title>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://grouprevelation.com:8000/live/Suarez/Suarez/5646.ts</link>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://vip6.ddns.net:8000/live/redmosiptv/redmos40ch/1913.ts</link>
 
-
-
-<item>
-<title>[B][COLOR green]•[/COLOR][COLOR darkorange]•[/COLOR][COLOR navy]•[/COLOR][COLOR lavenderblush] Sp[COLOR gold]o[/COLOR]rt TV [COLOR gold]2[/B][/COLOR][COLOR springgreen] (f4m|sportdevil) [/COLOR]</title>
-<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://109.236.90.101:8000/live/ZLS0QMxatlrteam/ZLS0QXmtarletam/253.ts</link>
 <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://sharecast.eu/embed/live2-bipmr&type=p2p</link>
 <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://sharecast.eu/embed/wfeae2-3ltjw&type=p2p</link>
 <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://www.liveonlinetv247.info/embed/sporttv2.php</link>
@@ -315,54 +276,21 @@
 
 
 
-
-
-
-
-
-
-
 <item>
-<title>[B][COLOR green]•[/COLOR][COLOR darkorange]•[/COLOR][COLOR navy]•[/COLOR][COLOR lavenderblush] Sp[COLOR gold]o[/COLOR]rt TV [COLOR gold]3[/B][/COLOR][COLOR springgreen] [/COLOR]</title>
-<link>$doregex[getLink]|Cookie=$get_cookies$&amp;User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0</link>
-<regex>
-<name>getLink</name>
-<expres>videoLink = '(.*?)'</expres>
-<page>http://www.livesport.pw/Sport3PT.html</page>
-<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0</agent>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>https://sck.pm/9M</thumbnail>
-<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
-
-
-<item>
-<title>[B][COLOR green]•[/COLOR][COLOR darkorange]•[/COLOR][COLOR navy]•[/COLOR][COLOR lavenderblush] Sp[COLOR gold]o[/COLOR]rt TV [COLOR gold]3[/B][/COLOR][COLOR springgreen] (f4m|Plexus) [/COLOR]</title>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] SP[COLOR gold]O[/COLOR]RT [COLOR gold]•[/COLOR] TV [COLOR gold]3[/B][/COLOR][COLOR springgreen] (f4m|sportdevil) [/COLOR]</title>
 <link>http://85.7.107.8:8011/play/a010</link>
-<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://109.236.90.101:8000/live/ZLS0QMxatlrteam/ZLS0QXmtarletam/254.ts</link>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://vip6.ddns.net:8000/live/redmosiptv/redmos40ch/1915.ts</link>
 <link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://alphatwo.ddns.net:8000/live/belle/belle/417.ts</link>
 <link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://sutverduz.com:8080/live/miki/miki/2991.ts</link>
+
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://sharecast.eu/embed/live3-qszlx</link>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://www.liveonlinetv247.info/embed/sporttv3.php</link>
 
 <link>plugin://program.plexus/?url=&amp;mode=1&amp;name=Sporttv3</link>
 
 <thumbnail>https://sck.pm/9M</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
 
-<item>
-<title>[B][COLOR green]•[/COLOR][COLOR darkorange]•[/COLOR][COLOR navy]•[/COLOR][COLOR lavenderblush] Sp[COLOR gold]o[/COLOR]rt TV [COLOR gold]3[/B][COLOR springgreen] (sportdevil) [/COLOR]</title>
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://sharecast.eu/embed/live3-qszlx</link>
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://www.liveonlinetv247.info/embed/sporttv3.php</link>
-<thumbnail>https://sck.pm/9M</thumbnail>
-<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
-
-
-
-
-
-
-
-
-
 
 
 
@@ -373,15 +301,9 @@
 
 
 <item>
-<title>[B][COLOR green]•[/COLOR][COLOR darkorange]•[/COLOR][COLOR navy]•[/COLOR][COLOR lavenderblush] Sp[COLOR gold]o[/COLOR]rt TV [COLOR gold]4[/B][/COLOR][COLOR springgreen] [/COLOR]</title>
-<link>$doregex[getLink]|Cookie=$get_cookies$&amp;User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0</link>
-<regex>
-<name>getLink</name>
-<expres>videoLink = '(.*?)'</expres>
-<page>http://www.livesport.pw/Sport4PT.html</page>
-<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0</agent>
-<cookieJar></cookieJar>
-</regex>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] SP[COLOR gold]O[/COLOR]RT [COLOR gold]•[/COLOR] TV [COLOR gold]4[/B][/COLOR][COLOR springgreen] (f4m|sportdevil) [/COLOR]</title>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://www.livesport.pw/Sport4PT.html</link>
+
 <thumbnail>https://sck.pm/aAr</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
 
@@ -392,49 +314,21 @@
 
 
 
-
-
-
-
-=====================================================================================================================
-
-
-
-
-
-
-
 <item>
-<title>[B][COLOR green]•[/COLOR][COLOR darkorange]•[/COLOR][COLOR navy]•[/COLOR][COLOR lavenderblush] Sp[COLOR gold]o[/COLOR]rt TV [COLOR gold]5[/B][/COLOR][COLOR springgreen] [/COLOR]</title>
-<link>$doregex[getLink]|Cookie=$get_cookies$&amp;User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0</link>
-<regex>
-<name>getLink</name>
-<expres>videoLink = '(.*?)'</expres>
-<page>http://www.livesport.pw/Sport5PT.html</page>
-<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0</agent>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>https://sck.pm/aAr</thumbnail>
-<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] SP[COLOR gold]O[/COLOR]RT [COLOR gold]•[/COLOR] TV [COLOR gold]5[/B][/COLOR][COLOR springgreen] (f4m|sportdevil) [/COLOR]</title>
 
-<item>
-<title>[B][COLOR green]•[/COLOR][COLOR darkorange]•[/COLOR][COLOR navy]•[/COLOR][COLOR lavenderblush] Sp[COLOR gold]o[/COLOR]rt TV [COLOR gold]5[/B][/COLOR][COLOR springgreen]  [/COLOR]</title>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://grouprevelation.com:8000/live/Suarez/Suarez/5637.ts</link>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://vip6.ddns.net:8000/live/redmosiptv/redmos40ch/1914.ts</link>
 
-<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://151.80.35.29:25461/live/portugal/portugal/441.ts</link>
-<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://109.236.90.101:8000/live/ZLS0QMxatlrteam/ZLS0QXmtarletam/256.ts</link>
-<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://sutverduz.com:8080/live/miki/miki/3087.ts</link>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://sharecast.eu/embed/live4-w04by&type=p2p</link>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://www.livesport.pw/Sport5PT.html</link>
 
 <link>plugin://program.plexus/?url=&amp;mode=1&amp;name=Sporttv5</link>
 
 <thumbnail>https://sck.pm/aAr</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
 
-<item>
-<title>[B][COLOR green]•[/COLOR][COLOR darkorange]•[/COLOR][COLOR navy]•[/COLOR][COLOR lavenderblush] Sp[COLOR gold]o[/COLOR]rt TV [COLOR gold]5[/B][/COLOR][COLOR springgreen] (sportdevil) [/COLOR]</title>
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://sharecast.eu/embed/live4-w04by&type=p2p</link>
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://www.liveonlinetv247.info/embed/sporttv5.php</link>
-<thumbnail>https://sck.pm/aAr</thumbnail>
-<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
 
 
 
@@ -451,19 +345,14 @@
 <item>
 <title>[B][COLOR green]•[/COLOR][COLOR darkorange]•[/COLOR][COLOR navy]•[/COLOR][COLOR red] B[/COLOR]tv1[/B][COLOR springgreen] (f4m) [/COLOR]</title>
 
-<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://151.80.35.29:25461/live/portugal/portugal/435.ts</link>
-<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://217.182.192.199:25461/live/may7/20177/278.ts</link>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://grouprevelation.com:8000/live/Suarez/Suarez/5630.ts</link>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://alphatwo.ddns.net:8000/live/shaun/shaun/420.ts</link>
 <link>plugin://plugin.video.f4mTester/?streamtype=HLSRETRY;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://iptvsensation.ddns.net:6500/live/James1/zkdZbEUp2X/7742.m3u8</link>
 
-<thumbnail>https://www.thelogodb.com/images/media/logo/yxyxqp1437951545.png</thumbnail>
-<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
-
-<item>
-<title>[B][COLOR green]•[/COLOR][COLOR darkorange]•[/COLOR][COLOR navy]•[/COLOR][COLOR red] B[/COLOR]tv1[/B][COLOR springgreen] (sportdevil) [/COLOR]</title>
 <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://sharecast.eu/embed/btv-md504</link>
+
 <thumbnail>https://www.thelogodb.com/images/media/logo/yxyxqp1437951545.png</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
-
 
 
 
