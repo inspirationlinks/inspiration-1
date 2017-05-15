@@ -21,6 +21,13 @@
 =======================================================!P=======================================================
 
 
+
+
+
+
+
+
+
 <item>
 <title>[COLOR white][B][COLOR red]•[/COLOR] [COLOR red]"[/COLOR]!p[COLOR red]"[/COLOR] [COLOR red] PORTUGAL [/B][/COLOR]</title>
 <link>http://vai.trab.pedro.dos.TVsupertuga</link>
@@ -207,7 +214,7 @@
 <item>
 <title>[B][COLOR springgreen]•[/COLOR][COLOR navy]•[/COLOR][COLOR red]•[/COLOR][COLOR lavenderblush] SIC Noticias [COLOR red]•[/COLOR][COLOR white]  [/COLOR][/B]</title>
 <link>http://live.impresa.pt/live/sicnot/sicnot540p.m3u8</link>
-<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER&amp;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://sutverduz.com:8080/live/miki/miki/2807.ts</link>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER&amp;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://tvonline.webhop.net:19500/live/manu123/manu123/8823.ts</link>
 <thumbnail>http://www.thelogodb.com/images/media/logo/wtpyqt1436899156.png</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg/fanart></item>
 
@@ -244,6 +251,9 @@
 <link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER&amp;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://ns3004967.ip-151-80-35.eu:25461/live/toni/toni/1469.ts</link>
 <thumbnail>http://www.thelogodb.com/images/media/logo/vuxyry1436891832.png</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
 
 
 
@@ -968,7 +978,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <title>[B][COLOR springgreen]•[/COLOR][COLOR navy]•[/COLOR][COLOR red]•[/COLOR][COLOR lavenderblush] Fox Crime [COLOR red]•[/B][COLOR springgreen] [/COLOR]</title>
-<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://sutverduz.com:8080/live/miki/miki/3099.ts</link>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://megath.pw:8000/live/Martins/Martins/2178.ts</link>
 
 <thumbnail>http://s32.postimg.org/p9ioqj7yd/fox_crime.png</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
@@ -1142,7 +1152,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <title>[B][COLOR springgreen]•[/COLOR][COLOR navy]•[/COLOR][COLOR red]•[/COLOR][COLOR lavenderblush] Baby & Baby Firts TV[/COLOR] [COLOR red]•[/COLOR][COLOR white]  [/COLOR][/B]</title>
 <link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER&amp;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://ghosttechuk.ddns.net:25461/live/mark%20collins/wUf0C9f8PD/738.ts|User-Agent=VLC/2.2.2 LibVLC/2.2.17</link>
-<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER&amp;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://sadatek57.dyndns.tv:8000/live/Pailaidelande/bCfzbT9oUm/4106.ts|User-Agent=VLC/2.2.2 LibVLC/2.2.17</link>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER&amp;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://tvonline.webhop.net:19500/live/manu123/manu123/5535.ts</link>
 <thumbnail>http://www.thelogodb.com/images/media/logo/qwyswv1433940875.png</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
 
@@ -1155,7 +1165,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <title>[B][COLOR springgreen]•[/COLOR][COLOR navy]•[/COLOR][COLOR red]•[/COLOR][COLOR lavenderblush] PANDA BiGGS [/COLOR] [COLOR red]•[/COLOR][COLOR white]  [/COLOR][/B]</title>
-<link>http://ns2.mluso.com:88/live/RES00283/211015e5dv/43.mpegts</link>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER&amp;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://tvonline.webhop.net:19500/live/manu123/manu123/2488.ts</link>
+
 <thumbnail>http://s32.postimg.org/6l37pawp1/Panda_Biggs.png</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
 
@@ -1171,7 +1182,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <title>[B][COLOR springgreen]•[/COLOR][COLOR navy]•[/COLOR][COLOR red]•[/COLOR][COLOR lavenderblush] JIM JAM[/COLOR] [COLOR red]•[/COLOR][COLOR white]  [/COLOR][/B]</title>
 
-<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER&amp;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://europaiptv.net:8000/live/ZFFiQjNL3X/K42ldjiwGY/4303.ts</link>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER&amp;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://tvonline.webhop.net:19500/live/manu123/manu123/2486.ts</link>
 <thumbnail>http://www.thelogodb.com/images/media/logo/yupwrv1435102443.png</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
 
@@ -1248,6 +1259,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+
+
+
+
+
 =======================================================!P=======================================================
 <item>
 <title>[B][COLOR blue]==[COLOR navy]vv[COLOR blue]==[COLOR white] MUSICA [/COLOR][COLOR blue]==[COLOR navy]vv[COLOR blue]==[/COLOR][/B]</title> 
@@ -1272,7 +1288,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[B][COLOR springgreen]•[/COLOR][COLOR navy]•[/COLOR][COLOR red]•[/COLOR][COLOR lavenderblush] MC Music Choice [COLOR red]• [/B][/COLOR]</title>
+<title>[B][COLOR springgreen]•[/COLOR][COLOR navy]•[/COLOR][COLOR red]•[/COLOR][COLOR lavenderblush] MC Music Choice [COLOR red]• OFF[/B][/COLOR]</title>
 <link>http://fui.me</link>
 <externallink>https://pastebin.com/raw/bikKQBRz</externallink>
 <thumbnail>https://upload.wikimedia.org/wikipedia/en/c/c6/Muf4mTester| Sic_Choice_logo.png</thumbnail>
@@ -1357,6 +1373,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+
+
+
+
+
 =======================================================!P=======================================================
 <item>
 <title>[B][COLOR blue]==[COLOR navy]vv[COLOR blue]==[COLOR white] INFORMAÇAO [/COLOR][COLOR blue]==[COLOR navy]vv[COLOR blue]==[/COLOR][/B]</title> 
@@ -1397,7 +1418,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>                        
 <title>[B][COLOR springgreen]•[/COLOR][COLOR navy]•[/COLOR][COLOR red]•[/COLOR][COLOR lavenderblush] Tv Record News [COLOR red]•[/B][COLOR springgreen] [/COLOR]</title>
-<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://zialcobra.dyndns.org:8000/live/tello/tello/291.ts?Record</link>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://megath.pw:8000/live/Martins/Martins/2269.ts</link>
 
 <link>http://streaming57.sitehosting.com.br:1935/redesim/redesim/playlist.m3u8?Record#1</link>
 <link>http://v1.fabricahost.com.br:1935/tvguara/tvguara/playlist.m3u8?record#2</link>
@@ -1528,6 +1549,28 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>http://www.metafilegenerator.de/DWelle/tv-latinoamerica/ios/master.m3u8</link>
 <thumbnail>https://www.thelogodb.com/images/media/logo/wtqyxv1444822994.png</thumbnail>                       
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
