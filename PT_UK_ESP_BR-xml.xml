@@ -13,6 +13,37 @@
 
 
 
+=======================================================!P=======================================================<item>
+<title>[B][COLOR blue]==[COLOR navy]vv[COLOR blue]==[COLOR white] lISTAS PT [/COLOR][COLOR blue]==[COLOR navy]vv[COLOR blue]==[/COLOR][/B]</title> 
+<link>http://fui.me</link>
+<thumbnail>http://upimagens.com/di/2QB1/logoinspiration.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+=======================================================!P=======================================================
+
+
+
+
+
+
+
+
+
+<item>
+<title>[COLOR white][B][COLOR red]•[/COLOR] [COLOR red]"[/COLOR]!p[COLOR red]"[/COLOR] [COLOR red] PORTUGAL [/B][/COLOR]</title>
+<link>http://vai.trab.pedro.dos.TVsupertuga</link>
+<externallink>https://raw.githubusercontent.com/fghjgb/inspiration/master/PORTUGAL?token=AVdRuKZA6IxYvJsi-ODAtT_qhCV1QcKFks5ZIJ4WwA%3D%3D</externallink>
+<thumbnail>https://upimagens.com/di/SR8F/inspirationlivetv.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[COLOR white][B][COLOR red]•[/COLOR] [COLOR red]"[/COLOR]!p[COLOR red]"[/COLOR] [COLOR red] PORTUGAL [/B][/COLOR]2</title>
+<link>http://vai.trab.pedro.TVsupertuga</link>
+<externallink>https://pastebin.com/raw/NufA3Aiz</externallink>
+<thumbnail>https://upimagens.com/di/SR8F/inspirationlivetv.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
 
 
 
@@ -420,7 +451,7 @@
 
 <item>
 <title>[B][COLOR springgreen]•[/COLOR][COLOR navy]•[/COLOR][COLOR red]•[/COLOR][COLOR lavenderblush] Canal Q [COLOR red]•[/B][COLOR springgreen] [/COLOR]</title> 
-<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=</link>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://tvonline.webhop.net:19500/live/manu123/manu123/5523.ts</link>
 
 <thumbnail>https://www.thelogodb.com/images/media/logo/wpqqwq1436891473.png</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
@@ -428,31 +459,8 @@
 
 
 <item>
-<title>[B][COLOR springgreen]•[/COLOR][COLOR navy]•[/COLOR][COLOR red]•[/COLOR][COLOR lavenderblush] Globo SP [COLOR red]•[/B][COLOR springgreen] [/COLOR]</title>  
-
-<link>$doregex[getUrl]</link>
-<regex>
-<name>getUrl</name>
-<expres><![CDATA[#$pyFunction
-import requests, re, urllib2
-def GetLSProData(page_data,Cookie_Jar,m):
-  html = re.findall('src="(.*embed/.*?)"', page_data)[0]
-  source = requests.get(html, headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; rv:36.0) Gecko/20100101 Firefox/36.04', 'Referer': 'http://ekostreams.co/ch/sportvhd.php', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}).text
-  link = re.findall('"(h.*?m3u8)"', source)[0]
-  location = urllib2.urlopen(link)
-  return location.geturl()
-]]></expres>
-<page>http://ekostreams.co/ch/bobo.php</page>
-<referer>http://ekostreams.co/</referer>
-<cookieJar></cookieJar>
-</regex>
-</item>
-<thumbnail>https://www.thelogodb.com/images/media/logo/vqxxxt1436898683.png</thumbnail>
-<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
-
-<item>
 <title>[B][COLOR springgreen]•[/COLOR][COLOR navy]•[/COLOR][COLOR red]•[/COLOR][COLOR lavenderblush] Tv Globo Premium [COLOR red]•[/B][COLOR springgreen] [/COLOR]</title>  
-<link>http://4.31.30.145:9202$$lsname=[COLOR gold]Globo[/COLOR]</link>
+<link>http://4.31.30.145:9202</link>
 <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://ekostreams.co/ch/bobo.php?width=640&height=360</link>
 
 <link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER&amp;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://iptvsensation.ddns.net:6500/live/James1/zkdZbEUp2X/7818.ts</link>
@@ -521,7 +529,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <title>[B][COLOR springgreen]•[/COLOR][COLOR navy]•[/COLOR][COLOR red]•[/COLOR][COLOR lavenderblush] Cuatro [/COLOR][COLOR red]•[/COLOR][COLOR white] [/COLOR][/B]</title>
 
 <link>http://149.100.19.147:8000/play/a01n$$lsname=[COLOR green]cuatro[/COLOR]</link>
-<link>http://mediasethls-lh.akamaihd.net/i/mitele/cuatro_ng@393134/master.m3u8?hdnea=st=1492038095~exp=1492038395~acl=/i/mitele/cuatro_ng@393134/*~hmac=c41656c918f8f1946e75f316710595a8a936e63a8d550f5b4d93d762c0bca673$$lsname=Cuatro</link>
 <link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR];iconImage=http://sck.pm/SL;url=http://gtv.tn:8000/live/Julesmwamba2001@yahoo.fr/Julesmwamba2001@yahoo.fr/846.ts</link>
 
 <thumbnail>https://www.thelogodb.com/images/media/logo/ytxpvr1441657870.png</thumbnail>
@@ -600,6 +607,131 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+
+
+
+
+
+
+
+
+=======================================================!P=======================================================
+<item>
+<title>[B][COLOR blue]==[COLOR navy]vv[COLOR blue]==[COLOR white] INFANTIL [/COLOR][COLOR blue]==[COLOR navy]vv[COLOR blue]==[/COLOR][/B]</title> 
+<link>http://fui.me</link>
+<thumbnail>http://upimagens.com/di/2QB1/logoinspiration.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+=======================================================!P=======================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B][COLOR springgreen]•[/COLOR][COLOR navy]•[/COLOR][COLOR red]•[/COLOR][COLOR lavenderblush] Baby & Baby Firts TV[/COLOR] [COLOR red]•[/COLOR][COLOR white]  [/COLOR][/B]</title>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER&amp;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://ghosttechuk.ddns.net:25461/live/mark%20collins/wUf0C9f8PD/738.ts|User-Agent=VLC/2.2.2 LibVLC/2.2.17</link>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER&amp;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://tvonline.webhop.net:19500/live/manu123/manu123/5535.ts</link>
+<thumbnail>http://www.thelogodb.com/images/media/logo/qwyswv1433940875.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+<item>
+<title>[B][COLOR springgreen]•[/COLOR][COLOR navy]•[/COLOR][COLOR red]•[/COLOR][COLOR lavenderblush] CANAL PANDA[/COLOR] [COLOR red]•[/COLOR][COLOR white]  [/COLOR][/B]</title>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER&amp;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://ksportiptv.com:1557/live/metti/metti/3000.ts</link>
+<thumbnail>http://www.thelogodb.com/images/media/logo/srpsux1433342898.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+<item>
+<title>[B][COLOR springgreen]•[/COLOR][COLOR navy]•[/COLOR][COLOR red]•[/COLOR][COLOR lavenderblush] PANDA BiGGS [/COLOR] [COLOR red]•[/COLOR][COLOR white]  [/COLOR][/B]</title>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER&amp;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://tvonline.webhop.net:19500/live/manu123/manu123/2488.ts</link>
+
+<thumbnail>http://s32.postimg.org/6l37pawp1/Panda_Biggs.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+<item>
+<title>[B][COLOR springgreen]•[/COLOR][COLOR navy]•[/COLOR][COLOR red]•[/COLOR][COLOR lavenderblush] NICKELODEON[/COLOR] [COLOR red]•[/COLOR][COLOR white]  [/COLOR][/B]</title>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER&amp;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://ghosttechuk.ddns.net:25461/live/mark%20collins/wUf0C9f8PD/555.ts</link>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER&amp;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://grouprevelation.com:8000/live/Suarez/Suarez/5528.ts</link>
+<link>http://tv.redecanais.com:1935/redecanaisnick/myStream/playlist.m3u8</link>
+<thumbnail>http://www.thelogodb.com/images/media/logo/turwts1438374001.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+<item>
+<title>[B][COLOR springgreen]•[/COLOR][COLOR navy]•[/COLOR][COLOR red]•[/COLOR][COLOR lavenderblush] JIM JAM[/COLOR] [COLOR red]•[/COLOR][COLOR white]  [/COLOR][/B]</title>
+
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER&amp;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://tvonline.webhop.net:19500/live/manu123/manu123/2486.ts</link>
+<thumbnail>http://www.thelogodb.com/images/media/logo/yupwrv1435102443.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[B][COLOR springgreen]•[/COLOR][COLOR navy]•[/COLOR][COLOR red]•[/COLOR][COLOR lavenderblush] DISNEY CHANNEL [/COLOR] [COLOR red]•[/COLOR][COLOR white]  [/COLOR][/B]</title>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER&amp;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://ghosttechuk.ddns.net:25461/live/mark%20collins/wUf0C9f8PD/658.ts</link>
+
+<link>$doregex[get-stream] playpath=disney swfUrl=http://www.tv-msn.com/player/player.swf pageUrl=http://tv-msn.com/ token=$doregex[get-token]$$lsname=[br]</link>
+<regex>
+<name>get-stream</name>
+<expres><![CDATA[streamer=(.*)&auto]]></expres>
+<page>http://tv-msn.com/master.php</page>
+<referer>http://tv-msn.com/</referer>
+</regex>
+<regex>
+<name>get-token</name>
+<expres>(.*)</expres>
+<agent>Googlebot/2.1 (+http://www.googlebot.com/bot.html)</agent>
+<page>http://pastebin.com/raw/FKLbhr0Y</page>
+</regex>
+
+<thumbnail>https://www.thelogodb.com/images/media/logo/ruywvx1435106173.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+<item>
+<title>[B][COLOR springgreen]•[/COLOR][COLOR navy]•[/COLOR][COLOR red]•[/COLOR][COLOR lavenderblush] DISNEY JUNIOR [/COLOR] [COLOR red]•[/COLOR][COLOR white]  [/COLOR][/B]</title>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER&amp;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://ghosttechuk.ddns.net:25461/live/mark%20collins/wUf0C9f8PD/656.ts</link>
+<thumbnail>https://www.thelogodb.com/images/media/logo/urqpuq1433781477.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[B][COLOR springgreen]•[/COLOR][COLOR navy]•[/COLOR][COLOR red]•[/COLOR][COLOR lavenderblush] CARTOON NETWORK[/COLOR] [COLOR red]•[/COLOR][COLOR white]  [/COLOR][/B]</title>
+<link>http://ns2.mluso.com:88/live/RES00283/211015e5dv/47.mpegts</link>
+
+<link>http://iphone-streaming.ustream.tv/uhls/19964352/streams/live/iphone/playlist.m3u8$$lsname=[USA]</link>
+<thumbnail>http://www.thelogodb.com/images/media/logo/yvruvt1433944295.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+
+
+
+<item>
+<title>[B][COLOR springgreen]•[/COLOR][COLOR navy]•[/COLOR][COLOR red]•[/COLOR][COLOR lavenderblush]  TOONAMI[/COLOR] [COLOR red]•[/COLOR][COLOR white] [USA][/COLOR][/B]</title>
+<link>http://adultswimhls-i.akamaihd.net/hls/live/249295-b/adultswim_6/main/1/stream_Layer4.m3u8</link>
+<thumbnail>http://s32.postimg.org/6uhiqr9c5/animetv.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+<item>
+<title>[B][COLOR springgreen]•[/COLOR][COLOR navy]•[/COLOR][COLOR red]•[/COLOR][COLOR lavenderblush]  CARTOON CLASSICS [/COLOR][COLOR red]•[/COLOR][COLOR white] [UK] [/COLOR][/B]</title>
+<link>rtsp://72.13.93.186/campcartoon</link>
+<thumbnail>http://www.bridgestv.com/shows_images/kids/cartoonclassic/logo.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
 
 
 
@@ -723,7 +855,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>                        
 <title>[B][COLOR springgreen]•[/COLOR][COLOR navy]•[/COLOR][COLOR red]•[/COLOR][COLOR lavenderblush] ID [/B][COLOR springgreen] [f4m|sportdevil] [/COLOR]</title>
-<link>http://5.255.90.223:3000/play/a02o</link>
+
 <link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://ghosttechuk.ddns.net:25461/live/mark%20collins/wUf0C9f8PD/1093.ts</link>
 
 <thumbnail>https://www.thelogodb.com/images/media/logo/qvstqx1433944467.png</thumbnail>                       
@@ -732,7 +864,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>                        
 <title>[B][COLOR springgreen]•[/COLOR][COLOR navy]•[/COLOR][COLOR red]•[/COLOR][COLOR lavenderblush] Crime Investigation [COLOR red]•[/COLOR][COLOR navy][/COLOR][/B]</title>
-<link>http://89.29.203.196:9090/play/a03k</link>
 
 <link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://ghosttechuk.ddns.net:25461/live/mark%20collins/wUf0C9f8PD/671.ts</link>
 <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://cdn1.elitegol.xyz/verliga/22/index.m3u8</link>
@@ -1055,163 +1186,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://www.thelogodb.com/images/media/logo/vxxpqu1469457118.png</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-=======================================================!P=======================================================
-<item>
-<title>[B][COLOR blue]==[COLOR navy]vv[COLOR blue]==[COLOR white] INFANTIL [/COLOR][COLOR blue]==[COLOR navy]vv[COLOR blue]==[/COLOR][/B]</title> 
-<link>http://fui.me</link>
-<thumbnail>http://upimagens.com/di/2QB1/logoinspiration.png</thumbnail>
-<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
-=======================================================!P=======================================================
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<item>
-<title>[B][COLOR springgreen]•[/COLOR][COLOR navy]•[/COLOR][COLOR red]•[/COLOR][COLOR lavenderblush] Baby & Baby Firts TV[/COLOR] [COLOR red]•[/COLOR][COLOR white]  [/COLOR][/B]</title>
-<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER&amp;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://ghosttechuk.ddns.net:25461/live/mark%20collins/wUf0C9f8PD/738.ts|User-Agent=VLC/2.2.2 LibVLC/2.2.17</link>
-<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER&amp;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://tvonline.webhop.net:19500/live/manu123/manu123/5535.ts</link>
-<thumbnail>http://www.thelogodb.com/images/media/logo/qwyswv1433940875.png</thumbnail>
-<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
-
-
-<item>
-<title>[B][COLOR springgreen]•[/COLOR][COLOR navy]•[/COLOR][COLOR red]•[/COLOR][COLOR lavenderblush] CANAL PANDA[/COLOR] [COLOR red]•[/COLOR][COLOR white]  [/COLOR][/B]</title>
-<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER&amp;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://ksportiptv.com:1557/live/metti/metti/3000.ts</link>
-<thumbnail>http://www.thelogodb.com/images/media/logo/srpsux1433342898.png</thumbnail>
-<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
-
-<item>
-<title>[B][COLOR springgreen]•[/COLOR][COLOR navy]•[/COLOR][COLOR red]•[/COLOR][COLOR lavenderblush] PANDA BiGGS [/COLOR] [COLOR red]•[/COLOR][COLOR white]  [/COLOR][/B]</title>
-<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER&amp;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://tvonline.webhop.net:19500/live/manu123/manu123/2488.ts</link>
-
-<thumbnail>http://s32.postimg.org/6l37pawp1/Panda_Biggs.png</thumbnail>
-<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
-
-<item>
-<title>[B][COLOR springgreen]•[/COLOR][COLOR navy]•[/COLOR][COLOR red]•[/COLOR][COLOR lavenderblush] NICKELODEON[/COLOR] [COLOR red]•[/COLOR][COLOR white]  [/COLOR][/B]</title>
-<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER&amp;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://ghosttechuk.ddns.net:25461/live/mark%20collins/wUf0C9f8PD/555.ts</link>
-<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER&amp;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://grouprevelation.com:8000/live/Suarez/Suarez/5528.ts</link>
-<link>http://tv.redecanais.com:1935/redecanaisnick/myStream/playlist.m3u8</link>
-<thumbnail>http://www.thelogodb.com/images/media/logo/turwts1438374001.png</thumbnail>
-<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
-
-
-<item>
-<title>[B][COLOR springgreen]•[/COLOR][COLOR navy]•[/COLOR][COLOR red]•[/COLOR][COLOR lavenderblush] JIM JAM[/COLOR] [COLOR red]•[/COLOR][COLOR white]  [/COLOR][/B]</title>
-
-<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER&amp;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://tvonline.webhop.net:19500/live/manu123/manu123/2486.ts</link>
-<thumbnail>http://www.thelogodb.com/images/media/logo/yupwrv1435102443.png</thumbnail>
-<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
-
-
-
-<item>
-<title>[B][COLOR springgreen]•[/COLOR][COLOR navy]•[/COLOR][COLOR red]•[/COLOR][COLOR lavenderblush] DISNEY CHANNEL [/COLOR] [COLOR red]•[/COLOR][COLOR white]  [/COLOR][/B]</title>
-<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER&amp;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://ghosttechuk.ddns.net:25461/live/mark%20collins/wUf0C9f8PD/658.ts</link>
-
-<link>$doregex[get-stream] playpath=disney swfUrl=http://www.tv-msn.com/player/player.swf pageUrl=http://tv-msn.com/ token=$doregex[get-token]$$lsname=[br]</link>
-<regex>
-<name>get-stream</name>
-<expres><![CDATA[streamer=(.*)&auto]]></expres>
-<page>http://tv-msn.com/master.php</page>
-<referer>http://tv-msn.com/</referer>
-</regex>
-<regex>
-<name>get-token</name>
-<expres>(.*)</expres>
-<agent>Googlebot/2.1 (+http://www.googlebot.com/bot.html)</agent>
-<page>http://pastebin.com/raw/FKLbhr0Y</page>
-</regex>
-
-<thumbnail>https://www.thelogodb.com/images/media/logo/ruywvx1435106173.png</thumbnail>
-<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
-
-
-<item>
-<title>[B][COLOR springgreen]•[/COLOR][COLOR navy]•[/COLOR][COLOR red]•[/COLOR][COLOR lavenderblush] DISNEY JUNIOR [/COLOR] [COLOR red]•[/COLOR][COLOR white]  [/COLOR][/B]</title>
-<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER&amp;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://ghosttechuk.ddns.net:25461/live/mark%20collins/wUf0C9f8PD/656.ts</link>
-<thumbnail>https://www.thelogodb.com/images/media/logo/urqpuq1433781477.png</thumbnail>
-<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
-
-
-
-<item>
-<title>[B][COLOR springgreen]•[/COLOR][COLOR navy]•[/COLOR][COLOR red]•[/COLOR][COLOR lavenderblush] CARTOON NETWORK[/COLOR] [COLOR red]•[/COLOR][COLOR white]  [/COLOR][/B]</title>
-<link>http://ns2.mluso.com:88/live/RES00283/211015e5dv/47.mpegts</link>
-
-<link>http://iphone-streaming.ustream.tv/uhls/19964352/streams/live/iphone/playlist.m3u8$$lsname=[USA]</link>
-<thumbnail>http://www.thelogodb.com/images/media/logo/yvruvt1433944295.png</thumbnail>
-<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
-
-
-
-
-
-
-<item>
-<title>[B][COLOR springgreen]•[/COLOR][COLOR navy]•[/COLOR][COLOR red]•[/COLOR][COLOR lavenderblush]  TOONAMI[/COLOR] [COLOR red]•[/COLOR][COLOR white] [USA][/COLOR][/B]</title>
-<link>http://adultswimhls-i.akamaihd.net/hls/live/249295-b/adultswim_6/main/1/stream_Layer4.m3u8</link>
-<thumbnail>http://s32.postimg.org/6uhiqr9c5/animetv.png</thumbnail>
-<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
-
-
-<item>
-<title>[B][COLOR springgreen]•[/COLOR][COLOR navy]•[/COLOR][COLOR red]•[/COLOR][COLOR lavenderblush]  CARTOON CLASSICS [/COLOR][COLOR red]•[/COLOR][COLOR white] [UK] [/COLOR][/B]</title>
-<link>rtsp://72.13.93.186/campcartoon</link>
-<thumbnail>http://www.bridgestv.com/shows_images/kids/cartoonclassic/logo.png</thumbnail>
-<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
 
 
 
