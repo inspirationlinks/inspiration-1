@@ -203,7 +203,7 @@
 <title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] SP[COLOR gold]O[/COLOR]RT [COLOR gold]•[/COLOR] TV [COLOR gold]+[/B][/COLOR][COLOR springgreen] (f4m|sportdevil) [/COLOR]</title>
 
 <link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://iptvsbh.ddns.net:8003/live/moreira/moreira/1520.ts</link>
-<link>plugin://plugin.video.f4mTester/?streamtype=HLSRETRY;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://iptvsensation.ddns.net:6500/live/James1/zkdZbEUp2X/15368.m3u8</link>
+<link>plugin://plugin.video.f4mTester/?streamtype=HLSRETRY;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://grouprevelation.com:8000/live/Suarez/Suarez/5654.m3u8</link>
 
 <link>plugin://program.plexus/?url=&amp;mode=1&amp;name=Sporttv+</link>
 
@@ -226,7 +226,7 @@
 <link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://grouprevelation.com:8000/live/Suarez/Suarez/5648.ts</link>
 <link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://alphatwo.ddns.net:8000/live/shaun/shaun/415.ts</link>
 
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://livesports.pw/embed.php?file=torotv</link>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://www.ecanlitvizle.net/embed.php?kanal=s-sport&yayin=1</link>
 
 
 <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://sharecast.eu/embed/live1-rbi6c</link>
@@ -264,10 +264,8 @@
 
 <item>
 <title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] SP[COLOR gold]O[/COLOR]RT [COLOR gold]•[/COLOR] TV [COLOR gold]3[/B][/COLOR][COLOR springgreen] (f4m|sportdevil) [/COLOR]</title>
-<link>http://85.7.107.8:8011/play/a010</link>
 <link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://vip6.ddns.net:8000/live/redmosiptv/redmos40ch/1915.ts</link>
 <link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://alphatwo.ddns.net:8000/live/belle/belle/417.ts</link>
-<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://sutverduz.com:8080/live/miki/miki/2991.ts</link>
 
 <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://sharecast.eu/embed/live3-qszlx</link>
 <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://www.liveonlinetv247.info/embed/sporttv3.php</link>
@@ -288,6 +286,8 @@
 
 <item>
 <title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] SP[COLOR gold]O[/COLOR]RT [COLOR gold]•[/COLOR] TV [COLOR gold]4[/B][/COLOR][COLOR springgreen] (f4m|sportdevil) [/COLOR]</title>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://clients.clientportal.link:8080/live/xflake/N28I0k5nIx/7843.ts</link>
+
 <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://www.livesport.pw/Sport4PT.html</link>
 
 <thumbnail>https://sck.pm/aAr</thumbnail>
@@ -333,14 +333,11 @@
 
 <link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://grouprevelation.com:8000/live/Suarez/Suarez/5630.ts</link>
 <link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://alphatwo.ddns.net:8000/live/shaun/shaun/420.ts</link>
-<link>plugin://plugin.video.f4mTester/?streamtype=HLSRETRY;name=[COLOR gold]Inspir[COLOR lime]@[/COLOR]tion[/COLOR]&amp;url=http://iptvsensation.ddns.net:6500/live/James1/zkdZbEUp2X/7742.m3u8</link>
 
 <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://sharecast.eu/embed/btv-md504</link>
 
 <thumbnail>https://www.thelogodb.com/images/media/logo/yxyxqp1437951545.png</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
-
-
 
 
 
