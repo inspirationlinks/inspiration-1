@@ -2,7 +2,7 @@
 
 <channels>
 <channel>
-<name>[B][COLOR gold]TRAILERS[/B][/COLOR]</name>
+<name>[B][COLOR lime]•[/COLOR][B][COLOR gold] TRAILERS[/B][/COLOR]</name>
 <thumbnail>http://upimagens.com/di/5T7A/trailers.png</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
 <info>Trailers de Filmes</info>
@@ -10,7 +10,7 @@
 </item>
 
 <item>
-<title>[B][COLOR gold]TRAILERS[/B][/COLOR]</title>
+<title>[B][COLOR lime]•[/COLOR][B][COLOR gold] TRAILERS[/B][/COLOR]</title>
 <link>http://ignorame</link>
 <thumbnail>http://upimagens.com/di/5T7A/trailers.png</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
@@ -21,7 +21,7 @@
 
 <channels>
 <channel>
-<name>[B][COLOR gold]MOVIE RELEASE[/B][/COLOR]</name>
+<name>[B][COLOR lime]•[/COLOR][B][COLOR gold] MOVIES 2017[/B][/COLOR]</name>
 <thumbnail>http://upimagens.com/di/DI0V/Airportetgg.png</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
 <info>Filmes Recentes</info>
@@ -29,19 +29,19 @@
 </item>
 
 <item>
-<title>[B][COLOR gold]MOVIE RELEASE[/B][/COLOR]</title>
+<title>[B][COLOR lime]•[/COLOR][B][COLOR gold] MOVIE RELEASE[/B][/COLOR]</title>
 <link>https://pastebin.com/raw/g5wXz0QG</link>
 <thumbnail>http://upimagens.com/di/DI0V/Airportetgg.png</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
 <info>Filmes Recentes</info>
-<externallink></externallink>
+<externallink>https://pastebin.com/raw/g5wXz0QG</externallink>
 </item>
 
 
 
 <channels>
 <channel>
-<name>[B][COLOR gold]VINTAGE FILMS[/B][/COLOR]</name>
+<name>[B][COLOR lime]•[/COLOR][B][COLOR gold] VINTAGE FILMS[/B][/COLOR]</name>
 <thumbnail>https://upimagens.com/di/IJ29/vintage_films.png</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
 <info>Filmes Antigos</info>
@@ -49,7 +49,7 @@
 </item>
 
 <item>
-<title>[B][COLOR gold]VINTAGE FILMS[/B][/COLOR]</title>
+<title>[B][COLOR lime]•[/COLOR][B][COLOR gold] VINTAGE FILMS[/B][/COLOR]</title>
 <link>http://ignorame</link>
 <thumbnail>https://upimagens.com/di/IJ29/vintage_films.png</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
@@ -59,7 +59,7 @@
 
 <channels>
 <channel>
-<name>[B][COLOR gold]MADE IN PT[/B][/COLOR]</name>
+<name>[B][COLOR lime]•[/COLOR][B][COLOR gold] MADE IN PT[/B][/COLOR]</name>
 <thumbnail>http://upimagens.com/di/HBRH/made_in_pt.png</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
 <info>Filmes Portugueses</info>
@@ -67,7 +67,7 @@
 </item>
 
 <item>
-<title>[B][COLOR gold]MADE IN PT[/B][/COLOR]</title>
+<title>[B][COLOR lime]•[/COLOR][B][COLOR gold] MADE IN PT[/B][/COLOR]</title>
 <link>http://ignorame</link>
 <thumbnail>http://upimagens.com/di/HBRH/made_in_pt.png</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
