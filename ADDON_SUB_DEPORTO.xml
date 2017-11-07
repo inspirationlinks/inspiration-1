@@ -2,7 +2,7 @@
 
 <channels>
 <channel>
-<name>[B][COLOR gold]DESPORTO PREMIUM[/B][/COLOR][COLOR red][I] Off [/I][/COLOR]</name>
+<name>[B][COLOR lime]•[/COLOR][COLOR gold] DESPORTO PREMIUM[/B][/COLOR][COLOR red][I] Off [/I][/COLOR]</name>
 <thumbnail>http://upimagens.com/di/RQMS/futbol.png</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
 <info>Transmissões Desportivas</info>
@@ -15,15 +15,38 @@
 <thumbnail>http://upimagens.com/di/RQMS/futbol.png</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
 <info>Transmissões Desportivas</info>
-<externallink>https://raw.githubusercontent.com/fghjgb/inspiration/master/FUTBOL%20LIVE.xml?token=AVdRuEDhP_f1OnokbwyvR2LqUtZNCDBzks5ZILUWwA%3D%3D</externallink>
+<externallink>https://raw.githubusercontent.com/fghjgb/inspiration/master/FUTBOL%20LIVE.xml</externallink>
 </item>
+
 
 
 
 
 <channels>
 <channel>
-<name>[B][COLOR gold]REPLAY[/B][/COLOR]</name>
+<name>[B][COLOR lime]•[/COLOR][COLOR gold] CAZA & PESCA[/B][/COLOR]</name>
+<thumbnail>https://upimagens.com/di/R9JX/Airportet3.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
+<info>Repetição de Programas Desportivos</info>
+</subitem>
+</item>
+
+<item>
+<title>[B][COLOR lime]•[/COLOR][COLOR white] CAZA & PESCA [COLOR red]•[/COLOR] DESPORTIVOS[/COLOR][/B]</title>
+<link>http://ignorame</link>
+<thumbnail>https://upimagens.com/di/R9JX/Airportet3.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
+<info>Repetição de Programas Desportivos</info>
+<externallink>https://raw.githubusercontent.com/fghjgb/inspiration/master/cazapesca</externallink>
+</item>
+
+
+
+
+
+<channels>
+<channel>
+<name>[B][COLOR lime]•[/COLOR][COLOR gold] REPLAY[/B][/COLOR]</name>
 <thumbnail>https://upimagens.com/di/R9JX/Airportet3.png</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
 <info>Repetição de Programas Desportivos</info>
@@ -36,6 +59,6 @@
 <thumbnail>https://upimagens.com/di/R9JX/Airportet3.png</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
 <info>Repetição de Programas Desportivos</info>
-<externallink>https://raw.githubusercontent.com/fghjgb/inspiration/master/INFORMACAO_DESPORTIVA.xml?token=AVdRuHV6MmSc2yZJdWNTF0zLaoHCF1OCks5ZILdfwA%3D%3D</externallink>
+<externallink>https://raw.githubusercontent.com/fghjgb/inspiration/master/INFORMACAO_DESPORTIVA.xml</externallink>
 </item>
 
