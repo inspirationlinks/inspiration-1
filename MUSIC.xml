@@ -22,26 +22,6 @@
 
 
 
-=====================================================================================================================
-<item>
-<title>[B][COLOR red]••vv•• [COLOR gold]CONCERTOS [COLOR blue]LIVE[/COLOR][COLOR red] ••vv••[/COLOR][/B]</title> 
-<link>http://fui.me</link>
-<thumbnail>http://upimagens.com/di/2QB1/logoinspiration.png</thumbnail>
-<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
-=====================================================================================================================
-
-
-
-<item>
-<title>[B][COLOR red]•[/COLOR][COLOR blue] Concertos ao Vivo [/COLOR][COLOR magenta] [Youtube] [/COLOR][/B]</title>
-<link>http://fui.me</link>
-<externallink>https://goo.gl/G8SgOM</externallink>
-<thumbnail>http://upimagens.com/di/VYB3/concertos.png</thumbnail>
-<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
-
-
-
-
 
 
 
@@ -613,27 +593,6 @@ def GetLSProData(page_data,Cookie_Jar,m,url='https://www.youtube.com/playlist?li
 
 
 
-
-
-=====================================================================================================================
-<item>
-<title>[B][COLOR red]••vv•• [COLOR gold]LISTA MUSICA [COLOR blue]EXTERNAS[/COLOR][COLOR red] ••vv••[/COLOR][/B]</title> 
-<link>http://fui.me</link>
-<thumbnail>http://upimagens.com/di/2QB1/logoinspiration.png</thumbnail>
-<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
-=====================================================================================================================
-
-
-
-
-
-
-<item>
-<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] MUSIC ZONE [COLOR red]• [/B][COLOR magenta]by Norestric[/COLOR]</title>
-<link>http://fui.me</link>
-<externallink>&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#110;&#111;&#114;&#101;&#115;&#116;&#114;&#105;&#99;&#116;&#105;&#111;&#110;&#115;&#46;&#99;&#108;&#117;&#98;&#47;&#110;&#111;&#114;&#101;&#115;&#116;&#114;&#105;&#99;&#116;&#105;&#111;&#110;&#115;&#46;&#99;&#108;&#117;&#98;&#47;&#116;&#97;&#115;&#116;&#114;&#101;&#97;&#109;&#115;&#47;&#102;&#105;&#108;&#101;&#115;&#47;&#109;&#117;&#115;&#105;&#99;&#47;&#77;&#117;&#115;&#105;&#99;&#37;&#50;&#48;&#84;&#86;&#46;&#120;&#109;&#108;</externallink>
-<thumbnail>http://upimagens.com/di/95Y4/musiczone.png</thumbnail>
-<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
 
 
 
