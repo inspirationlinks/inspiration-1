@@ -34,26 +34,10 @@
 <thumbnail>http://upimagens.com/di/DI0V/Airportetgg.png</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
 <info>Filmes Recentes</info>
-<externallink>https://raw.githubusercontent.com/fghjgb/inspiration/master/FILMES_2016.xml?token=AVdRuA96Z45yADbog51NSTZ_d_HKLquBks5ZIMAywA%3D%3D</externallink>
+<externallink>https://pastebin.com/raw/g5wXz0QG</externallink>
 </item>
 
-<channels>
-<channel>
-<name>[B][COLOR gold]MOVIE KIDS[/B][/COLOR]</name>
-<thumbnail>http://upimagens.com/di/HQVI/animacao.png</thumbnail>
-<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
-<info>Filmes Recentes</info>
-</subitem>
-</item>
 
-<item>
-<title>[B][COLOR gold]MOVIE KIDS[/B][/COLOR]</title>
-<link>http://ignorame</link>
-<thumbnail>http://upimagens.com/di/HQVI/animacao.png</thumbnail>
-<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
-<info>Filmes Recentes</info>
-<externallink>https://raw.githubusercontent.com/fghjgb/inspiration/master/FILMES%20ANIMACAO.xml?token=AVdRuGWU4-Q9k-vFBdk8Ls8aUMK0qmIbks5ZIL_owA%3D%3D</externallink>
-</item>
 
 <channels>
 <channel>
@@ -70,7 +54,7 @@
 <thumbnail>https://upimagens.com/di/IJ29/vintage_films.png</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
 <info>Filmes Antigos</info>
-<externallink>https://raw.githubusercontent.com/fghjgb/inspiration/master/FILMS_VINTAGE.xml?token=AVdRuEkoQZ_ZUZqGPvjZ4KVWf1l77ZGOks5ZIL8xwA%3D%3D</externallink>
+<externallink>https://raw.githubusercontent.com/fghjgb/inspiration/master/FILMS_VINTAGE.xml</externallink>
 </item>
 
 <channels>
@@ -88,5 +72,5 @@
 <thumbnail>http://upimagens.com/di/HBRH/made_in_pt.png</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
 <info>Filmes Portugueses</info>
-<externallink>https://raw.githubusercontent.com/fghjgb/inspiration/master/CINEMA_PORTUGUES.xml?token=AVdRuMnU6ssxSqEDZAcJeAsCr1wi549jks5ZIL-AwA%3D%3D</externallink>
+<externallink>https://raw.githubusercontent.com/fghjgb/inspiration/master/CINEMA_PORTUGUES.xml</externallink>
 </item>
