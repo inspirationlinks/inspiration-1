@@ -17,18 +17,13 @@
 
 
 
-<item>
-<title>[B][COLOR green]•[/COLOR][COLOR gold]•[/COLOR][COLOR red]•[/COLOR][COLOR aquamarine] ANIMAUX [COLOR white] Channels [/B][COLOR red] (f4m) [/COLOR]</title>
-<link>http://live-s102.abweb.com/liveabs102/ngrp:animaux.stream_bis/chunklist_f1tv_b1096000.m3u8</link>
-<thumbnail>http://oi67.tinypic.com/2m4ss2f.jpg</thumbnail>
-<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
 
 
 
 <item>
-<title>[B][COLOR green]•[/COLOR][COLOR gold]•[/COLOR][COLOR red]•[/COLOR][COLOR aquamarine] CAZA & PESCA [COLOR white] Channels [/B][COLOR red] (sportdevil) [/COLOR]</title>
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://edge15.livesports.pw/live/vercazaypesca65b3f60d9f53/index.m3u8</link>
-
+<title>[B][COLOR green]•[/COLOR][COLOR gold]•[/COLOR][COLOR red]•[/COLOR][COLOR aquamarine] CAZA & PESCA [COLOR white] Channels [/B][COLOR red]  [/COLOR]</title>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=Inspir@tion;iconImage=;url=http://37.187.128.169:8000/live/dkkkasd4545rrrpp/akqpp33845hvnajur/39.ts$OPT:http-user-agent=VLC/3.0.0-git LibVLC/3.0.0-git</link>
 <thumbnail>http://www.thelogodb.com/images/media/logo/vxwput1438005508.png</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
 
@@ -36,23 +31,30 @@
 
 <item>
 <title>[B][COLOR green]•[/COLOR][COLOR gold]•[/COLOR][COLOR red]•[/COLOR][COLOR aquamarine] IBERALIA [/COLOR] [COLOR red]•[/COLOR][COLOR magenta]  [/COLOR][/B]</title>
-<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=Inspir@tion;iconImage=;url=http://192.99.149.20:8080/live/grspan/sxlk2slkx/3286.ts</link>
+<link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER;name=Inspir@tion;iconImage=;url=http://37.187.128.169:8000/live/dkkkasd4545rrrpp/akqpp33845hvnajur/38.ts$OPT:http-user-agent=VLC/3.0.0-git LibVLC/3.0.0-git</link>
 <thumbnail>http://s32.postimg.org/oac3cdon5/iberalia.png</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
 
 
 
 <item>
+<title>[B][COLOR green]•[/COLOR][COLOR gold]•[/COLOR][COLOR red]•[/COLOR][COLOR aquamarine] ANIMAUX [COLOR white] [/B][COLOR red]  [/COLOR]</title>
+<link>http://live-s102.abweb.com/liveabs102/ngrp:animaux.stream_bis/chunklist_f1tv_b1096000.m3u8</link>
+<thumbnail>http://oi67.tinypic.com/2m4ss2f.jpg</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
+
+
+
+<item>
 <title>[B][COLOR green]•[/COLOR][COLOR gold]•[/COLOR][COLOR red]•[/COLOR][COLOR aquamarine] CHASSE PECHE [/COLOR] [COLOR red]•[/COLOR][COLOR magenta]  [/COLOR][/B]</title>
-<link>http://live-s101.abweb.com/liveabs101/ngrp:chasseetpeche.stream_bis/chunklist_b1096000.m3u8$$lsname=INSPIR@TION</link>
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://urhd.tv/fr-chasse-peche$$lsname=INSPIR@TION & [SportDevil]</link>
+<link>http://live-s101.abweb.com/liveabs101/ngrp:chasseetpeche.stream_bis/chunklist_b1096000.m3u8</link>
 <thumbnail>https://www.thelogodb.com/images/media/logo/rqvxqr1435097845.png</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
 
 
 <item>
 <title>[B][COLOR green]•[/COLOR][COLOR gold]•[/COLOR][COLOR red]•[/COLOR][COLOR aquamarine] FISH TV [/COLOR] [COLOR red]•[/COLOR][COLOR magenta]  [/COLOR][/B]</title>
-<link>http://slrp.sambavideos.sambatech.com/liveevent/fishtvabr_fbc599e48634a06e1b7223987b93de98/livestream2/INSPIR@TION.m3u8</link>
+<link></link>
 <thumbnail>http://www.tvmagazine.com.br/imagens/icones/600/fishtv.png</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart></item>
 
