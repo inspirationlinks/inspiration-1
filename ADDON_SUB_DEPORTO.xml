@@ -2,7 +2,7 @@
 
 <channels>
 <channel>
-<name>[B][COLOR gold]DESPORTO PREMIUM[/B][/COLOR]</name>
+<name>[B][COLOR gold]DESPORTO PREMIUM[/B][/COLOR][COLOR lime][I]off[/I][/COLOR]</name>
 <thumbnail>http://upimagens.com/di/RQMS/futbol.png</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
 <info>Transmissões Desportivas</info>
@@ -19,23 +19,7 @@
 </item>
 
 
-<channels>
-<channel>
-<name>[B][COLOR gold]WRC | F1 | MOTOGP[/B][/COLOR]</name>
-<thumbnail>http://upimagens.com/di/Q29L/f1gp.png</thumbnail>
-<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
-<info>Canais de TV do Brasil</info>
-</subitem>
-</item>
 
-<item>
-<title>[B][COLOR lime]•[/COLOR][COLOR white] WRC[COLOR red]|[/COLOR]F1[COLOR red]|[/COLOR]MOTOGP[/COLOR] [/B]</title>
-<link>http://ignorame</link>
-<thumbnail>http://upimagens.com/di/Q29L/f1gp.png</thumbnail>
-<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
-<info>Canais de TV do Brasil</info>
-<externallink>https://raw.githubusercontent.com/fghjgb/inspiration/master/FORMULA1_GP.xml?token=AVdRuMVAzl-yAjZa5vh6r6ROzAUYK8Y3ks5ZILV3wA%3D%3D</externallink>
-</item>
 
 
 <channels>
