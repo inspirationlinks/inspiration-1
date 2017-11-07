@@ -32,7 +32,7 @@
 
 
 <item>
-<title>[B][COLOR green]•[/COLOR][COLOR darkorange]•[/COLOR][COLOR navy]•[/COLOR][COLOR aquamarine] [COLOR red]Replay - [/COLOR] Minuto 90[COLOR white] tv [COLOR tomato][/COLOR][/B][/COLOR][COLOR springgreen] [Youtube] [/COLOR]</title>
+<title>[B][COLOR lime]•[/COLOR][COLOR darkgrey]  [COLOR red]Replay - [/COLOR] Minuto 90[COLOR white] tv [COLOR tomato][/COLOR][/B][/COLOR][COLOR springgreen] [Youtube] [/COLOR]</title>
 <link>http://fonix.pt</link>
 <jsonrpc>plugin://plugin.video.youtube/user/minuto90tv/</jsonrpc>
 <thumbnail>https://yt3.ggpht.com/-I7fO28F7vco/AAAAAAAAAAI/AAAAAAAAAAA/yWdz2SVPuG8/s288-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
@@ -44,7 +44,7 @@
 
 
 <item>
-<title>[B][COLOR green]•[/COLOR][COLOR darkorange]•[/COLOR][COLOR navy]•[/COLOR][COLOR aquamarine] [COLOR red]Replay - [/COLOR] SCP [/B][/COLOR][COLOR springgreen] [Youtube] [/COLOR]</title>
+<title>[B][COLOR lime]•[/COLOR][COLOR darkgrey]  [COLOR red]Replay - [/COLOR] SCP [/B][/COLOR][COLOR springgreen] [Youtube] [/COLOR]</title>
 <link>http://fonix.pt</link>
 <jsonrpc>plugin://plugin.video.youtube/user/SportingCP/</jsonrpc>
 <thumbnail>http://www.forumscp.com/wiki/images/c/c1/SCP_logo.png</thumbnail>
@@ -60,7 +60,7 @@
 
 
 <item>
-<title>[B][COLOR green]•[/COLOR][COLOR darkorange]•[/COLOR][COLOR navy]•[/COLOR][COLOR aquamarine] [COLOR red]Replay - [/COLOR] Tempo Extra[COLOR red]|[/COLOR]O Dia Seguinte[COLOR red]|[/COLOR]Play Off[COLOR red]|[/COLOR]Liga D´Ouro[COLOR red]|[/COLOR]Pé Em Riste [/B][/COLOR][COLOR springgreen] [Youtube] [/COLOR]</title>
+<title>[B][COLOR lime]•[/COLOR][COLOR darkgrey]  [COLOR red]Replay - [/COLOR] Tempo Extra[COLOR red]|[/COLOR]O Dia Seguinte[COLOR red]|[/COLOR]Play Off[COLOR red]|[/COLOR]Liga D´Ouro[COLOR red]|[/COLOR]Pé Em Riste [/B][/COLOR][COLOR springgreen] [Youtube] [/COLOR]</title>
 <utube>UCl6GClF3K5NuEHJSXBKNexQ</utube>
 <thumbnail>http://upimagens.com/di/IU57/Airportet3.png</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg/fanart></item>
@@ -71,7 +71,7 @@
 
 
 <item>
-<title>[B][COLOR green]•[/COLOR][COLOR darkorange]•[/COLOR][COLOR navy]•[/COLOR][COLOR aquamarine] [COLOR red]Replay - [/COLOR] Noticias desportivas [COLOR red]#1 [/B][/COLOR][COLOR springgreen] [Youtube] [/COLOR]</title>
+<title>[B][COLOR lime]•[/COLOR][COLOR darkgrey]  [COLOR red]Replay - [/COLOR] Noticias desportivas [COLOR red]#1 [/B][/COLOR][COLOR springgreen] [Youtube] [/COLOR]</title>
 <utube>UCSQOXnLQ6GTOjAyIFWIljCQ</utube>
 <thumbnail>http://upimagens.com/di/IU57/Airportet3.png</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg/fanart></item>
@@ -81,7 +81,7 @@
 
 
 <item>
-<title>[B][COLOR green]•[/COLOR][COLOR darkorange]•[/COLOR][COLOR navy]•[/COLOR][COLOR aquamarine] [COLOR red]Replay - [/COLOR] Noticias desportivas [COLOR red]#2 [/B][/COLOR][COLOR springgreen] [Youtube] [/COLOR]</title>
+<title>[B][COLOR lime]•[/COLOR][COLOR darkgrey]  [COLOR red]Replay - [/COLOR] Noticias desportivas [COLOR red]#2 [/B][/COLOR][COLOR springgreen] [Youtube] [/COLOR]</title>
 <link>http://fonix.pt</link>
 <jsonrpc>plugin://plugin.video.youtube/user/masterrips/</jsonrpc>
 <thumbnail>http://upimagens.com/di/IU57/Airportet3.png</thumbnail>
