@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
+
+
+
+<channels>
+<channel>
+<name>[B][COLOR lime]•[/COLOR][COLOR gold] SPORT TVS SD[/B][/COLOR][COLOR red][I] [/I][/COLOR]</name>
+<thumbnail>http://upimagens.com/di/RQMS/futbol.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
+<info>Seccao privada</info>
+</subitem>
+</item>
+
+<item>
+<title>[B][COLOR lime]•[/COLOR][COLOR white] DESPORTO[COLOR red]•[/COLOR] PREMIUM[/COLOR][/B]</title>
+<link>http://ignorame</link>
+<thumbnail>http://upimagens.com/di/RQMS/futbol.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
+<info>Seccao privada</info>
+<externallink>https://raw.githubusercontent.com/fghjgb/inspiration/master/sporttvSD</externallink>
+</item>
+
+
+
+
+
 <channels>
 <channel>
 <name>[B][COLOR lime]•[/COLOR][COLOR gold] ARENAVISION[/B][/COLOR][COLOR red][I] [/I][/COLOR]</name>
