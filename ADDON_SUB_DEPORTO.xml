@@ -2,7 +2,7 @@
 
 <channels>
 <channel>
-<name>[B][COLOR lime]•[/COLOR][COLOR gold] DESPORTO PREMIUM[/B][/COLOR][COLOR red][I] Off [/I][/COLOR]</name>
+<name>[B][COLOR lime]•[/COLOR][COLOR gold] ARENAVISION[/B][/COLOR][COLOR red][I] [/I][/COLOR]</name>
 <thumbnail>http://upimagens.com/di/RQMS/futbol.png</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
 <info>Seccao privada</info>
@@ -15,13 +15,30 @@
 <thumbnail>http://upimagens.com/di/RQMS/futbol.png</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
 <info>Seccao privada</info>
-<externallink>https://raw.githubusercontent.com/fghjgb/inspiration/master/FUTBOL%20LIVE.xml</externallink>
+<externallink>https://pastebin.com/raw/ktG0ncz6</externallink>
 </item>
 
 
 
 
 
+<channels>
+<channel>
+<name>[B][COLOR lime]•[/COLOR][COLOR gold] CAZA & PESCA[/B][/COLOR]</name>
+<thumbnail>https://s1.postimg.org/6hykg5in7j/cazapesca.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
+<info>Seccao de caca desportiva e tauromaquia</info>
+</subitem>
+</item>
+
+<item>
+<title>[B][COLOR lime]•[/COLOR][COLOR white] CAZA & PESCA [COLOR red]•[/COLOR] DESPORTIVOS[/COLOR][/B]</title>
+<link>http://ignorame</link>
+<thumbnail>https://s1.postimg.org/6hykg5in7j/cazapesca.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
+<info>Seccao de caca desportiva e tauromaquia</info>
+<externallink>https://raw.githubusercontent.com/fghjgb/inspiration/master/cazapesca</externallink>
+</item>
 
 
 
