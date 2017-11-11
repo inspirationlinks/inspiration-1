@@ -21,7 +21,7 @@
 
 <channels>
 <channel>
-<name>[B][COLOR gold]MOVIES 2017[/B][/COLOR] [M3U]</name>
+<name>[B][COLOR gold]MOVIES 2017[/B][/COLOR]</name>
 <thumbnail>http://upimagens.com/di/DI0V/Airportetgg.png</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
 <info>Filmes Recentes</info>
@@ -36,28 +36,6 @@
 <info>Filmes Recentes</info>
 <externallink>https://pastebin.com/raw/g5wXz0QG</externallink>
 </item>
-
-
-
-<channels>
-<channel>
-<name>[B][COLOR gold]MOVIES 2017[/B][/COLOR] [XML]</name>
-<thumbnail>http://upimagens.com/di/DI0V/Airportetgg.png</thumbnail>
-<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
-<info>Filmes Recentes</info>
-</subitem>
-</item>
-
-<item>
-<title>[B][COLOR gold]MOVIE RELEASE[/B][/COLOR]</title>
-<link>https://pastebin.com/raw/g5wXz0QG</link>
-<thumbnail>http://upimagens.com/di/DI0V/Airportetgg.png</thumbnail>
-<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
-<info>Filmes Recentes</info>
-<externallink>https://raw.githubusercontent.com/fghjgb/inspiration/master/films_2017</externallink>
-</item>
-
-
 
 <channels>
 <channel>
