@@ -2,7 +2,26 @@
 
 <channels>
 <channel>
-<name>[B][COLOR lime]•[/COLOR][COLOR gold] PORTUGAL TV[/B][/COLOR]</name>
+<name>[B][COLOR lime]•[/COLOR][COLOR gold] TDT [/B][/COLOR]</name>
+<thumbnail>http://upimagens.com/di/4EPD/channels.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
+<info>Canais Portugueses e Internacionais</info>
+</subitem>
+</item>
+
+<item>
+<title>[B][COLOR lime]•[/COLOR][COLOR gold] PORTUGAL TV[/B][/COLOR]</title>
+<link>http://ignorame</link>
+<thumbnail>http://upimagens.com/di/4EPD/channels.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
+<info>Canais Portugueses e Internacionais</info>
+<externallink>https://pastebin.com/raw/Gg3fvRWA</externallink>
+</item>
+
+
+<channels>
+<channel>
+<name>[B][COLOR lime]•[/COLOR][COLOR gold] LISTAS TEMPORARIAS [/B][/COLOR]</name>
 <thumbnail>http://upimagens.com/di/4EPD/channels.png</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
 <info>Canais Portugueses e Internacionais</info>
@@ -17,6 +36,9 @@
 <info>Canais Portugueses e Internacionais</info>
 <externallink>https://pastebin.com/raw/jn9PkSf2</externallink>
 </item>
+
+
+
 
 
 <channels>
