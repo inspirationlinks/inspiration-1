@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+
+
+
+
+
+
+
+
+   <item>
+    <title>[B][COLOR lime]•[/COLOR][COLOR lavenderblush] Por[COLOR darkorange]tu[/COLOR]gal[/COLOR][COLOR olive]  Server Daily [/B][/COLOR]</title>
+    <link>$doregex[leg]</link>
+ <thumbnail>https://upimagens.com/di/SR8F/inspirationlivetv.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
+<info>Inspir@tion - Os Links são adquiridos através de uma busca livre pela Internet</info>
+    <regex>
+      <name>leg</name>
+      <listrepeat><![CDATA[
+            <title>[COLOR red] • [/COLOR][leg.param2]</title>
+            <link>$doregex[list]</link>
+			 <thumbnail>https://upimagens.com/di/SR8F/inspirationlivetv.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
+<info>Inspir@tion - Os Links são adquiridos através de uma busca livre pela Internet</info>
+    ]]></listrepeat>
+    <expres><![CDATA[(?s)<h2 class="post-title".+?href="https(.+?)">(.+?)</a>]]></expres>
+    <page>http://www.dailyiptvlist.com/europe/portugal/</page>
+    </regex>
+ 
+    <regex>
+    <name>list</name>
+    <listrepeat><![CDATA[
+    <title>[COLOR red][B] IL - [/B][/COLOR][COLOR lime][list.param2][/COLOR]</title>
+    <link>ignoreme</link>
+    <externallink>https://[list.param1]$$TSDOWNLOADER$$</externallink>
+				 <thumbnail>https://upimagens.com/di/SR8F/inspirationlivetv.png</thumbnail>
+<fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
+<info>Inspir@tion - Os Links são adquiridos através de uma busca livre pela Internet</info>
+    ]]></listrepeat>
+    <expres><![CDATA[<blockquote><p><a href="https://(.+?)">(.+?)</a></p></blockquote>]]></expres>
+    <page>http[leg.param1]</page>
+    </regex>
+</item>
