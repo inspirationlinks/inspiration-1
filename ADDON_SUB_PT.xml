@@ -40,17 +40,17 @@
 
 <channels>
 <channel>
-<name>[B][COLOR lime]•[/COLOR][COLOR gold] SERVER DAILY PT [/B][/COLOR]</name>
-<thumbnail>http://upimagens.com/di/4EPD/channels.png</thumbnail>
+<name>[B][COLOR lime]•[/COLOR][COLOR gold] DAILY IPTV PT [/B][/COLOR]</name>
+<thumbnail>https://www.dailyiptvlist.com/wp-content/uploads/2017/02/logo0003.png</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
-<info>Varias fontes de lista de canais de teste de Portugal. Do site Daily</info>
+<info>Fontes de listas PT do site Daily iptv List</info>
 </subitem>
 </item>
 
 <item>
 <title>[B][COLOR lime]•[/COLOR][COLOR gold] PORTUGAL TV[/B][/COLOR]</title>
 <link>http://ignorame</link>
-<thumbnail>http://upimagens.com/di/4EPD/channels.png</thumbnail>
+<thumbnail>https://www.dailyiptvlist.com/wp-content/uploads/2017/02/logo0003.png</thumbnail>
 <fanart>https://upimagens.com/di/JIBP/fanart.jpg</fanart>
 <info>Canais Portugueses e Internacionais</info>
 <externallink>https://raw.githubusercontent.com/fghjgb/inspiration/master/ServerDailyPT</externallink>
