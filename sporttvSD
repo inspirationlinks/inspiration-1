@@ -28,7 +28,7 @@
 
 
 <item>
-<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] SP[COLOR gold]O[/COLOR]RT [COLOR gold]•[/COLOR] TV [COLOR gold]+[/B][/COLOR][COLOR olive] (Low Bitrate) [/COLOR]</title>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] SP[COLOR gold]O[/COLOR]RT [COLOR gold]•[/COLOR] TV [COLOR gold]+[/B][/COLOR][COLOR olive] (OFF|ON) [/COLOR]</title>
 <link>rtmp://213.152.180.151:17247/sstream/nnXWDzhPK1.stream</link>
 <thumbnail>https://www.thelogodb.com/images/media/logo/trtupx1481664790.png</thumbnail>
 <fanart>https://upimagens.com/di/VNZL/fanart_simpletv.jpg</fanart></item>
@@ -42,10 +42,17 @@
 
 <item>
 <title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] SP[COLOR gold]O[/COLOR]RT [COLOR gold]•[/COLOR] TV [COLOR gold]1[/B][/COLOR][COLOR olive] (Low Bitrate) [/COLOR]</title>
-<link>rtmp://213.152.180.151:17247/sstream/EuxPCYoiaN.stream</link>
+<link>http://185.80.220.79:15214/streamM/CLANGj2Xof.stream/playlist.m3u8</link>
 <thumbnail>https://sck.pm/Hw</thumbnail>
 <fanart>https://upimagens.com/di/VNZL/fanart_simpletv.jpg</fanart></item>
 
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] SP[COLOR gold]O[/COLOR]RT [COLOR gold]•[/COLOR] TV [COLOR gold]1[/B][/COLOR][COLOR olive] sportsdevil [/COLOR]</title>
+<sportsdevil>http://sportsonline.pw/channels/pt/sporttv1.html</sportsdevil>
+<referer></referer>
+<thumbnail>https://sck.pm/Hw</thumbnail>
+<fanart>https://upimagens.com/di/VNZL/fanart_simpletv.jpg</fanart></item>
 
 
 <item>
@@ -89,11 +96,17 @@
 
 <item>
 <title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] SP[COLOR gold]O[/COLOR]RT [COLOR gold]•[/COLOR] TV [COLOR gold]2[/B][/COLOR][COLOR olive] (Low Bitrate) [/COLOR]</title>
-<link>rtmp://213.152.180.151:17247/sstream/0qZjb9kndn.stream</link>
+<link>http://185.80.220.79:15214/streamM/0qZjb9kndn.stream/playlist.m3u8</link>
 <thumbnail>https://sck.pm/58</thumbnail>
 <fanart>https://upimagens.com/di/VNZL/fanart_simpletv.jpg</fanart></item>
 
 
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] SP[COLOR gold]O[/COLOR]RT [COLOR gold]•[/COLOR] TV [COLOR gold]2[/B][/COLOR][COLOR olive] sportsdevil [/COLOR]</title>
+<sportsdevil>http://sportsonline.pw/channels/pt/sporttv2.html</sportsdevil>
+<referer></referer>
+<thumbnail>https://sck.pm/58</thumbnail>
+<fanart>https://upimagens.com/di/VNZL/fanart_simpletv.jpg</fanart></item>
 
 
 <item>
@@ -132,7 +145,15 @@
 
 <item>
 <title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] SP[COLOR gold]O[/COLOR]RT [COLOR gold]•[/COLOR] TV [COLOR gold]3[/B][/COLOR][COLOR olive] (Low Bitrate) [/COLOR]</title>
-<link>rtmp://213.152.180.151:17247/sstream/0a6vDa0OYU.stream</link>
+<link>http://185.80.220.79:15214/streamM/0a6vDa0OYU.stream/playlist.m3u8</link>
+<thumbnail>https://sck.pm/9M</thumbnail>
+<fanart>https://upimagens.com/di/VNZL/fanart_simpletv.jpg</fanart></item>
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] SP[COLOR gold]O[/COLOR]RT [COLOR gold]•[/COLOR] TV [COLOR gold]3[/B][/COLOR][COLOR olive] sportsdevil [/COLOR]</title>
+<sportsdevil>http://sportsonline.pw/channels/pt/sporttv3.html</sportsdevil>
+<referer></referer>
 <thumbnail>https://sck.pm/9M</thumbnail>
 <fanart>https://upimagens.com/di/VNZL/fanart_simpletv.jpg</fanart></item>
 
@@ -152,19 +173,18 @@
 
 
 
-
 <item>
 <title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] SP[COLOR gold]O[/COLOR]RT [COLOR gold]•[/COLOR] TV [COLOR gold]4[/B][/COLOR][COLOR olive] (Low Bitrate) [/COLOR]</title>
-<link>rtmp://213.152.180.151:17247/sstream/0tkVGgd2jl.stream</link>
+<link>http://185.80.220.79:15214/streamM/0tkVGgd2jl.stream/playlist.m3u8</link>
 <thumbnail>https://www.thelogodb.com/images/media/logo/vuytwx1470409983.png</thumbnail>
 <fanart>https://upimagens.com/di/VNZL/fanart_simpletv.jpg</fanart></item>
 
 
+
 <item>
-<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] SP[COLOR gold]O[/COLOR]RT [COLOR gold]•[/COLOR] TV [COLOR gold]4[/B][/COLOR][COLOR olive] (OFF) [/COLOR]</title>
-
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://www.livesport.pw/Sport4PT.html</link>
-
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] SP[COLOR gold]O[/COLOR]RT [COLOR gold]•[/COLOR] TV [COLOR gold]4[/B][/COLOR][COLOR olive] sportsdevil [/COLOR]</title>
+<sportsdevil>http://sportsonline.pw/channels/pt/sporttv4.html</sportsdevil>
+<referer></referer>
 <thumbnail>https://www.thelogodb.com/images/media/logo/vuytwx1470409983.png</thumbnail>
 <fanart>https://upimagens.com/di/VNZL/fanart_simpletv.jpg</fanart></item>
 
@@ -186,7 +206,15 @@
 
 <item>
 <title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] SP[COLOR gold]O[/COLOR]RT [COLOR gold]•[/COLOR] TV [COLOR gold]5[/B][/COLOR][COLOR olive] (Low Bitrate) [/COLOR]</title>
-<link>rtmp://213.152.180.151:17247/sstream/1UPDomF2Ab.stream</link>
+<link>http://185.80.220.79:15214/streamM/xZxIbGC9NR.stream/playlist.m3u8</link>
+<thumbnail>https://sck.pm/aAr</thumbnail>
+<fanart>https://upimagens.com/di/VNZL/fanart_simpletv.jpg</fanart></item>
+
+
+<item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] SP[COLOR gold]O[/COLOR]RT [COLOR gold]•[/COLOR] TV [COLOR gold]5[/B][/COLOR][COLOR olive] sportsdevil [/COLOR]</title>
+<sportsdevil>http://sportsonline.pw/channels/pt/sporttv5.html</sportsdevil>
+<referer></referer>
 <thumbnail>https://sck.pm/aAr</thumbnail>
 <fanart>https://upimagens.com/di/VNZL/fanart_simpletv.jpg</fanart></item>
 
@@ -210,7 +238,7 @@
 
 <item>
 <title>[B][COLOR darkorange]•[/COLOR][COLOR red] B[/COLOR]TV1[/B][COLOR olive] (Low Bitrate) [/COLOR]</title>
-<link>rtmp://213.152.180.151:17247/sstream/9DOXhIxxsw.stream</link>
+<link>http://185.80.220.79:15214/streamM/xZxIbGC9NR.stream/playlist.m3u8</link>
 <thumbnail>https://www.thelogodb.com/images/media/logo/yxyxqp1437951545.png</thumbnail>
 <fanart>https://upimagens.com/di/VNZL/fanart_simpletv.jpg</fanart></item>
 
@@ -228,7 +256,6 @@
 <agent>Mozilla/5.0 (Linux; Android 6.0; XT1097 Build/MPES24.49-18-3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/51.0.2704.81 Mobile Safari/537.36</agent></regex>
 <thumbnail>https://www.thelogodb.com/images/media/logo/yxyxqp1437951545.png</thumbnail>
 <fanart>https://upimagens.com/di/VNZL/fanart_simpletv.jpg</fanart></item>
-
 
 
 
