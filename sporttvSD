@@ -56,6 +56,15 @@
 
 
 <item>
+<title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] SP[COLOR gold]O[/COLOR]RT [COLOR gold]•[/COLOR] TV [COLOR gold]1[/B][/COLOR][COLOR olive] sportsdevil [/COLOR]</title>
+<sportsdevil>https://www.firstonetv.net/Live/Portugal/SPORT-TV-1-13</sportsdevil>
+<referer></referer>
+<thumbnail>https://sck.pm/Hw</thumbnail>
+<fanart>https://upimagens.com/di/VNZL/fanart_simpletv.jpg</fanart></item>
+
+
+
+<item>
 <title>[B][COLOR red]•[/COLOR][COLOR lavenderblush] SP[COLOR gold]O[/COLOR]RT [COLOR gold]•[/COLOR] TV [COLOR gold]1[/B][/COLOR][COLOR olive] magellan [/COLOR]</title>
 <link>http://$doregex[Igor_Rangel_IP]:8088/adfree/sportvportugal1/playlist.m3u8?id=1776&amp;pk=$doregex[Igor_Rangel_Pk]|User-Agent: Mozilla/5.0</link>
 <regex>
@@ -231,11 +240,6 @@
 
 
 
-
-
-
-
-
 <item>
 <title>[B][COLOR darkorange]•[/COLOR][COLOR red] B[/COLOR]TV1[/B][COLOR olive] (Low Bitrate) [/COLOR]</title>
 <link>http://185.80.220.79:15214/streamM/xZxIbGC9NR.stream/playlist.m3u8</link>
@@ -274,9 +278,48 @@
 
 
 
-
-
-
+<item>
+<title>[COLORred][B]Sport Klub [COLORwhite]1[/COLOR][/B]</title>
+<sportsdevil>http://nowwatchtvlive.cc/sport-klub-1-uzivo-televizija/</sportsdevil>
+<referer></referer>
+https://screenshots.firefoxusercontent.com/images/d8348b37-1474-4c01-9f59-db0bd7a7ff2c.png
+<fanart></fanart>
+</item>
+<item>
+<title>[COLORred][B]Sport Klub [COLORwhite]2[/COLOR][/B]</title>
+<sportsdevil>http://nowwatchtvlive.cc/sport-klub-2-uzivo-televizija-sport-klub-2-hd/</sportsdevil>
+<referer></referer>
+https://screenshots.firefoxusercontent.com/images/d8348b37-1474-4c01-9f59-db0bd7a7ff2c.png
+<fanart></fanart>
+</item>
+<item>
+<title>[COLORred][B]Sport Klub [COLORwhite]3[/COLOR][/B]</title>
+<sportsdevil>http://nowwatchtvlive.cc/sport-klub-3-uzivo-televizija-sport-klub-3-live-stream/</sportsdevil>
+<referer></referer>
+https://screenshots.firefoxusercontent.com/images/d8348b37-1474-4c01-9f59-db0bd7a7ff2c.png
+<fanart></fanart>
+</item>
+<item>
+<title>[COLORred][B]Sport Klub [COLORwhite]4[/COLOR][/B]</title>
+<sportsdevil>http://nowwatchtvlive.cc/sport-klub-4-uzivo-stream-sport-klub-4-live-online/</sportsdevil>
+<referer></referer>
+https://screenshots.firefoxusercontent.com/images/d8348b37-1474-4c01-9f59-db0bd7a7ff2c.png
+<fanart></fanart>
+</item>
+<item>
+<title>[COLORred][B]Sport Klub [COLORwhite]5[/COLOR][/B]</title>
+<sportsdevil>http://nowwatchtvlive.cc/sport-klub-5-uzivo-stream-sport-klub-5-live-online/</sportsdevil>
+<referer></referer>
+https://screenshots.firefoxusercontent.com/images/d8348b37-1474-4c01-9f59-db0bd7a7ff2c.png
+<fanart></fanart>
+</item>
+<item>
+<title>[COLORred][B]Sport Klub [COLORwhite]6[/COLOR][/B]</title>
+<sportsdevil>http://nowwatchtvlive.cc/sport-klub-6-uzivo-stream-sport-klub-6-live-online/</sportsdevil>
+<referer></referer>
+https://screenshots.firefoxusercontent.com/images/d8348b37-1474-4c01-9f59-db0bd7a7ff2c.png
+<fanart></fanart>
+</item>
 
 
 
